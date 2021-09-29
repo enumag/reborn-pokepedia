@@ -1,0 +1,8 @@
+{
+  "name": "Reborn Pokepedia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "c72d79b9"
+}
