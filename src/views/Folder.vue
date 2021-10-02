@@ -1,9 +1,11 @@
 <template>
   <ion-content fullscreen>
     <ion-list-header>Default</ion-list-header>
-    <ion-thumbnail class="ion-margin-start">
-      <img src="/assets/pokemon/132.png">
+    <ion-input v-model="pokemonId"></ion-input>
+    <ion-thumbnail class="ion-margin-start" style="--size:132px;">
+      <img :src="pokemonPath()">
     </ion-thumbnail>
+
 
     <ion-list>
       <ion-list-header>Item thumbnails</ion-list-header>
@@ -62,10 +64,20 @@
 </template>
 
 <script>
-import { IonContent, IonItem, IonLabel, IonThumbnail } from '@ionic/vue';
-import { defineComponent } from 'vue';
+import { IonContent, IonInput, IonItem, IonLabel, IonThumbnail } from '@ionic/vue';
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
-  components: { IonContent, IonItem, IonLabel, IonThumbnail }
+  components: { IonContent, IonInput, IonItem, IonLabel, IonThumbnail },
+  setup() {
+    const pokemonId = ref(1)
+    const pokemonPath = () => {
+      return "/assets/pokemon/" + pokemonId.value + ".png"
+    }
+    return {
+      pokemonId,
+      pokemonPath
+    }
+  }
 });
 </script>
