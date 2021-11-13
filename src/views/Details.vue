@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-content>
-      <ion-item>
+      <ion-item v-if="!isModal">
         <ion-label>Select a Pokemon</ion-label>
         <ion-select v-model="pokemonSel">
           <ion-select-option
@@ -26,7 +26,11 @@
       </ion-item>
       <ion-grid class="ion-margin-top ion-margin-bottom">
         <ion-row class="ion-align-items-start">
-          <ion-col size="12" size-sm="4" class="ion-text-center">
+          <ion-col
+            size="12"
+            :size-sm="isModal ? 12 : 4"
+            class="ion-text-center"
+          >
             <ion-img :src="pokemonPath()"></ion-img>
             <ion-text color="light" class="bg-dark title-box">{{
               pokemonSel.name
@@ -69,6 +73,7 @@
             <ion-row>
               <ion-col
                 size="1"
+                :size-xl="isModal ? 2 : 1"
                 class="ion-text-center ion-align-items-center"
                 style="display: flex"
               >
@@ -90,7 +95,7 @@
             <ion-row>
               <ion-col
                 size="2"
-                size-xl="1"
+                :size-xl="isModal ? 2 : 1"
                 class="ion-text-center ion-align-items-center"
                 style="display: flex"
               >
@@ -147,6 +152,12 @@
           </ion-grid>
         </ion-row>
       </ion-grid>
+      <ion-fab v-if="isModal" vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button
+          activated="true"
+          @click="modalCallback"
+        ></ion-fab-button>
+      </ion-fab>
     </ion-content>
   </ion-page>
 </template>
@@ -154,6 +165,8 @@
 import {
   IonCol,
   IonContent,
+  IonFab,
+  IonFabButton,
   IonGrid,
   IonImg,
   IonItem,
@@ -164,7 +177,7 @@ import {
   IonSelectOption,
   IonText,
 } from "@ionic/vue";
-import { defineComponent, ref } from "vue";
+import { defineComponent, onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 import { pokemonData10 } from "@/data/gen1_0";
 import { pokemonData11 } from "@/data/gen1_1";
@@ -185,11 +198,14 @@ import { pokemonData70 } from "@/data/gen7_0";
 import { pokemonData71 } from "@/data/gen7_1";
 import { gamePoints, statOrder } from "@/data/reborn";
 import { tmLocations, tutorLocations } from "@/data/tm_locations";
+import { Pokemon } from "@/interfaces/pokemon_interfaces";
 
 export default defineComponent({
   components: {
     IonCol,
     IonContent,
+    IonFab,
+    IonFabButton,
     IonGrid,
     IonImg,
     IonItem,
@@ -200,7 +216,17 @@ export default defineComponent({
     IonSelectOption,
     IonText,
   },
-  setup() {
+  props: {
+    pk: {
+      type: Object as () => Pokemon,
+      required: false,
+    },
+    modalCallback: {
+      type: Function as () => void,
+      required: false,
+    },
+  },
+  setup(props) {
     const pokemonData = pokemonData10.concat(
       pokemonData11,
       pokemonData12,
@@ -219,26 +245,11 @@ export default defineComponent({
       pokemonData70,
       pokemonData71
     );
-    const getIdNumberFromRoute = (id: string | string[]): number => {
-      let numId = 0;
-      if (!id) {
-        return numId;
-      }
-      if (typeof id === "string") {
-        numId = parseInt(id);
-      } else if (id.length > 0) {
-        numId = parseInt(id[0]);
-      }
-      if (numId > -1 && numId < pokemonData.length) {
-        return numId;
-      } else {
-        return 0;
-      }
-    };
     const route = useRoute();
     let moveList: string[] = [];
     let ptLevel = ref(0);
-    const pokemonSel = ref(pokemonData[getIdNumberFromRoute(route.params.id)]);
+    const isModal = ref(false);
+    const pokemonSel = ref(pokemonData[0]);
     const pokemonPath = () => {
       return (
         process.env.BASE_URL + "assets/pokemon/" + pokemonSel.value.no + ".png"
@@ -289,7 +300,46 @@ export default defineComponent({
         .filter((mv) => cumulativePoints.includes(mv.point))
         .forEach((mv) => moveList.push(mv.name));
     };
+
+    const getIdNumberFromRoute = (id: string | string[]): number => {
+      let numId = 0;
+      if (!id) {
+        return numId;
+      }
+      if (typeof id === "string") {
+        numId = parseInt(id);
+      } else if (id.length > 0) {
+        numId = parseInt(id[0]);
+      }
+      if (numId > 1) {
+        return numId;
+      } else {
+        return 1;
+      }
+    };
+
+    const determinePokemonSel = (
+      id: string | string[],
+      pk: Pokemon | undefined
+    ): void => {
+      if (pk) {
+        isModal.value = true;
+        pokemonSel.value = pk;
+      } else {
+        isModal.value = false;
+        pokemonSel.value = pokemonData.filter(
+          (pk) => pk.no == getIdNumberFromRoute(id)
+        )[0];
+        if (!pokemonSel.value) {
+          pokemonSel.value = pokemonData[0];
+        }
+      }
+    };
+
+    onMounted(() => determinePokemonSel(route.params.id, props.pk));
+
     return {
+      isModal,
       moveList,
       pokemonSel,
       pokemonData,
