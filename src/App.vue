@@ -25,6 +25,15 @@
               </ion-item>
             </ion-menu-toggle>
           </ion-list>
+          <ion-list>
+            <ion-item v-for="(b, i) in customizationButtons" :key="i">
+              <ion-icon :ios="b.iosIcon" :md="b.mdIcon"></ion-icon>
+              <ion-toggle
+                @ionChange="b.method()"
+                :checked="b.startValue()"
+              ></ion-toggle>
+            </ion-item>
+          </ion-list>
         </ion-content>
       </ion-menu>
       <ion-router-outlet id="main-content"></ion-router-outlet>
@@ -45,9 +54,11 @@ import {
   IonMenuToggle,
   IonRouterOutlet,
   IonSplitPane,
+  IonToggle,
 } from "@ionic/vue";
-import { defineComponent, ref } from "vue";
-import { appPages } from "@/data/menu";
+import { defineComponent, ref, watch } from "vue";
+import { globalStore } from "./store/global";
+import { appPages, customizationButtons } from "@/data/menu";
 
 export default defineComponent({
   name: "App",
@@ -63,18 +74,26 @@ export default defineComponent({
     IonMenuToggle,
     IonRouterOutlet,
     IonSplitPane,
+    IonToggle,
   },
   setup() {
     const selectedIndex = ref(1);
 
     const path = window.location.pathname;
     if (path !== undefined) {
-      selectedIndex.value = appPages.findIndex((page) => page.url === path);
+      selectedIndex.value = appPages.findIndex((page) =>
+        path.startsWith(page.url)
+      );
     }
+
+    watch(globalStore.state, (newValue) => {
+      document.body.classList.toggle("dark", newValue.darkMode);
+    });
 
     return {
       selectedIndex,
       appPages,
+      customizationButtons,
     };
   },
 });

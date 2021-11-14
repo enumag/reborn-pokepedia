@@ -13,9 +13,9 @@
           </ion-select-option>
         </ion-select>
       </ion-item>
-      <ion-item>
+      <ion-item v-if="!isModal">
         <ion-label>Select a Point in Game</ion-label>
-        <ion-select @ionChange="movesAvailable($event)">
+        <ion-select @ionChange="movesAvailable($event.target.value)">
           <ion-select-option
             v-for="(pnt, idx) in gamePoints"
             :key="idx"
@@ -115,6 +115,19 @@
               </ion-col>
             </ion-row>
           </ion-col>
+        </ion-row>
+        <ion-row v-if="isModal">
+          <ion-item>
+            <ion-label>Select a Point in Game</ion-label>
+            <ion-select @ionChange="movesAvailable($event.target.value)">
+              <ion-select-option
+                v-for="(pnt, idx) in gamePoints"
+                :key="idx"
+                :value="pnt"
+                >{{ pnt.name }}</ion-select-option
+              >
+            </ion-select>
+          </ion-item>
         </ion-row>
         <ion-row>
           <ion-grid>
@@ -221,6 +234,10 @@ export default defineComponent({
       type: Object as () => Pokemon,
       required: false,
     },
+    point: {
+      type: Object as () => typeof gamePoints[0],
+      required: false,
+    },
     modalCallback: {
       type: Function as () => void,
       required: false,
@@ -279,26 +296,28 @@ export default defineComponent({
       // Otherwise ends up using string comparision such that 11 < 4
       return +level < +ptLevel.value ? "selected" : "";
     };
-    const movesAvailable = (event: any) => {
-      ptLevel.value = event.target.value.level;
+    const movesAvailable = (point: typeof gamePoints[0] | undefined) => {
+      if (point) {
+        ptLevel.value = parseInt(point.level);
 
-      // Clear the reactive array
-      moveList.splice(0, moveList.length);
+        // Clear the reactive array
+        moveList.splice(0, moveList.length);
 
-      // Get all points up to this point
-      let pointNames = gamePoints.map((e) => e.name);
-      let cumulativePoints = pointNames.slice(
-        0,
-        pointNames.indexOf(event.target.value.name) + 1
-      );
+        // Get all points up to this point
+        let pointNames = gamePoints.map((e) => e.name);
+        let cumulativePoints = pointNames.slice(
+          0,
+          pointNames.indexOf(point.name) + 1
+        );
 
-      // Filter for moves and then add them to the reactive array
-      tmLocations
-        .filter((mv) => cumulativePoints.includes(mv.point))
-        .forEach((mv) => moveList.push(mv.name));
-      tutorLocations
-        .filter((mv) => cumulativePoints.includes(mv.point))
-        .forEach((mv) => moveList.push(mv.name));
+        // Filter for moves and then add them to the reactive array
+        tmLocations
+          .filter((mv) => cumulativePoints.includes(mv.point))
+          .forEach((mv) => moveList.push(mv.name));
+        tutorLocations
+          .filter((mv) => cumulativePoints.includes(mv.point))
+          .forEach((mv) => moveList.push(mv.name));
+      }
     };
 
     const getIdNumberFromRoute = (id: string | string[]): number => {
@@ -334,6 +353,7 @@ export default defineComponent({
           pokemonSel.value = pokemonData[0];
         }
       }
+      movesAvailable(props.point);
     };
 
     onMounted(() => determinePokemonSel(route.params.id, props.pk));

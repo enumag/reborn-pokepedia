@@ -3,7 +3,7 @@
     <ion-content fullscreen>
       <ion-item>
         <ion-label>Select a Point in Game</ion-label>
-        <ion-select @ionChange="pokemonAvailable($event)">
+        <ion-select v-model="pointInGame" @ionChange="pokemonAvailable($event)">
           <ion-select-option
             v-for="(pnt, idx) in gamePoints"
             :key="idx"
@@ -12,14 +12,18 @@
           >
         </ion-select>
       </ion-item>
-      <ion-list>
-        <ion-item v-for="pk in pointInGame" :key="pk.no">
+      <ion-list v-if="!globalStore.state.cardFormat">
+        <ion-item
+          v-for="pk in pokemonAtPoint"
+          :key="pk.no"
+          @click="setOpen(pk)"
+        >
           <ion-thumbnail slot="start">
             <img :src="pokemonPath(pk.no)" />
           </ion-thumbnail>
-          <ion-label>
-            <h3>{{ pk.name }}</h3>
-            <ion-thumbnail class="ion-margin-start">
+          <ion-label class="title">
+            <ion-text>{{ pk.name }}</ion-text>
+            <ion-thumbnail class="ion-margin-start ion-margin-top">
               <img
                 v-for="type in pk.types"
                 :key="type"
@@ -28,35 +32,70 @@
               />
             </ion-thumbnail>
           </ion-label>
-          <ion-col>
-            <ion-row>
-              <ion-col
-                class="ion-text-center"
-                v-for="(stat, i) in pk.stats"
-                :key="i"
-              >
-                <ion-badge color="secondary">{{ stat }}</ion-badge>
-                <br />
-                <ion-text color="medium" style="font-size: 0.8em">{{
-                  statOrder[i]
-                }}</ion-text>
-              </ion-col>
-            </ion-row></ion-col
-          >
-          <ion-col>
-            <ion-text>{{ pk.locations[0].method }}</ion-text>
+          <ion-col size-lg="9">
+            <ion-row class="method">
+              <ion-text>
+                {{ pokemonPoint(pk).location }}
+              </ion-text>
+            </ion-row>
+            <ion-row class="point">
+              <ion-text>
+                {{ pokemonPoint(pk).method }}
+              </ion-text>
+            </ion-row>
           </ion-col>
         </ion-item>
       </ion-list>
+      <ion-grid v-if="globalStore.state.cardFormat">
+        <ion-row>
+          <ion-col
+            size="6"
+            size-md="4"
+            size-lg="3"
+            size-xl="2.4"
+            v-for="pk in pokemonAtPoint"
+            :key="pk.no"
+            @click="setOpen(pk)"
+          >
+            <ion-card>
+              <img :src="pokemonPath(pk.no)" />
+              <ion-card-header>
+                <ion-card-subtitle>
+                  <ion-row class="ion-justify-content-around">
+                    <ion-thumbnail
+                      class="ion-margin-start ion-margin-top"
+                      v-for="type in pk.types"
+                      :key="type"
+                    >
+                      <img :src="pokemonTypePath(type)" :title="type" />
+                    </ion-thumbnail>
+                  </ion-row>
+                </ion-card-subtitle>
+                <ion-card-title class="ion-text-center">{{
+                  pk.name
+                }}</ion-card-title>
+              </ion-card-header>
+              <ion-card-content class="ion-text-center">
+                {{ pokemonPoint(pk).location }} - {{ pokemonPoint(pk).method }}
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-content>
   </ion-page>
 </template>
 
-<script>
+<script lang="ts">
 import {
-  IonBadge,
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
   IonCol,
   IonContent,
+  IonGrid,
   IonItem,
   IonLabel,
   IonList,
@@ -66,8 +105,10 @@ import {
   IonSelectOption,
   IonText,
   IonThumbnail,
+  modalController,
 } from "@ionic/vue";
 import { defineComponent, ref, reactive } from "vue";
+import { globalStore } from "@/store/global";
 import { pokemonData10 } from "@/data/gen1_0";
 import { pokemonData11 } from "@/data/gen1_1";
 import { pokemonData12 } from "@/data/gen1_2";
@@ -85,13 +126,20 @@ import { pokemonData60 } from "@/data/gen6_0";
 import { pokemonData61 } from "@/data/gen6_1";
 import { pokemonData70 } from "@/data/gen7_0";
 import { pokemonData71 } from "@/data/gen7_1";
-import { gamePoints, gameLocations, statOrder } from "@/data/reborn";
+import { gamePoints } from "@/data/reborn";
+import { Pokemon } from "@/interfaces/pokemon_interfaces";
+import Details from "@/views/Details.vue";
 
 export default defineComponent({
   components: {
-    IonBadge,
+    IonCard,
+    IonCardContent,
+    IonCardHeader,
+    IonCardSubtitle,
+    IonCardTitle,
     IonCol,
     IonContent,
+    IonGrid,
     IonItem,
     IonLabel,
     IonList,
@@ -103,8 +151,8 @@ export default defineComponent({
     IonThumbnail,
   },
   setup() {
-    let pointInGame = reactive([]);
-    const pokemonId = ref(1);
+    let pokemonAtPoint: Pokemon[] = reactive([]);
+    const pointInGame = ref(gamePoints[0]);
     const pokemonData = pokemonData10.concat(
       pokemonData11,
       pokemonData12,
@@ -123,39 +171,108 @@ export default defineComponent({
       pokemonData70,
       pokemonData71
     );
-    const pokemonPath = (pkId) => {
+    const setOpen = async (pk: Pokemon) => {
+      const modal = await modalController.create({
+        component: Details,
+        componentProps: {
+          pk: pk,
+          point: pointInGame.value,
+          modalCallback: modalController.dismiss,
+        },
+      });
+      return modal.present();
+    };
+    const pokemonPath = (pkId: number) => {
       return process.env.BASE_URL + "assets/pokemon/" + pkId + ".png";
     };
-    const pokemonTypePath = (typeStr) => {
+    const pokemonTypePath = (typeStr: string) => {
       return process.env.BASE_URL + "assets/types/" + typeStr + ".png";
     };
-    const pokemonAvailable = (event) => {
-      // Clear the reactive array
-      pointInGame.splice(0, pointInGame.length);
+    const pokemonPoint = (pk: Pokemon) => {
+      return pk.locations.filter(
+        (loc) => loc.point === pointInGame.value.name
+      )[0];
+    };
 
-      // Filter for pokemon and then add them to the reactive array
-      pokemonData
-        .filter((pk, idx, arr) => {
-          if (!pk.locations) {
-            return false;
-          }
-          return pk.locations.find(
-            (loc) => loc.point === event.target.value.name
-          );
-        })
-        .forEach((e) => pointInGame.push(e));
+    const pokemonAvailable = (event: Event) => {
+      if (event.target) {
+        // Clear the reactive array
+        pokemonAtPoint.splice(0, pokemonAtPoint.length);
+
+        // Filter for pokemon and then add them to the reactive array
+        pokemonData
+          .filter((pk, idx, arr) => pokemonPoint(pk))
+          .forEach((e) => pokemonAtPoint.push(e));
+      }
     };
     return {
-      pointInGame,
-      pokemonId,
-      pokemonData,
+      globalStore,
       gamePoints,
-      gameLocations,
-      statOrder,
+      pokemonAtPoint,
+      pointInGame,
       pokemonPath,
       pokemonTypePath,
+      pokemonPoint,
       pokemonAvailable,
+      setOpen,
     };
   },
 });
 </script>
+<style scoped>
+ion-list > ion-item {
+  --background: rgba(var(--ion-color-primary-rgb), 0.05);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-weight: bolder;
+    font-style: italic;
+    padding: 2px;
+    font-size: 1.1em;
+  }
+  .method {
+    font-size: 1.05em;
+    font-weight: bold;
+    margin: 0px;
+    color: var(--ion-color-medium, --ion-color-dark);
+  }
+
+  .point {
+    font-size: 0.95em;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0px;
+    color: var(--ion-color-medium, --ion-color-dark);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-weight: bolder;
+    font-style: italic;
+    padding: 2px;
+    font-size: 1.25em;
+  }
+
+  .method {
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 0px;
+    color: var(--ion-color-medium, --ion-color-dark);
+  }
+
+  .point {
+    font-size: 1em;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0px;
+    color: var(--ion-color-medium, --ion-color-dark);
+  }
+}
+
+body {
+  background-color: #eeeeee;
+}
+</style>
