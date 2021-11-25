@@ -4,7 +4,15 @@
       <ion-menu content-id="main-content" type="overlay">
         <ion-content>
           <ion-list id="inbox-list">
-            <ion-list-header>Reborn Pokepedia</ion-list-header>
+            <ion-list-header>
+              <ion-button
+                @click="selectedIndex = -1"
+                router-link="/"
+                class="logo"
+              >
+                <ion-img :src="logoPath()"></ion-img>
+              </ion-button>
+            </ion-list-header>
 
             <ion-menu-toggle
               auto-hide="false"
@@ -29,8 +37,8 @@
             <ion-item v-for="(b, i) in customizationButtons" :key="i">
               <ion-icon :ios="b.iosIcon" :md="b.mdIcon"></ion-icon>
               <ion-toggle
-                @ionChange="b.method()"
-                :checked="b.startValue()"
+                @ionChange="b.method($event)"
+                :checked="b.stateValue()"
               ></ion-toggle>
             </ion-item>
           </ion-list>
@@ -44,8 +52,10 @@
 <script lang="ts">
 import {
   IonApp,
+  IonButton,
   IonContent,
   IonIcon,
+  IonImg,
   IonItem,
   IonLabel,
   IonList,
@@ -56,7 +66,7 @@ import {
   IonSplitPane,
   IonToggle,
 } from "@ionic/vue";
-import { defineComponent, ref, watch } from "vue";
+import { defineComponent, ref, watchEffect } from "vue";
 import { globalStore } from "./store/global";
 import { appPages, customizationButtons } from "@/data/menu";
 
@@ -64,8 +74,10 @@ export default defineComponent({
   name: "App",
   components: {
     IonApp,
+    IonButton,
     IonContent,
     IonIcon,
+    IonImg,
     IonItem,
     IonLabel,
     IonList,
@@ -86,14 +98,19 @@ export default defineComponent({
       );
     }
 
-    watch(globalStore.state, (newValue) => {
-      document.body.classList.toggle("dark", newValue.darkMode);
+    const logoPath = () => {
+      return process.env.BASE_URL + "assets/icon/logo.png";
+    };
+
+    watchEffect(() => {
+      document.body.classList.toggle("dark", globalStore.state.darkMode);
     });
 
     return {
       selectedIndex,
       appPages,
       customizationButtons,
+      logoPath,
     };
   },
 });
@@ -214,5 +231,12 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+
+.logo {
+  height: 100%;
+  color: var(--ion-item-background, var(--ion-background-color, #fff));
+  --background-activated-opacity: 0;
+  --background-hover-opacity: 0;
 }
 </style>
