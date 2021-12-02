@@ -85,7 +85,7 @@
                   <ion-col
                     class="ion-margin ion-text-center egg-move"
                     style="flex-grow: 0"
-                    v-for="move in pokemonSel.egg_moves"
+                    v-for="move in pokemonSel.eggMoves"
                     :key="move"
                   >
                     <ion-label>{{ move }}</ion-label>
@@ -137,7 +137,7 @@
               <ion-col>Move</ion-col>
             </ion-row>
             <ion-row
-              v-for="(moves, level) in pokemonSel.level_up_moves"
+              v-for="(moves, level) in pokemonSel.levelUpMoves"
               :key="level"
               :class="isMoveSelected(level)"
             >
@@ -154,7 +154,7 @@
               </ion-col>
             </ion-row>
             <ion-row
-              v-for="(move, idx) in pokemonSel.tm_tutor_moves"
+              v-for="(move, idx) in pokemonSel.tmTutorMoves"
               :key="idx"
               :class="{ selected: moveList.includes(move) }"
             >
@@ -169,7 +169,7 @@
       <ion-fab v-if="isModal" vertical="bottom" horizontal="end" slot="fixed">
         <ion-fab-button
           activated="true"
-          @click="modalCallback"
+          @click="modalCallbackWrapper"
         ></ion-fab-button>
       </ion-fab>
     </ion-content>
@@ -264,10 +264,20 @@ export default defineComponent({
       pokemonData71
     );
     const route = useRoute();
-    let moveList: string[] = [];
-    let ptLevel = ref(0);
+    const moveList: string[] = [];
+    const ptLevel = ref(0);
     const isModal = ref(false);
     const pokemonSel = ref(pokemonData[0]);
+    // Typescript doesn't like that modalCallback is possibly undefined
+    // thus we can't directly call it via @click nor invoke it as a lambda
+    // so we do this little song and dance to let typescript know that
+    // yes, it is in fact callable, please stop failing
+    const modalCallbackWrapper = () => {
+      if (typeof props.modalCallback == "function") {
+        const mcb = props.modalCallback as Function;
+        mcb();
+      }
+    };
     const pokemonPath = () => {
       return (
         process.env.BASE_URL + "assets/pokemon/" + pokemonSel.value.no + ".png"
@@ -305,8 +315,8 @@ export default defineComponent({
         moveList.splice(0, moveList.length);
 
         // Get all points up to this point
-        let pointNames = gamePoints.map((e) => e.name);
-        let cumulativePoints = pointNames.slice(
+        const pointNames = gamePoints.map((e) => e.name);
+        const cumulativePoints = pointNames.slice(
           0,
           pointNames.indexOf(point.name) + 1
         );
@@ -366,6 +376,7 @@ export default defineComponent({
       pokemonData,
       gamePoints,
       statOrder,
+      modalCallbackWrapper,
       pokemonPath,
       pokemonTypePath,
       headerColorClass,

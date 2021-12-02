@@ -155,7 +155,7 @@ export default defineComponent({
     IonThumbnail,
   },
   setup() {
-    let pokemonAtLocation: Pokemon[] = reactive([]);
+    const pokemonAtLocation: Pokemon[] = reactive([]);
     const locationInGame = ref("");
     const pokemonData = pokemonData10.concat(
       pokemonData11,
@@ -205,6 +205,7 @@ export default defineComponent({
 
         // Filter for pokemon and then add them to the reactive array
         pokemonData
+          // eslint-disable-next-line
           .filter((pk, idx, arr) => pokemonLocation(pk))
           .forEach((e) => pokemonAtLocation.push(e));
       }
