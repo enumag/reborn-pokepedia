@@ -14,8 +14,6 @@ jobs:
         with:
           distribution: "zulu"
           java-version: "17"
-          cache: "gradle"
-        working-directory: android
 
       - name: Set up Node
         uses: actions/setup-node@v2
@@ -29,12 +27,12 @@ jobs:
           scripts/build.sh
 
       - name: Gradle Build
-        run: ./gradlew build --no-daemon
+        run: ./gradlew build
         working-directory: android
 
       - name: Assemble Release Bundle
         run: |
-          ./gradlew bundleRelease --no-daemon
+          ./gradlew bundleRelease
         working-directory: android
 
       - name: Sign Release
