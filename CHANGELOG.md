@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/brentspector/reborn-pokepedia/compare/v0.1.3...v0.1.4) (2021-12-10)
+
+
+### Bug Fixes
+
+* **android:** automatically increment android version ([30c81cc](https://github.com/brentspector/reborn-pokepedia/commit/30c81cc2e7ab7a3db18566377cc0d58f069e0639))
+* **android:** dynamically change version name ([22fb529](https://github.com/brentspector/reborn-pokepedia/commit/22fb529c372fe3b359d9e09582ba49ee937a9a6f))
+* **workflow:** downgrade upload google play to 1.0.15 ([c755417](https://github.com/brentspector/reborn-pokepedia/commit/c75541755cadc2aad714a18d1c7be38c541caa80))
+
 ### [0.1.3](https://github.com/brentspector/reborn-pokepedia/compare/v0.1.2...v0.1.3) (2021-12-10)
 
 ### [0.1.2](https://github.com/brentspector/reborn-pokepedia/compare/v0.1.1...v0.1.2) (2021-12-10)
