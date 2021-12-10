@@ -32,7 +32,7 @@ jobs:
           scripts/build.sh
 
       - name: Gradle Build
-        run: ./gradlew -a build
+        run: ./gradlew build
         working-directory: android
 
       - name: Assemble Release Bundle
