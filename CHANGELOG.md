@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/brentspector/reborn-pokepedia/compare/v0.1.0...v0.1.1) (2021-12-10)
+
+
+### Bug Fixes
+
+* **workflow:** remove tag from android workflow ([8b794c1](https://github.com/brentspector/reborn-pokepedia/commit/8b794c168168f814c451031ccf23322e95aa3811))
+
 ## 0.1.0 (2021-12-10)
 
 
