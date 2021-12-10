@@ -1,4 +1,18 @@
 apply plugin: 'com.android.application'
+apply plugin: 'me.moallemi.advanced-build-version'
+
+advancedVersioning {
+  nameOptions {
+      versionMajor 1
+      versionMinor 0
+      versionPatch 0
+      versionBuild 0
+  }
+  codeOptions {
+      versionCodeType 'AUTO_INCREMENT_STEP'
+   }
+  outputOptions { }
+}
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -6,8 +20,8 @@ android {
         applicationId "com.brentspector.rebornpokepedia"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode advancedVersioning.versionCode
+        versionName advancedVersioning.versionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
