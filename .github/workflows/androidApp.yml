@@ -2,8 +2,8 @@ name: Build Android
 on:
   workflow_run:
     workflows: ["Build Vue"]
-    branches: ["master"]
     types: [completed]
+  workflow_dispatch:
 
 jobs:
   build_android:
@@ -22,10 +22,10 @@ jobs:
           node-version: "16"
           cache: "npm"
 
-      - name: Ionic Capacitor Copy
+      - name: Ionic Capacitor Build and Copy
         run: |
           npm install @ionic/cli
-          ionic cap copy android
+          scripts/build.sh
 
       - name: Gradle Build
         run: ./gradlew build --no-daemon
@@ -39,11 +39,11 @@ jobs:
       - name: Sign Release
         uses: r0adkll/sign-android-release@v1
         with:
-        releaseDirectory: android/app/build/outputs/bundle/release
-        signingKeyBase64: ${{ secrets.SIGNING_KEY }}
-        alias: ${{ secrets.ALIAS }}
-        keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-        keyPassword: ${{ secrets.KEY_PASSWORD }}
+          releaseDirectory: android/app/build/outputs/bundle/release
+          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+          alias: ${{ secrets.ALIAS }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.KEY_PASSWORD }}
 
       - name: Tag Release
         run: |
@@ -61,5 +61,5 @@ jobs:
           serviceAccountJson: service_account.json
           packageName: com.brentspector.rebornpokepedia
           releaseFile: android/app/build/outputs/bundle/release/app-release.aab
-          track: production
+          track: alpha
           whatsNewDirectory: android/distribution/
