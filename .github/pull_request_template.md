@@ -7,4 +7,6 @@
 **Dependencies**
 <Are there any PRs that must be merged before this can be, or other requirements?>
 
+<Please run "npm run release" prior to merging this PR!>
+
 <Users may delete any unused portion of this template>

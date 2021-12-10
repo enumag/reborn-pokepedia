@@ -31,7 +31,7 @@
                 <img
                   alt="Download on the App Store"
                   title="App Store"
-                  src="http://i.imgur.com/0n2zqHD.png"
+                  :src="iconPath('appStore.png')"
                   width="140"
                 />
               </a>
@@ -42,7 +42,7 @@
                 <img
                   alt="Get it on Google Play"
                   title="Google Play"
-                  src="http://i.imgur.com/mtGRPuM.png"
+                  :src="iconPath('googlePlay.png')"
                   width="140"
                 />
               </a>
