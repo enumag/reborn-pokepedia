@@ -26,7 +26,9 @@ jobs:
       - name: Ionic Capacitor Build and Copy
         run: |
           npm ci
-          npm install @ionic/cli
+          echo "attempting to install individual dependencies"
+          npm install -g @ionic/cli cordova-res
+          echo "attempting to run script"
           scripts/build.sh
 
       - name: Gradle Build
