@@ -2,6 +2,64 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 3.0.0 (2021-12-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* updates package.json
+
+* build(android): remove ios add android
+
+remove ios; add android; fix lint errors;
+* remove ios
+
+* fix(android): fix android build issues and public path
+
+update android gradle version variables to use publicly available versions; update public path to be
+root unless overriden; provide ghpages override to build target in package.json;
+
+* style(eslint): fix eslint errors
+
+replace all variables with camelCase; add ignores for unused variables in locations and points
+views; fix fsevent dependency to be optional in package-lock.json;
+
+* fix(pokemon details): fix details to use new variable names
+
+replaces converted variable names with their new camelCase version;
+
+* fix(pokemon details): fix click command for fab
+
+the fab's click property now uses a wrapper around the modalCallback so that typescript knows it's a
+function;
+
+* feat(android app): add splash screen and icons for android
+
+adds base splash screen, icons, and adaptive icons for android; adds new build script for android;
+updates generic build script to copy cordova-res assets to the correct locations;
+
+* fix(build.gradle): add unique package id for android app
+
+replaces io.ionic.starter with the correct package name
+
+* docs(privacy policy): add privacy policy
+
+adds a privacy policy
+* replaces old routing with new routing
+
+* feat(pokemon details): display pokemon details
+
+adds list of pokemon data when selecting a pokemon to view;
+
+### Features
+
+* **main view:** layout a framework for two-way binding and loading an image ([f3119c9](https://github.com/brentspector/reborn-pokepedia/commit/f3119c91a6611689a4d79ad344e627fd41172812))
+* **pokemon details:** allow routing based on index id ([#10](https://github.com/brentspector/reborn-pokepedia/issues/10)) ([64c01a9](https://github.com/brentspector/reborn-pokepedia/commit/64c01a994876c3244d89e562a26279f3ce6c806e))
+
+
+* Feature/android app (#19) ([05d2d49](https://github.com/brentspector/reborn-pokepedia/commit/05d2d49911ee3d8705a4b48c6336d6d6509cb261)), closes [#19](https://github.com/brentspector/reborn-pokepedia/issues/19) [#18](https://github.com/brentspector/reborn-pokepedia/issues/18)
+* Feature/view pokemon data (#7) ([5565bd9](https://github.com/brentspector/reborn-pokepedia/commit/5565bd96ea977fc13d6513537cdd5bb76ee5652f)), closes [#7](https://github.com/brentspector/reborn-pokepedia/issues/7)
+
 ## 2.0.0 (2021-12-16)
 
 
