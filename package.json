@@ -2,6 +2,7 @@
   "name": "reborn-pokepedia",
   "version": "1.0.0",
   "private": true,
+  "description": "Pokemon Reborn Support App",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --mode ghpages",
@@ -29,13 +30,13 @@
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+    "@vue/cli-plugin-babel": "~4.5.15",
+    "@vue/cli-plugin-e2e-cypress": "~4.5.15",
     "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-plugin-typescript": "~4.5.0",
-    "@vue/cli-plugin-unit-jest": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.15",
+    "@vue/cli-plugin-typescript": "~4.5.15",
+    "@vue/cli-plugin-unit-jest": "~4.5.15",
+    "@vue/cli-service": "~4.5.15",
     "@vue/compiler-sfc": "^3.0.0-0",
     "@vue/eslint-config-typescript": "^5.0.2",
     "@vue/test-utils": "^2.0.0-0",
@@ -49,7 +50,6 @@
     "vue-jest": "^5.0.0-0",
     "vue-loader-v16": "npm:vue-loader@^16.1.0"
   },
-  "description": "Pokemon Reborn Support App",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
