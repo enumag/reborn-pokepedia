@@ -119,7 +119,7 @@ export default defineComponent({
 <!-- GLOBAL STYLES
     AVOID USING THIS -->
 <style>
-.modal-wrapper {
+ion-modal::part(content) {
   --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
   --backdrop-opacity: var(--ion-backdrop-opacity, 0.32);
 }
