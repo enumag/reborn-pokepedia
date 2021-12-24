@@ -117,6 +117,13 @@ export default defineComponent({
 </script>
 
 <style scoped>
+ion-router-outlet {
+  margin-top: var(--ion-safe-area-top);
+  margin-right: var(--ion-safe-area-right);
+  margin-bottom: var(--ion-safe-area-bottom);
+  margin-left: var(--ion-safe-area-left);
+}
+
 ion-menu ion-content {
   --background: var(--ion-item-background, var(--ion-background-color, #fff));
 }
