@@ -9,10 +9,6 @@
 <p align="center">Guide for Pokemon Based on Progress in Game</p>
 
 <p align="center">
-  <a href="https://img3.stockfresh.com/files/k/kikkerdirk/m/81/4759970_stock-photo-coming-soon.jpg">
-    <img alt="Download on the App Store" title="App Store" src="http://i.imgur.com/0n2zqHD.png" width="140">
-  </a>
-
   <a href="https://play.google.com/store/apps/details?id=com.brentspector.rebornpokepedia">
     <img alt="Get it on Google Play" title="Google Play" src="http://i.imgur.com/mtGRPuM.png" width="140">
   </a>
@@ -37,15 +33,20 @@ Reborn Pokepedia allows players to filter for Pokemon that are available based o
 
 This application is available on web, iOS, and Android.
 
-**Available for both iOS and Android.**
+**Available for Android.**
 
 Android: https://play.google.com/store/apps/details?id=com.brentspector.rebornpokepedia
 
-iOS:
+### What Happened to iOS?
+While there is an iOS app available in this codebase, the actual distribution to the App Store is too expensive. If you are interested in the iOS app, follow [these instructions](https://developer.apple.com/documentation/xcode/distributing-your-app-to-registered-devices).
 
-<p align="center">
-  <img src = "https://img3.stockfresh.com/files/k/kikkerdirk/m/81/4759970_stock-photo-coming-soon.jpg" width=350>
-</p>
+The app to load in XCode can be found at `ios/App/App.xcworkspace`
+
+You will likely need [NodeJS and npm](https://nodejs.org/en/download/), [Ionic CLI](https://ionicframework.com/docs/cli), and [cordova-res](https://capacitorjs.com/docs/guides/splash-screens-and-icons) to collect the node modules and build artifacts that Capacitor relies on in order to properly build the iOS app.
+
+Once that's taken care of, run `scripts/ios_build.sh` to create the build artifacts that XCode will use to make the `.ipa` file that gets installed on Apple devices.
+
+This app has been tested on `Monterey 12.1` and `Xcode 13.2.1` and various virtual devices, including `iPhone 13`.
 
 ## Features
 
@@ -57,7 +58,7 @@ A few of the things you can do with Reborn Pokepedia:
 
 ## Feedback
 
-Feel free to send us feedback by [Email](brent.spector@yahoo.com) or [file an issue](https://github.com/brentspector/reborn-pokepedia/issues/new). Feature requests are always welcome, although not guaranteed to be fulfilled. If you wish to contribute, please submit a pull request.
+Feel free to send us feedback by [Email](bspector20170@yahoo.com) or [file an issue](https://github.com/brentspector/reborn-pokepedia/issues/new). Feature requests are always welcome, although not guaranteed to be fulfilled. If you wish to contribute, please submit a pull request.
 
 ## Build Process
 
