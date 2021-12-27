@@ -177,7 +177,13 @@
             <!-- Section Break -->
             <h2>Problems or Feedback</h2>
             <p>
-              You can file an <a href="https://github.com/brentspector/reborn-pokepedia/issues/new">issue</a> if you have any problems, or email me at `bspector20170@gmail.com` for any feedback.
+              You can file an
+              <a
+                href="https://github.com/brentspector/reborn-pokepedia/issues/new"
+                >issue</a
+              >
+              if you have any problems, or email me at
+              <code>bspector20170@gmail.com</code> for any feedback.
             </p>
           </ion-col>
         </ion-row>
