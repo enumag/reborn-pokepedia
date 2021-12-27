@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/brentspector/reborn-pokepedia/compare/v3.0.0...v3.1.0) (2021-12-27)
+
+
+### Features
+
+* **ios:** add ios support ([701f2a4](https://github.com/brentspector/reborn-pokepedia/commit/701f2a4d74967386f522be24056e2e4603b2fd13))
+* **ios:** add splash screen fixes for iphone ([7d2aefd](https://github.com/brentspector/reborn-pokepedia/commit/7d2aefdfed6eb185a2033e04fcf87f22a568b7ef))
+
+
+### Bug Fixes
+
+* **welcome:** fix light mode colors ([84c1eb4](https://github.com/brentspector/reborn-pokepedia/commit/84c1eb468a8982ee407d27f7b23c0c03b1a94088))
+
 ## 3.0.0 (2021-12-16)
 
 
