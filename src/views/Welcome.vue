@@ -26,17 +26,6 @@
             </p>
             <p>
               <a
-                href="https://img3.stockfresh.com/files/k/kikkerdirk/m/81/4759970_stock-photo-coming-soon.jpg"
-              >
-                <img
-                  alt="Download on the App Store"
-                  title="App Store"
-                  :src="iconPath('appStore.png')"
-                  width="140"
-                />
-              </a>
-
-              <a
                 href="https://play.google.com/store/apps/details?id=com.brentspector.rebornpokepedia"
               >
                 <img
@@ -186,6 +175,10 @@
               to Dark Mode. To use Light Mode theme, toggle this option off.
             </p>
             <!-- Section Break -->
+            <h2>Problems or Feedback</h2>
+            <p>
+              You can file an <a href="https://github.com/brentspector/reborn-pokepedia/issues/new">issue</a> if you have any problems, or email me at `bspector20170@gmail.com` for any feedback.
+            </p>
           </ion-col>
         </ion-row>
       </ion-grid>
