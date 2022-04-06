@@ -16,7 +16,7 @@
       </ion-item>
       <ion-list v-if="!globalStore.state.cardFormat">
         <ion-item
-          v-for="pk in pokemonAtPoint"
+          v-for="pk in pokemonAtLocation"
           :key="pk.no"
           @click="setDetailsOpen(pk)"
         >
@@ -37,12 +37,12 @@
           <ion-col size-lg="9">
             <ion-row class="method">
               <ion-text>
-                {{ pokemonPoint(pk).location }}
+                {{ pokemonLocation(pk).method }}
               </ion-text>
             </ion-row>
             <ion-row class="point">
               <ion-text>
-                {{ pokemonPoint(pk).method }}
+                {{ pokemonLocation(pk).point }}
               </ion-text>
             </ion-row>
           </ion-col>
@@ -55,7 +55,7 @@
             size-md="4"
             size-lg="3"
             size-xl="2.4"
-            v-for="pk in pokemonAtPoint"
+            v-for="pk in pokemonAtLocation"
             :key="pk.no"
             @click="setDetailsOpen(pk)"
           >
@@ -78,7 +78,8 @@
                 }}</ion-card-title>
               </ion-card-header>
               <ion-card-content class="ion-text-center">
-                {{ pokemonPoint(pk).location }} - {{ pokemonPoint(pk).method }}
+                {{ pokemonLocation(pk).method }} -
+                {{ pokemonLocation(pk).point }}
               </ion-card-content>
             </ion-card>
           </ion-col>
@@ -128,9 +129,9 @@ import { pokemonData60 } from "@/data/gen6_0";
 import { pokemonData61 } from "@/data/gen6_1";
 import { pokemonData70 } from "@/data/gen7_0";
 import { pokemonData71 } from "@/data/gen7_1";
-import { gamePoints } from "@/data/reborn";
+import { gameLocations } from "@/data/reborn";
 import { Pokemon } from "@/interfaces/pokemon_interfaces";
-import Details from "@/views/Details.vue";
+import Details from "@/views/DetailsView.vue";
 import SearchList from "@/views/SearchList.vue";
 
 export default defineComponent({
@@ -153,8 +154,8 @@ export default defineComponent({
     IonThumbnail,
   },
   setup() {
-    const pokemonAtPoint: Pokemon[] = reactive([]);
-    const pointInGame = ref(gamePoints[0]);
+    const pokemonAtLocation: Pokemon[] = reactive([]);
+    const locationInGame = ref("");
     const pokemonData = pokemonData10.concat(
       pokemonData11,
       pokemonData12,
@@ -173,30 +174,28 @@ export default defineComponent({
       pokemonData70,
       pokemonData71
     );
-    const pokemonAvailable = (point: typeof pointInGame.value) => {
-      if (point) {
+    const pokemonAvailable = (location: typeof locationInGame.value) => {
+      if (location) {
         // Clear the reactive array
-        pokemonAtPoint.splice(0, pokemonAtPoint.length);
+        pokemonAtLocation.splice(0, pokemonAtLocation.length);
 
         //Apply point in game
-        pointInGame.value = point;
+        locationInGame.value = location;
 
         // Filter for pokemon and then add them to the reactive array
         pokemonData
           // eslint-disable-next-line
-          .filter((pk, idx, arr) => pokemonPoint(pk))
-          .forEach((e) => pokemonAtPoint.push(e));
+          .filter((pk, idx, arr) => pokemonLocation(pk))
+          .forEach((e) => pokemonAtLocation.push(e));
       }
       modalController.dismiss();
     };
-
     const setDetailsOpen = async (pk: Pokemon) => {
       const modal = await modalController.create({
         component: Details,
         componentProps: {
           pk: pk,
-          point: pointInGame.value,
-          modalCallback: modalController.dismiss,
+          modalCallback: modalController,
         },
         cssClass: "details-modal",
       });
@@ -206,9 +205,8 @@ export default defineComponent({
       const modal = await modalController.create({
         component: SearchList,
         componentProps: {
-          content: gamePoints,
-          contentKey: "name",
-          label: "Select A Point In Game",
+          content: gameLocations,
+          label: "Select A Location",
           modalCallback: pokemonAvailable,
         },
       });
@@ -220,27 +218,27 @@ export default defineComponent({
     const pokemonTypePath = (typeStr: string) => {
       return process.env.BASE_URL + "assets/types/" + typeStr + ".png";
     };
-    const pokemonPoint = (pk: Pokemon) => {
+    const pokemonLocation = (pk: Pokemon) => {
       return pk.locations.filter(
-        (loc) => loc.point === pointInGame.value.name
+        (loc) => loc.location === locationInGame.value
       )[0];
     };
+
     const dropdownLabel = () => {
-      if (pokemonAtPoint.length > 0) {
-        return pointInGame.value.name;
+      if (pokemonAtLocation.length > 0) {
+        return locationInGame.value;
       } else {
-        return "Select A Point In Game";
+        return "Select A Location";
       }
     };
-
     return {
       searchOutline,
       searchSharp,
       globalStore,
-      pokemonAtPoint,
+      pokemonAtLocation,
       pokemonPath,
       pokemonTypePath,
-      pokemonPoint,
+      pokemonLocation,
       dropdownLabel,
       setDetailsOpen,
       setSearchListOpen,

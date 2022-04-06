@@ -2058,7 +2058,7 @@ pokemonRenumber = {
     "Linoone (Galarian)": 10172,
     "Mega Gardevoir": 10051,
     "Mega Sableye": 10066,
-    "Mega Mawile": 10053,
+    "Mega Mawile": 10052,
     "Mega Aggron": 10053,
     "Mega Medicham": 10054,
     "Mega Manectric": 10055,

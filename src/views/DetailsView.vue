@@ -248,7 +248,7 @@ export default defineComponent({
       required: false,
     },
     modalCallback: {
-      type: Function as () => void,
+      type: Object as () => typeof modalController,
       required: false,
     },
   },
@@ -276,15 +276,12 @@ export default defineComponent({
     const pointInGame = ref({ name: "Select A Point In Game", level: "0" });
     const isModal = ref(false);
     const pokemonSel = ref(pokemonData[0]);
-    let modal: HTMLIonModalElement;
-    // Typescript doesn't like that modalCallback is possibly undefined
-    // thus we can't directly call it via @click nor invoke it as a lambda
-    // so we do this little song and dance to let typescript know that
-    // yes, it is in fact callable, please stop failing
+    // Ionic does not export the HTMLIonModalElement, so we can't use that type here
+    // Instead, we use awaited to ignore the promise and get the promise's return type
+    let modal: Awaited<ReturnType<typeof modalController.create>>;
     const modalCallbackWrapper = () => {
-      if (typeof props.modalCallback == "function") {
-        const mcb = props.modalCallback as Function;
-        mcb();
+      if (props.modalCallback !== undefined) {
+        props.modalCallback.dismiss();
       }
     };
     const pokemonPath = () => {

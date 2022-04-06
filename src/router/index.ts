@@ -4,23 +4,23 @@ import { RouteRecordRaw } from "vue-router";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "",
-    component: () => import("../views/Welcome.vue"),
+    component: () => import("../views/WelcomeView.vue"),
   },
   {
     path: "/points",
-    component: () => import("../views/Points.vue"),
+    component: () => import("../views/PointsView.vue"),
   },
   {
     path: "/locations",
-    component: () => import("../views/Locations.vue"),
+    component: () => import("../views/LocationsView.vue"),
   },
   {
     path: "/details",
-    component: () => import("../views/Details.vue"),
+    component: () => import("../views/DetailsView.vue"),
   },
   {
     path: "/details/:id",
-    component: () => import("../views/Details.vue"),
+    component: () => import("../views/DetailsView.vue"),
   },
 ];
 
