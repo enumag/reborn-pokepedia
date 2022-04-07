@@ -151,7 +151,9 @@ export const pokemonData20: Pokemon[] = [
       "SYNTHESIS",
       "WORRYSEED",
     ],
-    locations: [],
+    locations: [
+      { location: "Manyworld Forest", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 154,
@@ -229,7 +231,13 @@ export const pokemonData20: Pokemon[] = [
       "SYNTHESIS",
       "WORRYSEED",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Chrysolia Deepwoods",
+        point: "Post-Champion",
+        method: "LandMorning",
+      },
+    ],
   },
   {
     no: 155,
@@ -374,7 +382,9 @@ export const pokemonData20: Pokemon[] = [
       "ROLLOUT",
       "SNORE",
     ],
-    locations: [],
+    locations: [
+      { location: "Manyworld Forest", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 157,
@@ -640,7 +650,9 @@ export const pokemonData20: Pokemon[] = [
       "WATERPLEDGE",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      { location: "Manyworld Pool", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 160,
@@ -1040,8 +1052,8 @@ export const pokemonData20: Pokemon[] = [
       { location: "Lower Peridot Ward", point: "Julia", method: "LandNight" },
       { location: "Peridot Ward", point: "Julia", method: "LandNight" },
       {
-        location: "Malchous Forest",
-        point: "Taka/Pulse Tangrowth 2",
+        location: "Malchous Forest Park",
+        point: "Adrienn",
         method: "LandNight",
       },
       {
@@ -1154,8 +1166,11 @@ export const pokemonData20: Pokemon[] = [
       { location: "North Obsidia Ward", point: "Adrienn", method: "LandNight" },
       { location: "South Obsidia Ward", point: "Adrienn", method: "LandNight" },
       { location: "Lower Peridot Ward", point: "Adrienn", method: "LandNight" },
-      { location: "Malchous Forest", point: "Adrienn", method: "LandNight" },
-      { location: "Rhodochrine Jungle", point: "Adrienn", method: "LandNight" },
+      {
+        location: "Malchous Forest Park",
+        point: "Adrienn",
+        method: "LandNight",
+      },
       { location: "Onyx Ward", point: "Adrienn", method: "LandNight" },
     ],
   },
@@ -1248,8 +1263,8 @@ export const pokemonData20: Pokemon[] = [
       { location: "Lower Peridot Ward", point: "Julia", method: "LandMorning" },
       { location: "Peridot Ward", point: "Julia", method: "LandMorning" },
       {
-        location: "Malchous Forest",
-        point: "Taka/Pulse Tangrowth 2",
+        location: "Malchous Forest Park",
+        point: "Adrienn",
         method: "LandMorning",
       },
       {
@@ -1267,6 +1282,7 @@ export const pokemonData20: Pokemon[] = [
         point: "Radomus",
         method: "LandMorning",
       },
+      { location: "Chrysolia Forest", point: "Serra", method: "LandMorning" },
     ],
   },
   {
@@ -1372,7 +1388,16 @@ export const pokemonData20: Pokemon[] = [
         point: "Adrienn",
         method: "LandMorning",
       },
-      { location: "Malchous Forest", point: "Adrienn", method: "LandMorning" },
+      {
+        location: "Malchous Forest Park",
+        point: "Adrienn",
+        method: "LandMorning",
+      },
+      {
+        location: "Chrysolia Deepwoods",
+        point: "Post-Champion",
+        method: "LandMorning",
+      },
     ],
   },
   {
@@ -1455,8 +1480,8 @@ export const pokemonData20: Pokemon[] = [
       { location: "Lower Peridot Ward", point: "Julia", method: "LandNight" },
       { location: "Peridot Ward", point: "Julia", method: "LandNight" },
       {
-        location: "Malchous Forest",
-        point: "Taka/Pulse Tangrowth 2",
+        location: "Malchous Forest Park",
+        point: "Adrienn",
         method: "LandNight",
       },
       {
@@ -1575,7 +1600,22 @@ export const pokemonData20: Pokemon[] = [
       { location: "Peridot Ward", point: "Adrienn", method: "LandNight" },
       { location: "Jasper Ward", point: "Adrienn", method: "LandNight" },
       { location: "Lower Peridot Ward", point: "Adrienn", method: "LandNight" },
-      { location: "Malchous Forest", point: "Adrienn", method: "LandNight" },
+      {
+        location: "Malchous Forest Park",
+        point: "Adrienn",
+        method: "LandNight",
+      },
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Land",
+      },
+      {
+        location: "Idyll of Pestilence",
+        point: "Post-Champion",
+        method: "Land",
+      },
     ],
   },
   {
@@ -1653,7 +1693,19 @@ export const pokemonData20: Pokemon[] = [
       "UPROAR",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      {
+        location: "Charous Mountain",
+        point: "Elite 4/Champion",
+        method: "Cave",
+      },
+      {
+        location: "Chrysolia Deepwoods",
+        point: "Post-Champion",
+        method: "Cave",
+      },
+    ],
   },
   {
     no: 170,
@@ -1732,6 +1784,11 @@ export const pokemonData20: Pokemon[] = [
       "WATERPULSE",
     ],
     locations: [
+      {
+        location: "The Underroot",
+        point: "Taka/Pulse Tangrowth 2",
+        method: "OldRod",
+      },
       { location: "Ametrine Mountain", point: "Samson", method: "Land" },
       { location: "Celestinine Mountain", point: "Radomus", method: "Land" },
       { location: "Azurine Lake", point: "Adrienn", method: "Cave" },
@@ -1819,6 +1876,12 @@ export const pokemonData20: Pokemon[] = [
       { location: "Ametrine Mountain", point: "Samson", method: "Land" },
       { location: "Celestinine Mountain", point: "Radomus", method: "Land" },
       { location: "Agate City", point: "Hardy", method: "Land" },
+      { location: "Aegir Cave", point: "Post-Champion", method: "Land" },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Land",
+      },
     ],
   },
   {
@@ -1880,6 +1943,7 @@ export const pokemonData20: Pokemon[] = [
       "SECRETPOWER",
       "CONFIDE",
       "FLASH",
+      "CELEBRATE",
       "COVET",
       "ELECTROWEB",
       "HEADBUTT",
@@ -2277,7 +2341,9 @@ export const pokemonData20: Pokemon[] = [
       "WATERPULSE",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Manyworld Forest", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 177,
@@ -2468,7 +2534,14 @@ export const pokemonData20: Pokemon[] = [
       "TWISTER",
       "ZENHEADBUTT",
     ],
-    locations: [{ location: "Citae Astrae", point: "Radomus", method: "Cave" }],
+    locations: [
+      { location: "Citae Astrae", point: "Radomus", method: "Cave" },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Land",
+      },
+    ],
   },
   {
     no: 179,
@@ -2544,7 +2617,11 @@ export const pokemonData20: Pokemon[] = [
     ],
     locations: [
       { location: "Jasper Ward", point: "Adrienn", method: "LandMorning" },
-      { location: "Malchous Forest", point: "Adrienn", method: "LandMorning" },
+      {
+        location: "Malchous Forest Park",
+        point: "Adrienn",
+        method: "LandMorning",
+      },
       {
         location: "Jasper Ward",
         point: "Taka/Pulse Tangrowth 2",
@@ -2622,7 +2699,11 @@ export const pokemonData20: Pokemon[] = [
     ],
     locations: [
       { location: "Jasper Ward", point: "Adrienn", method: "LandMorning" },
-      { location: "Malchous Forest", point: "Adrienn", method: "LandMorning" },
+      {
+        location: "Malchous Forest Park",
+        point: "Adrienn",
+        method: "LandMorning",
+      },
     ],
   },
   {
@@ -2715,7 +2796,18 @@ export const pokemonData20: Pokemon[] = [
     ],
     locations: [
       { location: "Jasper Ward", point: "Adrienn", method: "LandMorning" },
-      { location: "Malchous Forest", point: "Adrienn", method: "LandMorning" },
+      {
+        location: "Malchous Forest Park",
+        point: "Adrienn",
+        method: "LandMorning",
+      },
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      {
+        location: "Charous Mountain",
+        point: "Elite 4/Champion",
+        method: "Cave",
+      },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -2878,7 +2970,13 @@ export const pokemonData20: Pokemon[] = [
       "UPROAR",
       "WORRYSEED",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Chrysolia Deepwoods",
+        point: "Post-Champion",
+        method: "LandDay",
+      },
+    ],
   },
   {
     no: 183,
@@ -2966,7 +3064,10 @@ export const pokemonData20: Pokemon[] = [
       "SWIFT",
       "WATERPULSE",
     ],
-    locations: [{ location: "Route 4", point: "Hardy", method: "LandMorning" }],
+    locations: [
+      { location: "Route 4", point: "Hardy", method: "LandMorning" },
+      { location: "Mirage Tower?", point: "Post-Champion", method: "OldRod" },
+    ],
   },
   {
     no: 184,
@@ -3045,7 +3146,20 @@ export const pokemonData20: Pokemon[] = [
       "SWIFT",
       "WATERPULSE",
     ],
-    locations: [{ location: "Route 4", point: "Hardy", method: "LandMorning" }],
+    locations: [
+      { location: "Route 4", point: "Hardy", method: "LandMorning" },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Land",
+      },
+      {
+        location: "Aegir Cave Depths",
+        point: "Post-Champion",
+        method: "Water",
+      },
+      { location: "Mirage Tower?", point: "Post-Champion", method: "SuperRod" },
+    ],
   },
   {
     no: 185,
@@ -3153,6 +3267,13 @@ export const pokemonData20: Pokemon[] = [
       { location: "Obsidia Ward", point: "Adrienn", method: "LandDay" },
       { location: "North Obsidia Ward", point: "Adrienn", method: "LandDay" },
       { location: "South Obsidia Ward", point: "Adrienn", method: "LandDay" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+      { location: "Manyworld Forest", point: "Post-Champion", method: "Land" },
+      {
+        location: "New World - Victini",
+        point: "Post-Champion",
+        method: "Land",
+      },
     ],
   },
   {
@@ -3217,7 +3338,9 @@ export const pokemonData20: Pokemon[] = [
       "SNORE",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Water" },
+    ],
   },
   {
     no: 187,
@@ -3299,6 +3422,7 @@ export const pokemonData20: Pokemon[] = [
     ],
     locations: [
       { location: "Iolia Valley", point: "Luna", method: "LandDay" },
+      { location: "Chrysolia Forest", point: "Serra", method: "LandMorning" },
       {
         location: "Obsidia Slums",
         point: "ZEL/Pulse Tangrowth 1",
@@ -3442,7 +3566,18 @@ export const pokemonData20: Pokemon[] = [
       "SYNTHESIS",
       "WORRYSEED",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Land",
+      },
+      {
+        location: "Idyll of Panaceance",
+        point: "Post-Champion",
+        method: "Land",
+      },
+    ],
   },
   {
     no: 190,
@@ -3625,7 +3760,15 @@ export const pokemonData20: Pokemon[] = [
       "UPROAR",
       "WORRYSEED",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Obsidia Ward",
+        point: "ZEL/Pulse Tangrowth 1",
+        method: "LandMorning",
+      },
+      { location: "Lower Peridot Ward", point: "Julia", method: "LandMorning" },
+      { location: "Peridot Ward", point: "Julia", method: "LandMorning" },
+    ],
   },
   {
     no: 192,
@@ -3874,6 +4017,7 @@ export const pokemonData20: Pokemon[] = [
     locations: [
       { location: "Azurine Island", point: "Aya", method: "LandMorning" },
       { location: "Tanzan Cove", point: "Serra", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "OldRod" },
     ],
   },
   {
@@ -3958,6 +4102,19 @@ export const pokemonData20: Pokemon[] = [
       { location: "Azurine Island", point: "Aya", method: "LandMorning" },
       { location: "Chrysolia Spring", point: "Adrienn", method: "Water" },
       { location: "Tanzan Cove", point: "Serra", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "GoodRod" },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Land",
+      },
+      { location: "Tourmaline Desert", point: "Titania", method: "Land" },
+      { location: "Manyworld Pool", point: "Post-Champion", method: "Land" },
+      {
+        location: "Idyll of Pestilence",
+        point: "Post-Champion",
+        method: "GoodRod",
+      },
     ],
   },
   {
@@ -4017,6 +4174,7 @@ export const pokemonData20: Pokemon[] = [
       "CUT",
       "FLASH",
       "ALLYSWITCH",
+      "CELEBRATE",
       "COVET",
       "HEADBUTT",
       "HEALBELL",
@@ -4036,7 +4194,14 @@ export const pokemonData20: Pokemon[] = [
       "TRICK",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Land",
+      },
+    ],
   },
   {
     no: 197,
@@ -4092,6 +4257,7 @@ export const pokemonData20: Pokemon[] = [
       "CONFIDE",
       "CUT",
       "FLASH",
+      "CELEBRATE",
       "COVET",
       "FOULPLAY",
       "HEADBUTT",
@@ -4110,7 +4276,11 @@ export const pokemonData20: Pokemon[] = [
       "THROATCHOP",
       "WONDERROOM",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "Twilight Desert", point: "Post-Champion", method: "Cave" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 198,
@@ -4318,7 +4488,10 @@ export const pokemonData20: Pokemon[] = [
       "WONDERROOM",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "New World", point: "Post-Champion", method: "SuperRod" },
+    ],
   },
   {
     no: 200,
@@ -4392,6 +4565,7 @@ export const pokemonData20: Pokemon[] = [
       "SECRETPOWER",
       "DARKPULSE",
       "DAZZLINGGLEAM",
+      "CONFIDE",
       "FLASH",
       "ALLYSWITCH",
       "FOULPLAY",
@@ -4435,6 +4609,7 @@ export const pokemonData20: Pokemon[] = [
       { location: "Grand Stairway", point: "Shelly", method: "Cave" },
       { location: "Byxbysion Wasteland", point: "Aya", method: "HeadbuttLow" },
       { location: "Citae Astrae", point: "Radomus", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -4447,7 +4622,10 @@ export const pokemonData20: Pokemon[] = [
     },
     eggMoves: [],
     tmTutorMoves: [],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 203,
@@ -4561,6 +4739,7 @@ export const pokemonData20: Pokemon[] = [
         point: "Radomus",
         method: "LandMorning",
       },
+      { location: "Aegir Cave", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -4642,8 +4821,6 @@ export const pokemonData20: Pokemon[] = [
     ],
     locations: [
       { location: "Opal Ward", point: "Julia", method: "HeadbuttLow" },
-      { location: "Lower Peridot Ward", point: "Julia", method: "HeadbuttLow" },
-      { location: "Peridot Ward", point: "Julia", method: "HeadbuttLow" },
       { location: "Beryl Ward", point: "Corey", method: "HeadbuttLow" },
       { location: "Beryl Cemetery", point: "Corey", method: "HeadbuttLow" },
       { location: "Azurine Island", point: "Aya", method: "HeadbuttLow" },
@@ -4657,6 +4834,12 @@ export const pokemonData20: Pokemon[] = [
       {
         location: "North Aventurine Woods",
         point: "Radomus",
+        method: "HeadbuttLow",
+      },
+      { location: "Peridot Ward", point: "Adrienn", method: "HeadbuttLow" },
+      {
+        location: "Lower Peridot Ward",
+        point: "Adrienn",
         method: "HeadbuttLow",
       },
       { location: "Route 4", point: "Hardy", method: "HeadbuttLow" },
@@ -4763,6 +4946,7 @@ export const pokemonData20: Pokemon[] = [
       { location: "Beryl Cemetery", point: "Adrienn", method: "HeadbuttLow" },
       { location: "Azurine Island", point: "Adrienn", method: "HeadbuttLow" },
       { location: "Route 4", point: "Hardy", method: "HeadbuttLow" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -5079,6 +5263,13 @@ export const pokemonData20: Pokemon[] = [
       { location: "Tanzan Mountain", point: "Adrienn", method: "Cave" },
       { location: "Tanzan Depths", point: "Adrienn", method: "Cave" },
       { location: "1R253 Scrapyard", point: "Titania", method: "Cave" },
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+      {
+        location: "Chrysolia Deepwoods",
+        point: "Post-Champion",
+        method: "Cave",
+      },
     ],
   },
   {
@@ -5499,6 +5690,19 @@ export const pokemonData20: Pokemon[] = [
       { location: "Citrine Mountain", point: "Adrienn", method: "SuperRod" },
       { location: "Teknite Cave", point: "Titania", method: "GoodRod" },
       { location: "Charous Mountain", point: "Hardy", method: "GoodRod" },
+      { location: "New World", point: "Post-Champion", method: "OldRod" },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "GoodRod",
+      },
+      { location: "Manyworld Pool", point: "Post-Champion", method: "Land" },
+      { location: "Ametrine Core", point: "Post-Champion", method: "GoodRod" },
+      {
+        location: "Idyll of Pestilence",
+        point: "Post-Champion",
+        method: "Water",
+      },
     ],
   },
   {
@@ -5751,6 +5955,7 @@ export const pokemonData20: Pokemon[] = [
       { location: "Apophyll Beach", point: "Kiki", method: "RockSmash" },
       { location: "Pyrous Mountain", point: "Kiki", method: "RockSmash" },
       { location: "1R253 Scrapyard", point: "Titania", method: "RockSmash" },
+      { location: "Aegir Cave", point: "Post-Champion", method: "RockSmash" },
     ],
   },
   {
@@ -6252,6 +6457,12 @@ export const pokemonData20: Pokemon[] = [
       { location: "Route 3", point: "Charlotte", method: "LandMorning" },
       { location: "Beryl Ward", point: "Adrienn", method: "LandMorning" },
       { location: "Beryl Cemetery", point: "Adrienn", method: "LandMorning" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+      {
+        location: "Idyll of Panaceance",
+        point: "Post-Champion",
+        method: "Land",
+      },
     ],
   },
   {
@@ -6411,7 +6622,11 @@ export const pokemonData20: Pokemon[] = [
       "STEALTHROCK",
       "STOMPINGTANTRUM",
     ],
-    locations: [{ location: "Pyrous Mountain", point: "Kiki", method: "Cave" }],
+    locations: [
+      { location: "Pyrous Mountain", point: "Kiki", method: "Cave" },
+      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
+      { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
+    ],
   },
   {
     no: 220,
@@ -6564,7 +6779,7 @@ export const pokemonData20: Pokemon[] = [
     locations: [
       { location: "Celestinine Mountain", point: "Radomus", method: "Cave" },
       { location: "Citrine Mountain", point: "Samson", method: "Cave" },
-      { location: "Route 3 Caves", point: "Charlotte", method: "Cave" },
+      { location: "Route 3", point: "Charlotte", method: "Cave" },
       { location: "Route 4", point: "Charlotte", method: "LandMorning" },
       { location: "Ametrine City", point: "T3RR4", method: "LandMorning" },
     ],
@@ -6671,6 +6886,14 @@ export const pokemonData20: Pokemon[] = [
       { location: "Azurine Lake", point: "Adrienn", method: "Cave" },
       { location: "Coral Ward", point: "Adrienn", method: "Cave" },
       { location: "Coral Lighthouse", point: "Adrienn", method: "Cave" },
+      { location: "Aegir Cave", point: "Post-Champion", method: "Land" },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Land",
+      },
+      { location: "Splash Grounds", point: "Post-Champion", method: "Cave" },
+      { location: "Tourmaline Desert", point: "Titania", method: "Land" },
       {
         location: "Apophyll Beach",
         point: "Kiki",

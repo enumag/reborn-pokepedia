@@ -83,10 +83,11 @@ export const pokemonData41: Pokemon[] = [
         point: "Taka/Pulse Tangrowth 2",
         method: "Cave",
       },
+      { location: "Malchous Forest Park", point: "Adrienn", method: "LandDay" },
       {
-        location: "Malchous Forest",
-        point: "Taka/Pulse Tangrowth 2",
-        method: "LandDay",
+        location: "Chrysolia Deepwoods",
+        point: "Post-Champion",
+        method: "LandNight",
       },
     ],
   },
@@ -177,6 +178,8 @@ export const pokemonData41: Pokemon[] = [
       { location: "Teknite Cave", point: "Titania", method: "Water" },
       { location: "Charous Mountain", point: "Hardy", method: "OldRod" },
       { location: "Agate City", point: "Hardy", method: "OldRod" },
+      { location: "New World", point: "Post-Champion", method: "OldRod" },
+      { location: "Ametrine Core", point: "Post-Champion", method: "OldRod" },
     ],
   },
   {
@@ -255,6 +258,13 @@ export const pokemonData41: Pokemon[] = [
       { location: "Teknite Cave", point: "Titania", method: "Water" },
       { location: "Charous Mountain", point: "Hardy", method: "Water" },
       { location: "Agate City", point: "Hardy", method: "Water" },
+      { location: "New World", point: "Post-Champion", method: "GoodRod" },
+      {
+        location: "Aegir Cave Depths",
+        point: "Post-Champion",
+        method: "Water",
+      },
+      { location: "Ametrine Core", point: "Post-Champion", method: "Water" },
     ],
   },
   {
@@ -676,7 +686,12 @@ export const pokemonData41: Pokemon[] = [
       "THROATCHOP",
       "THROATCHOP",
     ],
-    locations: [],
+    locations: [
+      { location: "Charous Path", point: "Elite 4/Champion", method: "Land" },
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "Twilight Desert", point: "Post-Champion", method: "Cave" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 462,
@@ -763,6 +778,7 @@ export const pokemonData41: Pokemon[] = [
       "SWIFT",
     ],
     locations: [
+      { location: "Endgame", point: "Post-Champion", method: "Land" },
       {
         location: "Yureyu Power Plant",
         point: "Luna",
@@ -1069,7 +1085,13 @@ export const pokemonData41: Pokemon[] = [
       "WORRYSEED",
     ],
     locations: [
-      { location: "Rhodochrine Jungle", point: "Adrienn", method: "LandDay" },
+      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
+      {
+        location: "Chrysolia Deepwoods",
+        point: "Post-Champion",
+        method: "LandMorning",
+      },
+      { location: "Endgame", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -1166,7 +1188,10 @@ export const pokemonData41: Pokemon[] = [
       "SWIFT",
       "THUNDERPUNCH",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 467,
@@ -1246,7 +1271,9 @@ export const pokemonData41: Pokemon[] = [
       "STOMPINGTANTRUM",
       "THUNDERPUNCH",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+    ],
   },
   {
     no: 468,
@@ -1415,6 +1442,11 @@ export const pokemonData41: Pokemon[] = [
     ],
     locations: [
       { location: "Azurine Island", point: "Adrienn", method: "LandMorning" },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Land",
+      },
     ],
   },
   {
@@ -1472,6 +1504,7 @@ export const pokemonData41: Pokemon[] = [
       "STRENGTH",
       "ROCKSMASH",
       "FLASH",
+      "CELEBRATE",
       "COVET",
       "FURYCUTTER",
       "GIGADRAIN",
@@ -1490,7 +1523,9 @@ export const pokemonData41: Pokemon[] = [
       "SYNTHESIS",
       "WORRYSEED",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+    ],
   },
   {
     no: 471,
@@ -1545,6 +1580,7 @@ export const pokemonData41: Pokemon[] = [
       "STRENGTH",
       "ROCKSMASH",
       "AQUATAIL",
+      "CELEBRATE",
       "COVET",
       "HEADBUTT",
       "HEALBELL",
@@ -1560,7 +1596,9 @@ export const pokemonData41: Pokemon[] = [
       "SWIFT",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      { location: "Charous Path", point: "Elite 4/Champion", method: "Land" },
+    ],
   },
   {
     no: 472,
@@ -1664,6 +1702,7 @@ export const pokemonData41: Pokemon[] = [
     locations: [
       { location: "Teknite Ridge", point: "Hardy", method: "LandMorning" },
       { location: "Tourmaline Desert", point: "Titania", method: "Water" },
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
     ],
   },
   {
@@ -1737,6 +1776,7 @@ export const pokemonData41: Pokemon[] = [
       "ENDEAVOR",
       "HEADBUTT",
       "ICYWIND",
+      "IRONHEAD",
       "KNOCKOFF",
       "MUDSLAP",
       "SNORE",
@@ -1744,7 +1784,9 @@ export const pokemonData41: Pokemon[] = [
       "STOMPINGTANTRUM",
       "SUPERPOWER",
     ],
-    locations: [],
+    locations: [
+      { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
+    ],
   },
   {
     no: 474,
@@ -1906,7 +1948,14 @@ export const pokemonData41: Pokemon[] = [
       "WONDERROOM",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      {
+        location: "Charous Mountain",
+        point: "Elite 4/Champion",
+        method: "Cave",
+      },
+    ],
   },
   {
     no: 10068,
@@ -2139,6 +2188,7 @@ export const pokemonData41: Pokemon[] = [
     ],
     locations: [
       { location: "1R253 Scrapyard", point: "Titania", method: "Cave" },
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
       {
         location: "Yureyu Power Plant",
         point: "Luna",
@@ -2250,7 +2300,9 @@ export const pokemonData41: Pokemon[] = [
       "TRICK",
       "WONDERROOM",
     ],
-    locations: [],
+    locations: [
+      { location: "Mirage Tower?", point: "Post-Champion", method: "Cave" },
+    ],
   },
   {
     no: 478,
@@ -2336,6 +2388,8 @@ export const pokemonData41: Pokemon[] = [
     ],
     locations: [
       { location: "Charous Mountain", point: "Hardy", method: "Cave" },
+      { location: "Aegir Cave Depths", point: "Post-Champion", method: "Cave" },
+      { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
     ],
   },
   {
@@ -2413,6 +2467,7 @@ export const pokemonData41: Pokemon[] = [
       "TRICK",
     ],
     locations: [
+      { location: "New World", point: "Post-Champion", method: "Land" },
       {
         location: "Yureyu Power Plant",
         point: "Luna",
@@ -3773,6 +3828,8 @@ export const pokemonData41: Pokemon[] = [
     ],
     locations: [
       { location: "Tourmaline Desert", point: "Titania", method: "SuperRod" },
+      { location: "New World", point: "Post-Champion", method: "Water" },
+      { location: "Splash Grounds", point: "Post-Champion", method: "Cave" },
     ],
   },
   {
@@ -3990,6 +4047,7 @@ export const pokemonData41: Pokemon[] = [
       "NATUREPOWER",
       "FLASH",
       "AIRCUTTER",
+      "CELEBRATE",
       "COVET",
       "EARTHPOWER",
       "ENDEAVOR",
@@ -4056,6 +4114,7 @@ export const pokemonData41: Pokemon[] = [
       "NATUREPOWER",
       "FLASH",
       "AIRCUTTER",
+      "CELEBRATE",
       "COVET",
       "EARTHPOWER",
       "ENDEAVOR",

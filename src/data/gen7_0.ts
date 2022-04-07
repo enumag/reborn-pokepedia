@@ -223,7 +223,9 @@ export const pokemonData70: Pokemon[] = [
       "TAILWIND",
       "WORRYSEED",
     ],
-    locations: [],
+    locations: [
+      { location: "Rhodochrine Tree", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 725,
@@ -672,7 +674,10 @@ export const pokemonData70: Pokemon[] = [
       "WATERPULSE",
       "WONDERROOM",
     ],
-    locations: [],
+    locations: [
+      { location: "Splash Grounds", point: "Post-Champion", method: "Cave" },
+      { location: "Mirage Tower?", point: "Post-Champion", method: "SuperRod" },
+    ],
   },
   {
     no: 731,
@@ -865,6 +870,12 @@ export const pokemonData70: Pokemon[] = [
     ],
     locations: [
       { location: "Chrysolia Forest", point: "Serra", method: "LandMorning" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+      {
+        location: "Chrysolia Deepwoods",
+        point: "Post-Champion",
+        method: "LandMorning",
+      },
     ],
   },
   {
@@ -1010,6 +1021,12 @@ export const pokemonData70: Pokemon[] = [
     locations: [
       { location: "North Obsidia Alleyway", point: "Adrienn", method: "Cave" },
       { location: "Obsidia Alleyway", point: "Adrienn", method: "Cave" },
+      {
+        location: "South Obsidia Ward",
+        point: "Adrienn",
+        method: "LandMorning",
+      },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -1275,7 +1292,19 @@ export const pokemonData70: Pokemon[] = [
       "THUNDERPUNCH",
       "ZENHEADBUTT",
     ],
-    locations: [{ location: "Apophyll Cave", point: "Kiki", method: "Cave" }],
+    locations: [
+      { location: "Apophyll Cave", point: "Kiki", method: "Cave" },
+      {
+        location: "Obsidia Slums",
+        point: "ZEL/Pulse Tangrowth 1",
+        method: "Cave",
+      },
+      {
+        location: "South Obsidia Ward",
+        point: "Adrienn",
+        method: "LandMorning",
+      },
+    ],
   },
   {
     no: 740,
@@ -1352,6 +1381,8 @@ export const pokemonData70: Pokemon[] = [
     ],
     locations: [
       { location: "Charous Mountain", point: "Hardy", method: "Cave" },
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "Charous Path", point: "Elite 4/Champion", method: "Land" },
     ],
   },
   {
@@ -1418,6 +1449,7 @@ export const pokemonData70: Pokemon[] = [
     ],
     locations: [
       { location: "Tanzan Cove", point: "Serra", method: "LandMorning" },
+      { location: "Chrysolia Spring", point: "Serra", method: "Cave" },
     ],
   },
   {
@@ -1768,6 +1800,7 @@ export const pokemonData70: Pokemon[] = [
         point: "Titania",
         method: "HeadbuttLow",
       },
+      { location: "Aegir Cave Depths", point: "Post-Champion", method: "Cave" },
     ],
   },
   {
@@ -1917,6 +1950,7 @@ export const pokemonData70: Pokemon[] = [
     locations: [
       { location: "Teknite Ridge", point: "Hardy", method: "LandMorning" },
       { location: "Tourmaline Desert", point: "Titania", method: "Cave" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -2145,6 +2179,14 @@ export const pokemonData70: Pokemon[] = [
       { location: "Route 4", point: "Charlotte", method: "GoodRod" },
       { location: "Charous Mountain", point: "Hardy", method: "Water" },
       { location: "Agate City", point: "Hardy", method: "Water" },
+      { location: "Aegir Cave", point: "Post-Champion", method: "OldRod" },
+      { location: "Ametrine Core", point: "Post-Champion", method: "Water" },
+      {
+        location: "Idyll of Panaceance",
+        point: "Post-Champion",
+        method: "GoodRod",
+      },
+      { location: "Mirage Tower?", point: "Post-Champion", method: "GoodRod" },
     ],
   },
   {
@@ -2274,6 +2316,11 @@ export const pokemonData70: Pokemon[] = [
       { location: "Coral Ward", point: "Adrienn", method: "Cave" },
       { location: "Coral Lighthouse", point: "Adrienn", method: "Cave" },
       {
+        location: "Idyll of Pestilence",
+        point: "Post-Champion",
+        method: "OldRod",
+      },
+      {
         location: "Jasper Ward",
         point: "Taka/ZEL/Pulse Tangrowth 3",
         method: "Mystery Egg Event (~5%)",
@@ -2349,7 +2396,15 @@ export const pokemonData70: Pokemon[] = [
       "SPITE",
       "WATERPULSE",
     ],
-    locations: [{ location: "Azurine Lake", point: "Adrienn", method: "Land" }],
+    locations: [
+      { location: "Azurine Lake", point: "Adrienn", method: "Land" },
+      { location: "Splash Grounds", point: "Post-Champion", method: "Cave" },
+      {
+        location: "Idyll of Pestilence",
+        point: "Post-Champion",
+        method: "SuperRod",
+      },
+    ],
   },
   {
     no: 749,
@@ -2469,6 +2524,7 @@ export const pokemonData70: Pokemon[] = [
     ],
     locations: [
       { location: "Route 1", point: "Radomus", method: "LandMorning" },
+      { location: "Aegir Cave", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -2605,6 +2661,7 @@ export const pokemonData70: Pokemon[] = [
     ],
     locations: [
       { location: "North Aventurine Woods", point: "Adrienn", method: "Water" },
+      { location: "Aegir Cave Depths", point: "Post-Champion", method: "Cave" },
     ],
   },
   {
@@ -2672,8 +2729,8 @@ export const pokemonData70: Pokemon[] = [
     ],
     locations: [
       {
-        location: "Malchous Forest",
-        point: "Taka/Pulse Tangrowth 2",
+        location: "Malchous Forest Park",
+        point: "Adrienn",
         method: "LandMorning",
       },
     ],
@@ -2752,7 +2809,12 @@ export const pokemonData70: Pokemon[] = [
       "WORRYSEED",
     ],
     locations: [
-      { location: "Malchous Forest", point: "Adrienn", method: "LandMorning" },
+      {
+        location: "Malchous Forest Park",
+        point: "Adrienn",
+        method: "LandMorning",
+      },
+      { location: "Rhodochrine Tree", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -2817,9 +2879,9 @@ export const pokemonData70: Pokemon[] = [
     ],
     locations: [
       {
-        location: "Rhodochrine Jungle",
-        point: "Taka/ZEL/Pulse Tangrowth 3",
-        method: "Cave",
+        location: "The Underroot",
+        point: "Taka/Pulse Tangrowth 2",
+        method: "Land",
       },
       { location: "Beryl Cave", point: "Shade", method: "Cave" },
     ],
@@ -2887,7 +2949,13 @@ export const pokemonData70: Pokemon[] = [
     ],
     locations: [
       { location: "Beryl Cave", point: "Shade", method: "Cave" },
-      { location: "Route 3 Caves", point: "Charlotte", method: "Cave" },
+      { location: "Route 3", point: "Charlotte", method: "Cave" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+      {
+        location: "Cauldron of the Future",
+        point: "Post-Champion",
+        method: "Land",
+      },
     ],
   },
   {
@@ -3039,7 +3107,14 @@ export const pokemonData70: Pokemon[] = [
       "SNATCH",
       "SNORE",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      {
+        location: "Idyll of Pestilence",
+        point: "Post-Champion",
+        method: "Land",
+      },
+    ],
   },
   {
     no: 759,
@@ -3203,6 +3278,7 @@ export const pokemonData70: Pokemon[] = [
         point: "Radomus",
         method: "LandMorning",
       },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -3408,7 +3484,10 @@ export const pokemonData70: Pokemon[] = [
       "WORRYSEED",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "Rhodochrine Tree", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 764,
@@ -3471,6 +3550,7 @@ export const pokemonData70: Pokemon[] = [
       "AFTERYOU",
       "ALLYSWITCH",
       "BIND",
+      "CELEBRATE",
       "COVET",
       "DEFOG",
       "GIGADRAIN",
@@ -3487,7 +3567,10 @@ export const pokemonData70: Pokemon[] = [
       "TRICK",
       "WORRYSEED",
     ],
-    locations: [{ location: "Tanzan Cove", point: "Serra", method: "LandDay" }],
+    locations: [
+      { location: "Tanzan Cove", point: "Serra", method: "LandDay" },
+      { location: "Chrysolia Forest", point: "Serra", method: "LandMorning" },
+    ],
   },
   {
     no: 765,
@@ -3713,6 +3796,7 @@ export const pokemonData70: Pokemon[] = [
       { location: "Azurine Lake", point: "Adrienn", method: "Land" },
       { location: "Coral Ward", point: "Adrienn", method: "Cave" },
       { location: "Coral Lighthouse", point: "Adrienn", method: "Cave" },
+      { location: "Aegir Cave", point: "Post-Champion", method: "GoodRod" },
     ],
   },
   {
@@ -3802,6 +3886,8 @@ export const pokemonData70: Pokemon[] = [
       { location: "Azurine Lake", point: "Adrienn", method: "Cave" },
       { location: "Coral Ward", point: "Adrienn", method: "Cave" },
       { location: "Coral Lighthouse", point: "Adrienn", method: "Cave" },
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "Aegir Cave", point: "Post-Champion", method: "SuperRod" },
     ],
   },
   {
@@ -3993,6 +4079,11 @@ export const pokemonData70: Pokemon[] = [
       { location: "Azurine Lake", point: "Adrienn", method: "Land" },
       { location: "Coral Ward", point: "Adrienn", method: "Cave" },
       { location: "Coral Lighthouse", point: "Adrienn", method: "Cave" },
+      {
+        location: "Idyll of Panaceance",
+        point: "Post-Champion",
+        method: "GoodRod",
+      },
     ],
   },
   {
@@ -4237,6 +4328,7 @@ export const pokemonData70: Pokemon[] = [
     ],
     locations: [
       { location: "Teknite Ridge", point: "Hardy", method: "LandNight" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -4306,6 +4398,12 @@ export const pokemonData70: Pokemon[] = [
         location: "North Aventurine Woods",
         point: "Radomus",
         method: "HeadbuttLow",
+      },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+      {
+        location: "New World - Victini",
+        point: "Post-Champion",
+        method: "Land",
       },
     ],
   },
@@ -4644,6 +4742,11 @@ export const pokemonData70: Pokemon[] = [
     ],
     locations: [
       { location: "Tourmaline Desert", point: "Titania", method: "SuperRod" },
+      {
+        location: "Cauldron of the Future",
+        point: "Post-Champion",
+        method: "Land",
+      },
     ],
   },
   {
@@ -4815,7 +4918,18 @@ export const pokemonData70: Pokemon[] = [
       "SYNTHESIS",
       "TELEKINESIS",
     ],
-    locations: [{ location: "Azurine Lake", point: "Adrienn", method: "Land" }],
+    locations: [
+      { location: "Azurine Lake", point: "Adrienn", method: "Land" },
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "New World", point: "Post-Champion", method: "SuperRod" },
+      { location: "Twilight Desert", point: "Post-Champion", method: "Cave" },
+      { location: "Splash Grounds", point: "Post-Champion", method: "Cave" },
+      {
+        location: "Idyll of Pestilence",
+        point: "Post-Champion",
+        method: "SuperRod",
+      },
+    ],
   },
   {
     no: 782,
@@ -5242,7 +5356,13 @@ export const pokemonData70: Pokemon[] = [
     levelUpMoves: { "1": ["SPLASH"], "23": ["TELEPORT"] },
     eggMoves: [],
     tmTutorMoves: [],
-    locations: [],
+    locations: [
+      {
+        location: "Cauldron of the Future",
+        point: "Post-Champion",
+        method: "SuperRod",
+      },
+    ],
   },
   {
     no: 790,

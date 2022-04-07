@@ -540,7 +540,7 @@ export const pokemonData32: Pokemon[] = [
     types: ["Dragon", "Flying"],
     stats: [105, 150, 90, 95, 150, 90],
     levelUpMoves: {
-      "1": ["TWISTER"],
+      "1": ["DRAGONASCENT", "VCREATE", "TWISTER"],
       "5": ["SCARYFACE"],
       "15": ["ANCIENTPOWER"],
       "20": ["CRUNCH"],
@@ -613,6 +613,7 @@ export const pokemonData32: Pokemon[] = [
       "ANCIENTPOWER",
       "AQUATAIL",
       "BIND",
+      "CELEBRATE",
       "DEFOG",
       "DRACOMETEOR",
       "DRAGONASCENT",
@@ -642,7 +643,7 @@ export const pokemonData32: Pokemon[] = [
     types: ["Dragon", "Flying"],
     stats: [105, 180, 100, 115, 180, 100],
     levelUpMoves: {
-      "1": ["TWISTER"],
+      "1": ["DRAGONASCENT", "VCREATE", "TWISTER"],
       "5": ["SCARYFACE"],
       "15": ["ANCIENTPOWER"],
       "20": ["CRUNCH"],
@@ -715,6 +716,7 @@ export const pokemonData32: Pokemon[] = [
       "ANCIENTPOWER",
       "AQUATAIL",
       "BIND",
+      "CELEBRATE",
       "DEFOG",
       "DRACOMETEOR",
       "DRAGONASCENT",

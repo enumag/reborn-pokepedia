@@ -84,10 +84,12 @@ export const pokemonData21: Pokemon[] = [
       { location: "Ametrine Mountain", point: "Samson", method: "GoodRod" },
       { location: "Celestinine Mountain", point: "Radomus", method: "GoodRod" },
       { location: "Citrine Mountain", point: "Samson", method: "OldRod" },
-      { location: "Azurine Lake", point: "Adrienn", method: "Land" },
+      { location: "Azurine Lake", point: "Adrienn", method: "Cave" },
       { location: "Coral Ward", point: "Adrienn", method: "Cave" },
       { location: "Coral Lighthouse", point: "Adrienn", method: "Cave" },
       { location: "Teknite Cave", point: "Titania", method: "GoodRod" },
+      { location: "Manyworld Pool", point: "Post-Champion", method: "Land" },
+      { location: "Ametrine Core", point: "Post-Champion", method: "GoodRod" },
       { location: "Onyx Ward", point: "Florina", method: "Egg (17%)" },
     ],
   },
@@ -181,6 +183,13 @@ export const pokemonData21: Pokemon[] = [
       { location: "Citrine Mountain", point: "Charlotte", method: "Water" },
       { location: "Azurine Lake", point: "Adrienn", method: "Land" },
       { location: "Teknite Cave", point: "Titania", method: "SuperRod" },
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Land",
+      },
+      { location: "Ametrine Core", point: "Post-Champion", method: "SuperRod" },
     ],
   },
   {
@@ -254,6 +263,7 @@ export const pokemonData21: Pokemon[] = [
     locations: [
       { location: "Ametrine Mountain", point: "Samson", method: "Cave" },
       { location: "Celestinine Mountain", point: "Radomus", method: "Cave" },
+      { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
     ],
   },
   {
@@ -363,6 +373,12 @@ export const pokemonData21: Pokemon[] = [
       { location: "Azurine Island", point: "Adrienn", method: "Water" },
       { location: "Azurine Cave", point: "Adrienn", method: "Water" },
       { location: "Agate City", point: "Hardy", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Water" },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "SuperRod",
+      },
     ],
   },
   {
@@ -455,6 +471,8 @@ export const pokemonData21: Pokemon[] = [
       { location: "Teknite Ridge", point: "Hardy", method: "LandMorning" },
       { location: "1R253 Scrapyard", point: "Titania", method: "Cave" },
       { location: "Tourmaline Desert", point: "Titania", method: "Cave" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+      { location: "Manyworld Forest", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -649,6 +667,7 @@ export const pokemonData21: Pokemon[] = [
     locations: [
       { location: "Lapis Ward", point: "Adrienn", method: "LandDay" },
       { location: "North Obsidia Alleyway", point: "Adrienn", method: "Cave" },
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
     ],
   },
   {
@@ -810,6 +829,9 @@ export const pokemonData21: Pokemon[] = [
     locations: [
       { location: "Agate City", point: "Hardy", method: "Land" },
       { location: "Charous Mountain", point: "Hardy", method: "SuperRod" },
+      { location: "New World", point: "Post-Champion", method: "SuperRod" },
+      { location: "Splash Grounds", point: "Post-Champion", method: "Cave" },
+      { location: "Ametrine Core", point: "Post-Champion", method: "SuperRod" },
     ],
   },
   {
@@ -977,6 +999,7 @@ export const pokemonData21: Pokemon[] = [
       { location: "Citrine Mountain", point: "Shade", method: "Cave" },
       { location: "Beryl Ward", point: "Adrienn", method: "LandMorning" },
       { location: "Beryl Cemetery", point: "Adrienn", method: "LandMorning" },
+      { location: "Neoteric Isle", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -1158,12 +1181,12 @@ export const pokemonData21: Pokemon[] = [
       "ZENHEADBUTT",
     ],
     locations: [
-      { location: "Route 1", point: "Radomus", method: "LandMorning" },
       {
         location: "Vanhanen Labyrinth",
         point: "Radomus",
         method: "LandMorning",
       },
+      { location: "Aegir Cave", point: "Post-Champion", method: "Land" },
       {
         location: "Malchous Forest",
         point: "Taka/ZEL/Pulse Tangrowth 3",
@@ -1190,7 +1213,14 @@ export const pokemonData21: Pokemon[] = [
     },
     eggMoves: [],
     tmTutorMoves: [],
-    locations: [{ location: "Lost Railcave", point: "Serra", method: "Cave" }],
+    locations: [
+      { location: "Lost Railcave", point: "Serra", method: "Cave" },
+      {
+        location: "Chrysolia Deepwoods",
+        point: "Post-Champion",
+        method: "LandMorning",
+      },
+    ],
   },
   {
     no: 236,
@@ -1334,7 +1364,9 @@ export const pokemonData21: Pokemon[] = [
       "TWISTER",
       "VACUUMWAVE",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+    ],
   },
   {
     no: 238,
@@ -1421,6 +1453,7 @@ export const pokemonData21: Pokemon[] = [
       "TRICK",
       "UPROAR",
       "WATERPULSE",
+      "WONDERROOM",
       "ZENHEADBUTT",
     ],
     locations: [
@@ -1827,7 +1860,16 @@ export const pokemonData21: Pokemon[] = [
     types: ["Electric"],
     stats: [90, 85, 75, 115, 115, 100],
     levelUpMoves: {
-      "1": ["EXTRASENSORY", "DISCHARGE", "BITE", "LEER"],
+      "1": [
+        "ZAPCANNON",
+        "WEATHERBALL",
+        "AURASPHERE",
+        "EXTREMESPEED",
+        "EXTRASENSORY",
+        "DISCHARGE",
+        "BITE",
+        "LEER",
+      ],
       "8": ["THUNDERSHOCK"],
       "15": ["ROAR"],
       "22": ["QUICKATTACK"],
@@ -1876,6 +1918,7 @@ export const pokemonData21: Pokemon[] = [
       "WILDCHARGE",
       "SECRETPOWER",
       "SNARL",
+      "CONFIDE",
       "CUT",
       "STRENGTH",
       "ROCKSMASH",
@@ -1902,6 +1945,10 @@ export const pokemonData21: Pokemon[] = [
     stats: [115, 115, 85, 100, 90, 75],
     levelUpMoves: {
       "1": [
+        "FLAREBLITZ",
+        "CRUSHCLAW",
+        "HOWL",
+        "EXTREMESPEED",
         "SACREDFIRE",
         "ERUPTION",
         "EXTRASENSORY",
@@ -1957,6 +2004,7 @@ export const pokemonData21: Pokemon[] = [
       "SUBSTITUTE",
       "SECRETPOWER",
       "SNARL",
+      "CONFIDE",
       "CUT",
       "STRENGTH",
       "ROCKSMASH",
@@ -1980,7 +2028,15 @@ export const pokemonData21: Pokemon[] = [
     types: ["Water"],
     stats: [100, 75, 115, 85, 90, 115],
     levelUpMoves: {
-      "1": ["SHEERCOLD", "BITE", "LEER", "BUBBLEBEAM", "RAINDANCE"],
+      "1": [
+        "AIRSLASH",
+        "AQUARING",
+        "EXTREMESPEED",
+        "BITE",
+        "LEER",
+        "BUBBLEBEAM",
+        "RAINDANCE",
+      ],
       "8": ["BUBBLEBEAM"],
       "15": ["RAINDANCE"],
       "22": ["GUST"],
@@ -2026,6 +2082,7 @@ export const pokemonData21: Pokemon[] = [
       "SUBSTITUTE",
       "SECRETPOWER",
       "SNARL",
+      "CONFIDE",
       "CUT",
       "SURF",
       "WATERFALL",
@@ -2625,6 +2682,7 @@ export const pokemonData21: Pokemon[] = [
       "TRICKROOM",
       "SECRETPOWER",
       "NATUREPOWER",
+      "DAZZLINGGLEAM",
       "CUT",
       "FLASH",
       "ALLYSWITCH",

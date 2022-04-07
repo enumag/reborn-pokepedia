@@ -279,6 +279,11 @@ eventLocations = {
         "point": "Taka/Pulse Tangrowth 2",
         "method": "Sunny Pokesnax Event (100%)"
     },
+    "Makuhita": {
+        "location": "Obsidia Slums",
+        "point": "Taka/Pulse Tangrowth 2",
+        "method": "Pokesnax Event (100%)"
+    },
     "Growlithe": {
         "location": "Jasper Ward",
         "point": "Taka/ZEL/Pulse Tangrowth 3",
@@ -1693,7 +1698,8 @@ points = [
     {"name": "Amaria", "level": "90"},
     {"name": "Hardy", "level": "90"},
     {"name": "Saphira", "level": "95"},
-    {"name": "Elite 4/Champion", "level": "100"}
+    {"name": "Elite 4/Champion", "level": "100"},
+    {"name": "Post-Champion", "level": "120"}
 ]
 
 methods = [
@@ -1709,7 +1715,7 @@ locations = [
     {"name": "Lower Peridot Ward", "point": "Julia"},
     {"name": "Peridot Ward", "point": "Julia"},
     {"name": "North Peridot Alley", "point": "Julia"},
-    {"name": "South Peridot Alley", "point": "Julia"},
+    {"name": "Lower Peridot Alley", "point": "Julia"},
     {"name": "Peridot Underground Railnet", "point": "Julia"},
     {"name": "Obsidia Slums", "point": "ZEL/Pulse Tangrowth 1"},
     {"name": "Coral Ward", "point": "ZEL/Pulse Tangrowth 1"},
@@ -1719,6 +1725,7 @@ locations = [
     {"name": "Onyx Ward", "point": "Florina"},
     {"name": "Jasper Ward", "point": "Taka/Pulse Tangrowth 2"},
     {"name": "Malchous Forest", "point": "Taka/Pulse Tangrowth 2"},
+    {"name": "The Underroot", "point": "Taka/Pulse Tangrowth 2"},
     {"name": "Beryl Ward", "point": "Taka/ZEL/Pulse Tangrowth 3"},
     {"name": "Rhodochrine Jungle", "point": "Taka/ZEL/Pulse Tangrowth 3"},
     {"name": "Beryl Cemetery", "point": "Corey"},
@@ -1763,8 +1770,10 @@ locations = [
     {"name": "Ametrine City", "point": "T3RR4"},
     {"name": "Glitch World", "point": "T3RR4"},
     {"name": "Water Treatment Center", "point": "Ciel"},
+    {"name": "South Peridot Alley", "point": "Adrienn"},
     {"name": "North Obsidia Ward", "point": "Adrienn"},
     {"name": "South Obsidia Ward", "point": "Adrienn"},
+    {"name": "Malchous Forest Park", "point": "Adrienn"},
     {"name": "Lapis Ward", "point": "Adrienn"},
     {"name": "Azurine Lake", "point": "Adrienn"},
     {"name": "Azurine Cave", "point": "Adrienn"},
@@ -1779,10 +1788,38 @@ locations = [
     {"name": "Once Upon a Somewhere/Waste of Time", "point": "Titania"},
     {"name": "Teknite Ridge", "point": "Hardy"},
     {"name": "Charous Mountain", "point": "Hardy"},
-    {"name": "Agate City", "point": "Hardy"}
+    {"name": "Agate City", "point": "Hardy"},
+    {"name": "Charous Path", "point": "Elite 4/Champion"},
+    {"name": "Victory Road", "point": "Elite 4/Champion"},
+    {"name": "Aegir Cave Depths", "point": "Post-Champion"},
+    {"name": "Aegir Cave", "point": "Post-Champion"},
+    {"name": "Ametrine Core", "point": "Post-Champion"},
+    {"name": "Cauldron of the Future", "point": "Post-Champion"},
+    {"name": "Chrysolia Deepwoods", "point": "Post-Champion"},
+    {"name": "Citae Prisma", "point": "Post-Champion"},
+    {"name": "Endgame", "point": "Post-Champion"},
+    {"name": "Idyll of Panaceance", "point": "Post-Champion"},
+    {"name": "Idyll of Pestilence", "point": "Post-Champion"},
+    {"name": "Rhodochrine Tree", "point": "Post-Champion"},
+    {"name": "Manyworld Forest", "point": "Post-Champion"},
+    {"name": "Manyworld Pool", "point": "Post-Champion"},
+    {"name": "Mirage Tower?", "point": "Post-Champion"},
+    {"name": "Neoteric Isle", "point": "Post-Champion"},
+    {"name": "New World - Regis", "point": "Post-Champion"},
+    {"name": "New World - Victini", "point": "Post-Champion"},
+    {"name": "New World Helix", "point": "Post-Champion"},
+    {"name": "New World", "point": "Post-Champion"},
+    {"name": "Splash Grounds", "point": "Post-Champion"},
+    {"name": "Twilight Desert", "point": "Post-Champion"},
+    {"name": "Unexplored Territory", "point": "Post-Champion"},
+    {"name": "Vacant Past", "point": "Post-Champion"}
 ]
 
 locationRemap = {
+    "Obsidia Slums B1F": "Obsidia Slums",
+    "Obsidia Slums 1F": "Obsidia Slums",
+    "Obsidia Slums 2F": "Obsidia Slums",
+    "Obsidia Park": "Obsidia Ward",
     "Lapis Water Grid": "Water Treatment Center",
     "Central Obsidia Water Grid": "Water Treatment Center",
     "North Obsidia Water Grid": "Water Treatment Center",
@@ -1797,7 +1834,6 @@ locationRemap = {
     "Grand Stairway B2F": "Grand Stairway",
     "Grand Stairway B3F": "Grand Stairway",
     "Mt Moon": "Glitch World",
-    "Victory Road": "Glitch World",
     "Cerulean Cave": "Glitch World",
     "Byxbysion Grotto": "Byxbysion Tunnels",
     "Hidden Tunnel": "Byxbysion Tunnels",
@@ -1805,6 +1841,7 @@ locationRemap = {
     "Pyrous Mountain 1F": "Pyrous Mountain",
     "Pyrous Mountain 2F": "Pyrous Mountain",
     "Pyrous Mountain 3F": "Pyrous Mountain",
+    "Pyrous Mountain B2F - Sp.Atk EVs": "Pyrous Mountain",
     "Ruby Cave": "Route 3 Caves",
     "Sapphire Cave": "Route 3 Caves",
     "Emerald Cave": "Route 3 Caves",
@@ -1848,7 +1885,13 @@ locationRemap = {
     "Citrine Mountain 2F": "Citrine Mountain",
     "Citrine Mountain 3F": "Citrine Mountain",
     "Once Upon a Somewhere": "Once Upon a Somewhere/Waste of Time",
-    "Once Upon a Waste of Time": "Once Upon a Somewhere/Waste of Time"
+    "Once Upon a Waste of Time": "Once Upon a Somewhere/Waste of Time",
+    "Victory Road 2F": "Victory Road",
+    "Victory Road B1F": "Victory Road",
+    "Victory Road B2F": "Victory Road",
+    "Victory Road B3F": "Victory Road",
+    "Victory Road B4F": "Victory Road",
+    "Victory Road B5F": "Victory Road"
 }
 
 pointOfNoReturn = [
@@ -1869,7 +1912,8 @@ locationNumRemap = {
     "041": "Peridot Underground Railnet",
     "103": "Obsidia Underground Railnet",
     "447": "Glitch World",
-    "450": "Glitch World"
+    "450": "Glitch World",
+    "453": "Glitch World"
 }
 
 mapRepoint = {
@@ -1889,7 +1933,6 @@ mapRepoint = {
     "528": "Adrienn",
     "529": "Adrienn",
     "530": "Adrienn",
-    "531": "Adrienn",
     "532": "Adrienn",
     "533": "Adrienn",
     "544": "Adrienn",
@@ -1936,7 +1979,8 @@ mapRepoint = {
     "728": "Hardy",
     "729": "Hardy",
     "742": "Hardy",
-    "760": "Adrienn"
+    "760": "Adrienn",
+    "792": "Elite 4/Champion"
 }
 
 alolanLocations = {
@@ -2340,10 +2384,10 @@ def getPoint(location, method, mapNo):
             if pt["name"] == methodPt:
                 methodLv = pt["level"]
         # Can't surf in areas outside of Point of No Return until Adrienn
-        if method == "Water" and location not in pointOfNoReturn and locationLv < methodLv:
+        if method == "Water" and location not in pointOfNoReturn and int(locationLv) < int(methodLv):
             locationPt = "Adrienn"
             locationLv = "80"
-        return locationPt if locationLv > methodLv else methodPt
+        return locationPt if int(locationLv) > int(methodLv) else methodPt
     return ""
 
 
