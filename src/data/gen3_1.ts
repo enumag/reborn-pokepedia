@@ -2911,7 +2911,7 @@ export const pokemonData31: Pokemon[] = [
     ],
     locations: [
       {
-        location: "Spinal Town",
+        location: "Spinel Town",
         point: "Serra",
         method: "Fossil Reviver (100%)",
       },
@@ -3071,7 +3071,7 @@ export const pokemonData31: Pokemon[] = [
     ],
     locations: [
       {
-        location: "Spinal Town",
+        location: "Spinel Town",
         point: "Serra",
         method: "Fossil Reviver (100%)",
       },

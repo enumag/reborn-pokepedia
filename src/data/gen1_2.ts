@@ -1420,7 +1420,7 @@ export const pokemonData12: Pokemon[] = [
         method: "OldRod",
       },
       {
-        location: "Spinal Town",
+        location: "Spinel Town",
         point: "Serra",
         method: "Fossil Reviver (100%)",
       },
@@ -1594,7 +1594,7 @@ export const pokemonData12: Pokemon[] = [
         method: "OldRod",
       },
       {
-        location: "Spinal Town",
+        location: "Spinel Town",
         point: "Serra",
         method: "Fossil Reviver (100%)",
       },
@@ -1807,7 +1807,7 @@ export const pokemonData12: Pokemon[] = [
         method: "Land",
       },
       {
-        location: "Spinal Town",
+        location: "Spinel Town",
         point: "Adrienn",
         method: "Trade Powerful Staraptor Event (100%)",
       },

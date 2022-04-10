@@ -94,7 +94,7 @@ export const pokemonData21: Pokemon[] = [
       {
         location: "Chrysolia Forest",
         point: "Serra",
-        method: "Interact with Fountain After Visiting Spinal Town",
+        method: "Interact with Fountain After Visiting Spinel Town",
       },
     ],
   },

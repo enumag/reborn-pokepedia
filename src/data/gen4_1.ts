@@ -1839,7 +1839,7 @@ export const pokemonData41: Pokemon[] = [
     tmTutorMoves: [],
     locations: [
       {
-        location: "Gitch World",
+        location: "Glitch World",
         point: "T3RR4",
         method: "Link Stone and Dubious Disc",
       },
@@ -3257,11 +3257,7 @@ export const pokemonData41: Pokemon[] = [
       "TWISTER",
     ],
     locations: [
-      {
-        location: "Subseven Sanctum",
-        point: "Post-Champion",
-        method: "Tier 6",
-      },
+      { location: "7th Street", point: "Post-Champion", method: "Tier 6" },
     ],
   },
   {
@@ -3355,11 +3351,7 @@ export const pokemonData41: Pokemon[] = [
       "WATERPULSE",
     ],
     locations: [
-      {
-        location: "Subseven Sanctum",
-        point: "Post-Champion",
-        method: "Tier 6",
-      },
+      { location: "7th Street", point: "Post-Champion", method: "Tier 6" },
     ],
   },
   {

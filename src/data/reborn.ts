@@ -30,6 +30,7 @@ export const gamePoints = [
 export const gameLocations = [
   "Opal Ward",
   "Lower Peridot Ward",
+  "Lower Peridot Alley",
   "Peridot Ward",
   "North Peridot Alley",
   "Peridot Underground Railnet",
@@ -63,7 +64,7 @@ export const gameLocations = [
   "Chrysolia Forest",
   "Chrysolia Spring",
   "Lost Railcave",
-  "Spinal Town",
+  "Spinel Town",
   "Tanzan Cove",
   "Tanzan Depths",
   "South Aventurine Woods",

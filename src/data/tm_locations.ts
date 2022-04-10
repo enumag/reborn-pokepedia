@@ -7,7 +7,7 @@ export const tmLocations = [
   },
   {
     name: "DRAGONCLAW",
-    location: "Labradorra City",
+    location: "Route 3",
     point: "Elite 4/Champion",
     method: "Saphira Prize",
   },
@@ -85,7 +85,7 @@ export const tmLocations = [
   },
   {
     name: "HYPERBEAM",
-    location: "Spinal Town",
+    location: "Spinel Town",
     point: "Amaria",
     method: "Defeat McKrezzy During Mega Ring Event",
   },
@@ -295,7 +295,7 @@ export const tmLocations = [
   },
   {
     name: "OVERHEAT",
-    location: "Chrysolia Spring Sauna",
+    location: "Chrysolia Spring",
     point: "Adrienn",
     method: "Search Area",
   },
@@ -349,7 +349,7 @@ export const tmLocations = [
   },
   {
     name: "BRUTALSWING",
-    location: "Azurine Caves",
+    location: "Azurine Cave",
     point: "Adrienn",
     method: "King Pyukumuku Event",
   },
@@ -361,7 +361,7 @@ export const tmLocations = [
   },
   {
     name: "WILLOWISP",
-    location: "Chrysolia Springs",
+    location: "Chrysolia Spring",
     point: "Adrienn",
     method: "Search Area",
   },
@@ -415,7 +415,7 @@ export const tmLocations = [
   },
   {
     name: "AURORAVEIL",
-    location: "Spinal Town",
+    location: "Spinel Town",
     point: "Noel",
     method: "Serra Prize",
   },
@@ -458,7 +458,7 @@ export const tmLocations = [
   {
     name: "PSYCHUP",
     location: "Rhodochrine Jungle",
-    point: "Correy",
+    point: "Corey",
     method: "Search Area",
   },
   {
@@ -470,7 +470,7 @@ export const tmLocations = [
   {
     name: "FROSTBREATH",
     location: "Ametrine City",
-    point: "Ceil",
+    point: "Ciel",
     method: "Search Area",
   },
   {

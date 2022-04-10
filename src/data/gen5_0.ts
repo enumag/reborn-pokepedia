@@ -6101,7 +6101,7 @@ export const pokemonData50: Pokemon[] = [
         method: "GoodRod",
       },
       {
-        location: "Spinal Town",
+        location: "Spinel Town",
         point: "Serra",
         method: "Nighttime Meteor Grunt Event (50%)",
       },
@@ -6287,7 +6287,7 @@ export const pokemonData50: Pokemon[] = [
     ],
     locations: [
       {
-        location: "Spinal Town",
+        location: "Spinel Town",
         point: "Serra",
         method: "Nighttime Meteor Grunt Event (50%)",
       },
