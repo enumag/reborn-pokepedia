@@ -302,7 +302,7 @@ eventLocations = {
         }, {
             "location": "Chrysolia Forest",
             "point": "Serra",
-            "method": "Interact with Fountain After Visiting Spinal Town"
+            "method": "Interact with Fountain After Visiting Spinel Town"
         }
     ],
     "Clauncher": {
@@ -958,38 +958,38 @@ eventLocations = {
         "method": "Trade Karrablast"
     },
     "Omanyte": {
-        "location": "Spinal Town",
+        "location": "Spinel Town",
         "point": "Serra",
         "method": "Fossil Reviver (100%)"
     },
     "Kabuto": {
-        "location": "Spinal Town",
+        "location": "Spinel Town",
         "point": "Serra",
         "method": "Fossil Reviver (100%)"
     },
     "Anorith": {
-        "location": "Spinal Town",
+        "location": "Spinel Town",
         "point": "Serra",
         "method": "Fossil Reviver (100%)"
     },
     "Lileep": {
-        "location": "Spinal Town",
+        "location": "Spinel Town",
         "point": "Serra",
         "method": "Fossil Reviver (100%)"
     },
     "Cranidos": {
-        "location": "Spinal Town",
+        "location": "Spinel Town",
         "point": "Serra",
         "method": "Fossil Reviver (100%)"
     },
     "Shieldon": {
-        "location": "Spinal Town",
+        "location": "Spinel Town",
         "point": "Serra",
         "method": "Fossil Reviver (100%)"
     },
     "Archen": [
         {
-            "location": "Spinal Town",
+            "location": "Spinel Town",
             "point": "Serra",
             "method": "Nighttime Meteor Grunt Event (50%)"
         },
@@ -1001,7 +1001,7 @@ eventLocations = {
     ],
     "Tirtouga": [
         {
-            "location": "Spinal Town",
+            "location": "Spinel Town",
             "point": "Serra",
             "method": "Nighttime Meteor Grunt Event (50%)"
         },
@@ -1234,7 +1234,7 @@ eventLocations = {
         "method": "Data Chip PC"
     },
     "Porygon-Z": {
-        "location": "Gitch World",
+        "location": "Glitch World",
         "point": "T3RR4",
         "method": "Link Stone and Dubious Disc"
     },
@@ -1299,7 +1299,7 @@ eventLocations = {
         "method": "Devon Corp Railnet Reconstruction Project (100%)"
     },
     "Aerodactyl": {
-        "location": "Spinal Town",
+        "location": "Spinel Town",
         "point": "Adrienn",
         "method": "Trade Powerful Staraptor Event (100%)"
     },
@@ -1791,7 +1791,7 @@ eventLocations = {
         "method": "Tier 6"
     },
     "Dialga": {
-        "location": "Subseven Sanctum",
+        "location": "7th Street",
         "point": "Post-Champion",
         "method": "Tier 6"
     },
@@ -1801,7 +1801,7 @@ eventLocations = {
         "method": "Tier 6"
     },
     "Palkia": {
-        "location": "Subseven Sanctum",
+        "location": "7th Street",
         "point": "Post-Champion",
         "method": "Tier 6"
     },
@@ -1905,7 +1905,7 @@ eventLocations = {
 tmLocations = [
     {"name": "WORKUP", "location": "Ametrine Mountain",
         "point": "Adrienn", "method": "B3F"},
-    {"name": "DRAGONCLAW", "location": "Labradorra City",
+    {"name": "DRAGONCLAW", "location": "Route 3",
         "point": "Elite 4/Champion", "method": "Saphira Prize"},
     {"name": "PSYSHOCK", "location": "Celestinine Mountain",
         "point": "Ciel", "method": "4F"},
@@ -1931,7 +1931,7 @@ tmLocations = [
         "point": "Hardy", "method": "Bee 300 Pokedex Event"},
     {"name": "BLIZZARD", "location": "Obsidia Ward",
         "point": "Hardy", "method": "Obsidia Department Store Penthouse Give Kid Lemonade"},
-    {"name": "HYPERBEAM", "location": "Spinal Town", "point": "Amaria",
+    {"name": "HYPERBEAM", "location": "Spinel Town", "point": "Amaria",
      "method": "Defeat McKrezzy During Mega Ring Event"},
     {"name": "LIGHTSCREEN", "location": "Azurine Island",
      "point": "Titania", "method": "NPC Gift"},
@@ -2001,7 +2001,7 @@ tmLocations = [
      "point": "Aya", "method": "Obsidia Department Store 4F"},
     {"name": "ECHOEDVOICE", "location": "Peridot Ward",
      "point": "Kiki", "method": "Search Blackstream Factor B2F"},
-    {"name": "OVERHEAT", "location": "Chrysolia Spring Sauna", "point": "Adrienn",
+    {"name": "OVERHEAT", "location": "Chrysolia Spring", "point": "Adrienn",
      "method": "Search Area"},
     {"name": "STEELWING", "location": "South Aventurine Woods",
      "point": "Radomus", "method": "Search Woods"},
@@ -2019,11 +2019,11 @@ tmLocations = [
      "point": "ZEL/Pulse Tangrowth 1", "method": "Julia Prize"},
     {"name": "SKYDROP", "location": "Route 2",
      "point": "Samson", "method": "Search Route 2"},
-    {"name": "BRUTALSWING", "location": "Azurine Caves",
+    {"name": "BRUTALSWING", "location": "Azurine Cave",
      "point": "Adrienn", "method": "King Pyukumuku Event"},
     {"name": "QUASH", "location": "Obsidia Slums",
      "point": "ZEL/Pulse Tangrowth 1", "method": "Search 2F Top Right"},
-    {"name": "WILLOWISP", "location": "Chrysolia Springs",
+    {"name": "WILLOWISP", "location": "Chrysolia Spring",
      "point": "Adrienn", "method": "Search Area"},
     {"name": "ACROBATICS", "location": "Agate Circus", "point": "Adrienn",
      "method": "Talk to Ringmaster After Defeating Ciel"},
@@ -2041,7 +2041,7 @@ tmLocations = [
      "point": "Adrienn", "method": "Search Lighthouse Upper Area"},
     {"name": "ROCKPOLISH", "location": "Grand Stairway",
      "point": "Shelly", "method": "B2F Grand Stairway Puzzle"},
-    {"name": "AURORAVEIL", "location": "Spinal Town",
+    {"name": "AURORAVEIL", "location": "Spinel Town",
      "point": "Noel", "method": "Serra Prize"},
     {"name": "STONEEDGE", "location": "Sugiline Ruin", "point": "Titania",
      "method": "Search 1F Left of Arceus Statue Upper Middle"},
@@ -2055,11 +2055,11 @@ tmLocations = [
         "point": "Titania", "method": "Search Area"},
     {"name": "STRUGGLEBUG", "location": "Lapis Ward",
      "point": "Shade", "method": "Shelly Prize"},
-    {"name": "PSYCHUP", "location": "Rhodochrine Jungle", "point": "Correy",
+    {"name": "PSYCHUP", "location": "Rhodochrine Jungle", "point": "Corey",
      "method": "Search Area"},
     {"name": "BULLDOZE", "location": "Glitch World",
      "point": "Ciel", "method": "T3RR4 Prize"},
-    {"name": "FROSTBREATH", "location": "Ametrine City", "point": "Ceil",
+    {"name": "FROSTBREATH", "location": "Ametrine City", "point": "Ciel",
      "method": "Search Area"},
     {"name": "ROCKSLIDE", "location": "Agate City",
      "point": "Saphira", "method": "Hardy Prize"},
@@ -2363,7 +2363,7 @@ locations = [
     {"name": "Chrysolia Forest", "point": "Serra"},
     {"name": "Chrysolia Spring", "point": "Serra"},
     {"name": "Lost Railcave", "point": "Serra"},
-    {"name": "Spinal Town", "point": "Serra"},
+    {"name": "Spinel Town", "point": "Serra"},
     {"name": "Tanzan Cove", "point": "Serra"},
     {"name": "Tanzan Depths", "point": "Noel"},
     {"name": "South Aventurine Woods", "point": "Radomus"},
