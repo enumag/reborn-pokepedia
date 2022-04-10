@@ -905,9 +905,9 @@ export const pokemonData12: Pokemon[] = [
       },
       { location: "Manyworld Pool", point: "Post-Champion", method: "Land" },
       {
-        location: "Celestinine Cascade",
+        location: "Ametrine Mountain",
         point: "Ciel",
-        method: "Friday Event (100%)",
+        method: "Underwater B2F Friday Event (100%)",
       },
     ],
   },
@@ -2097,7 +2097,9 @@ export const pokemonData12: Pokemon[] = [
       "TWISTER",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      { location: "Ametrine City", point: "Post-Champion", method: "Tier 2" },
+    ],
   },
   {
     no: 145,
@@ -2173,7 +2175,13 @@ export const pokemonData12: Pokemon[] = [
       "TAILWIND",
       "TWISTER",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Yureyu Power Plant",
+        point: "Post-Champion",
+        method: "Tier 2",
+      },
+    ],
   },
   {
     no: 146,
@@ -2246,7 +2254,9 @@ export const pokemonData12: Pokemon[] = [
       "TAILWIND",
       "TWISTER",
     ],
-    locations: [],
+    locations: [
+      { location: "Pyrous Mountain", point: "Post-Champion", method: "Tier 2" },
+    ],
   },
   {
     no: 147,
@@ -2638,7 +2648,9 @@ export const pokemonData12: Pokemon[] = [
       "WONDERROOM",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Neoteric Isle", point: "Post-Champion", method: "Tier 8" },
+    ],
   },
   {
     no: 10043,
@@ -3083,6 +3095,8 @@ export const pokemonData12: Pokemon[] = [
       "WORRYSEED",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Neoteric Isle", point: "Post-Champion", method: "Tier 8" },
+    ],
   },
 ];

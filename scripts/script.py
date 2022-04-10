@@ -3,6 +3,8 @@ from configparser import (ConfigParser, MissingSectionHeaderError,
 from string import printable
 import json
 
+# TODO https://docs.google.com/spreadsheets/d/1NmNBklcSI_OqWKMAaJ_WyqjBJ5J7lo3IuwTftIaJlIw/edit#gid=1921351918
+
 eventLocations = {
     "Zigzagoon": {
         "location": "Opal Ward",
@@ -15,7 +17,7 @@ eventLocations = {
         "method": "Bridge Event (50%)"
     },
     "Tynamo": {
-        "location": "South Peridot Alley",
+        "location": "Lower Peridot Alley",
         "point": "Julia",
         "method": "Thunderstorm Event (100%)"
     },
@@ -27,12 +29,22 @@ eventLocations = {
     "Minccino": {
         "location": "Lower Peridot Ward",
         "point": "Julia",
-        "method": "$50 Bum Pokesnax Event (50%)"
+        "method": "$50 Bum Pokesnax Event (25%)"
     },
     "Espurr": {
         "location": "Lower Peridot Ward",
         "point": "Julia",
-        "method": "$50 Bum Pokesnax Event (50%)"
+        "method": "$50 Bum Pokesnax Event (25%)"
+    },
+    "Swinub": {
+        "location": "Lower Peridot Ward",
+        "point": "Julia",
+        "method": "MonoIce $50 Bum Pokesnax Event (25%)"
+    },
+    "Aron": {
+        "location": "Lower Peridot Ward",
+        "point": "Julia",
+        "method": "MonoSteel $50 Bum Pokesnax Event (25%)"
     },
     "Teddiursa": {
         "location": "Lower Peridot Ward",
@@ -43,6 +55,16 @@ eventLocations = {
         "location": "Lower Peridot Ward",
         "point": "Julia",
         "method": "House NPC (100%)"
+    },
+    "Delibird": {
+        "location": "Lower Peridot Ward",
+        "point": "Julia",
+        "method": "Gift Box House Event (100%)"
+    },
+    "Skitty": {
+        "location": "Lower Peridot Ward",
+        "point": "Julia",
+        "method": "Oran Berry Event (100%)"
     },
     "Blitzle": {
         "location": "Lower Peridot Ward",
@@ -99,6 +121,18 @@ eventLocations = {
         "point": "Julia",
         "method": "Trade Bibarel"
     },
+    "Drifloon": [
+        {
+            "location": "Peridot Ward",
+            "point": "Julia",
+            "method": "MonoGhost Night Event (100%)"
+        },
+        {
+            "location": "Yureyu Power Plant",
+            "point": "Corey",
+            "method": "Windy Outside Plant Event (100%)"
+        }
+    ],
     "Numel": {
         "location": "Lower Peridot Ward",
         "point": "ZEL/Pulse Tangrowth 1",
@@ -129,11 +163,22 @@ eventLocations = {
         "point": "ZEL/Pulse Tangrowth 1",
         "method": "Trade Furret"
     },
-    "Vanillite": {
-        "location": "Obsidia Ward",
-        "point": "ZEL/Pulse Tangrowth 1",
-        "method": "Candy Shop Vanilla Ice Cream (100%)"
-    },
+    "Vanillite": [
+        {
+            "location": "Obsidia Ward",
+            "point": "ZEL/Pulse Tangrowth 1",
+            "method": "Candy Shop Vanilla Ice Cream (100%)"
+        }, {
+            "location": "Spinel Town",
+            "point": "Serra",
+            "method": "Vending Machine Vanilla Ice Cream (100%)"
+        },
+        {
+            "location": "7th Street",
+            "point": "Subseven Sanctum",
+            "method": "Purchase (100%)"
+        }
+    ],
     "Swirlix": {
         "location": "Obsidia Ward",
         "point": "ZEL/Pulse Tangrowth 1",
@@ -148,6 +193,16 @@ eventLocations = {
         "location": "Obsidia Ward",
         "point": "ZEL/Pulse Tangrowth 1",
         "method": "Hair Salon Competition Event (100%)"
+    },
+    "Wigglytuff": {
+        "location": "Obsidia Slums",
+        "point": "ZEL/Pulse Tangrowth 1",
+        "method": "Moon Stone"
+    },
+    "Musharna": {
+        "location": "Obsidia Slums",
+        "point": "ZEL/Pulse Tangrowth 1",
+        "method": "Moon Stone"
     },
     "Electrike": {
         "location": "Obsidia Alleyway",
@@ -177,32 +232,22 @@ eventLocations = {
     "Drowzee": {
         "location": "Obsidia Slums",
         "point": "ZEL/Pulse Tangrowth 1",
-        "method": "Egg (25%)"
+        "method": "Egg (33%)"
     },
     "Bronzor": {
         "location": "Obsidia Slums",
         "point": "ZEL/Pulse Tangrowth 1",
-        "method": "Egg (25%)"
+        "method": "Egg (33%)"
     },
     "Ducklett": {
         "location": "Obsidia Slums",
         "point": "ZEL/Pulse Tangrowth 1",
-        "method": "Egg (25%)"
-    },
-    "Cacnea": {
-        "location": "Obsidia Slums",
-        "point": "ZEL/Pulse Tangrowth 1",
-        "method": "Egg (25%)"
+        "method": "Egg (33%)"
     },
     "Lotad": {
         "location": "Coral Ward",
         "point": "ZEL/Pulse Tangrowth 1",
         "method": "Pier Rainstorm Event (100%)"
-    },
-    "Skitty": {
-        "location": "Coral Ward",
-        "point": "ZEL/Pulse Tangrowth 1",
-        "method": "Ultra Potion Event (100%)"
     },
     "Spoink": {
         "location": "Coral Ward",
@@ -213,6 +258,11 @@ eventLocations = {
         "location": "Coral Ward",
         "point": "ZEL/Pulse Tangrowth 1",
         "method": "Day Care Couple Event (100%)"
+    },
+    "Nosepass": {
+        "location": "Coral Ward",
+        "point": "ZEL/Pulse Tangrowth 1",
+        "method": "Trade Watchog"
     },
     "Lillipup": {
         "location": "Onyx Ward",
@@ -234,16 +284,27 @@ eventLocations = {
         "point": "Florina",
         "method": "Game Corner Prize"
     },
-    "Pichu": {
+    "Mantyke": {
         "location": "Onyx Ward",
         "point": "Florina",
-        "method": "Rooftop Garden Pokesnax Event (100%)"
+        "method": "Game Corner Prize"
     },
-    "Remoraid": {
+    "Snover": {
         "location": "Onyx Ward",
         "point": "Florina",
-        "method": "Egg (17%)"
+        "method": "Game Corner Prize"
     },
+    "Remoraid": [
+        {
+            "location": "Onyx Ward",
+            "point": "Florina",
+            "method": "Egg (17%)"
+        }, {
+            "location": "Chrysolia Forest",
+            "point": "Serra",
+            "method": "Interact with Fountain After Visiting Spinal Town"
+        }
+    ],
     "Clauncher": {
         "location": "Onyx Ward",
         "point": "Florina",
@@ -264,6 +325,43 @@ eventLocations = {
         "point": "Florina",
         "method": "Egg (17%)"
     },
+    "Frillish": {
+        "location": "Onyx Ward",
+        "point": "Florina",
+        "method": "Egg (17%)"
+    },
+    "Pichu": {
+        "location": "Onyx Ward",
+        "point": "Taka/Pulse Tangrowth 2",
+        "method": "Rooftop Garden Pokesnax Event (100%)"
+    },
+    "Zangoose": [
+        {
+            "location": "Lower Peridot Alley",
+            "point": "Taka/Pulse Tangrowth 2",
+            "method": "Friday Night Alleyway Event (100%)"
+        },
+        {
+            "location": "North Peridot Alley",
+            "point": "Taka/Pulse Tangrowth 2",
+            "method": "Thursday Night Alleyway Event (100%)"
+        },
+        {
+            "location": "Obsidia Alleyway",
+            "point": "Taka/Pulse Tangrowth 2",
+            "method": "Monday Night Alleyway Event (100%)"
+        },
+        {
+            "location": "North Obsidia Alleyway",
+            "point": "Shade",
+            "method": "Tuesday Night Alleyway Event (100%)"
+        },
+        {
+            "location": "Lapis Alleyway",
+            "point": "Shelly",
+            "method": "Wednesday Night Alleyway Event (100%)"
+        }
+    ],
     "Stufful": {
         "location": "Peridot Ward",
         "point": "Taka/Pulse Tangrowth 2",
@@ -279,11 +377,16 @@ eventLocations = {
         "point": "Taka/Pulse Tangrowth 2",
         "method": "Sunny Pokesnax Event (100%)"
     },
-    "Makuhita": {
+    "Makuhita": [{
         "location": "Obsidia Slums",
         "point": "Taka/Pulse Tangrowth 2",
         "method": "Pokesnax Event (100%)"
-    },
+    }, {
+        "location": "7th Street",
+        "point": "Subseven Sanctum",
+        "method": "Purchase (100%)"
+    }
+    ],
     "Growlithe": {
         "location": "Jasper Ward",
         "point": "Taka/ZEL/Pulse Tangrowth 3",
@@ -294,42 +397,72 @@ eventLocations = {
         "point": "Taka/ZEL/Pulse Tangrowth 3",
         "method": "Mystery Egg Event (~5%)"
     },
-    "Mareanie": {
-        "location": "Jasper Ward",
-        "point": "Taka/ZEL/Pulse Tangrowth 3",
-        "method": "Mystery Egg Event (~5%)"
-    },
+    "Mareanie": [
+        {
+            "location": "Jasper Ward",
+            "point": "Taka/ZEL/Pulse Tangrowth 3",
+            "method": "Mystery Egg Event (~5%)"
+        }, {
+            "location": "Citrine Mountain",
+            "point": "Charlotte",
+            "method": "Citrine Mountain Puzzle (100%)"
+        }
+    ],
     "Staryu": {
         "location": "Jasper Ward",
         "point": "Taka/ZEL/Pulse Tangrowth 3",
         "method": "Mystery Egg Event (~5%)"
     },
-    "Togepi": {
-        "location": "Jasper Ward",
-        "point": "Taka/ZEL/Pulse Tangrowth 3",
-        "method": "Mystery Egg Event (~5%)"
-    },
-    "Sneasel": {
-        "location": "Jasper Ward",
-        "point": "Taka/ZEL/Pulse Tangrowth 3",
-        "method": "Mystery Egg Event (~5%)"
-    },
+    "Togepi": [
+        {
+            "location": "Jasper Ward",
+            "point": "Taka/ZEL/Pulse Tangrowth 3",
+            "method": "Mystery Egg Event (~5%)"
+        }, {
+            "location": "Coral Ward",
+            "point": "Titania",
+            "method": "Railnet Restoration Trade Probopass"
+        }
+    ],
+    "Sneasel": [
+        {
+            "location": "Jasper Ward",
+            "point": "Taka/ZEL/Pulse Tangrowth 3",
+            "method": "Mystery Egg Event (~5%)"
+        }, {
+            "location": "Ametrine Mountain",
+            "point": "Ciel",
+            "method": "Ametrine Mountain (100%)"
+        }
+    ],
     "Shroomish": {
         "location": "Jasper Ward",
         "point": "Taka/ZEL/Pulse Tangrowth 3",
         "method": "Mystery Egg Event (~5%)"
     },
-    "Gastly": {
-        "location": "Jasper Ward",
-        "point": "Taka/ZEL/Pulse Tangrowth 3",
-        "method": "Mystery Egg Event (~5%)"
-    },
-    "Axew": {
-        "location": "Jasper Ward",
-        "point": "Taka/ZEL/Pulse Tangrowth 3",
-        "method": "Mystery Egg Event (~5%)"
-    },
-    "Vullaby": {
+    "Gastly": [
+        {
+            "location": "Jasper Ward",
+            "point": "Taka/ZEL/Pulse Tangrowth 3",
+            "method": "Mystery Egg Event (~5%)"
+        }, {
+            "location": "Route 4",
+            "point": "Hardy",
+            "method": "Route 4 Puzzle (100%)"
+        }
+    ],
+    "Axew": [
+        {
+            "location": "Jasper Ward",
+            "point": "Taka/ZEL/Pulse Tangrowth 3",
+            "method": "Mystery Egg Event (~5%)"
+        }, {
+            "location": "The Underroot",
+            "point": "Luna",
+            "method": "Crystal Key Event (100%)"
+        }
+    ],
+    "Vulpix (Alolan)": {
         "location": "Jasper Ward",
         "point": "Taka/ZEL/Pulse Tangrowth 3",
         "method": "Mystery Egg Event (~5%)"
@@ -339,12 +472,18 @@ eventLocations = {
         "point": "Taka/ZEL/Pulse Tangrowth 3",
         "method": "Mystery Egg Event (~5%)"
     },
-    "Phantump": {
-        "location": "Jasper Ward",
-        "point": "Taka/ZEL/Pulse Tangrowth 3",
-        "method": "Mystery Egg Event (~5%)"
-    },
-    "Drilbur": {
+    "Litwick": [
+        {
+            "location": "Jasper Ward",
+            "point": "Taka/ZEL/Pulse Tangrowth 3",
+            "method": "Mystery Egg Event (~5%)"
+        }, {
+            "location": "7th Street",
+            "point": "Luna",
+            "method": "Soul Candle Subseven Sanctum Event (100%)"
+        }
+    ],
+    "Trapinch": {
         "location": "Jasper Ward",
         "point": "Taka/ZEL/Pulse Tangrowth 3",
         "method": "Mystery Egg Event (~5%)"
@@ -359,11 +498,17 @@ eventLocations = {
         "point": "Taka/ZEL/Pulse Tangrowth 3",
         "method": "Mystery Egg Event (~5%)"
     },
-    "Elekid": {
-        "location": "Jasper Ward",
-        "point": "Taka/ZEL/Pulse Tangrowth 3",
-        "method": "Mystery Egg Event (~5%)"
-    },
+    "Elekid": [
+        {
+            "location": "Jasper Ward",
+            "point": "Taka/ZEL/Pulse Tangrowth 3",
+            "method": "Mystery Egg Event (~5%)"
+        }, {
+            "location": "Calcenon City",
+            "point": "T3RR4",
+            "method": "Trade Electirizer (100%)"
+        }
+    ],
     "Starly": {
         "location": "Jasper Ward",
         "point": "Taka/ZEL/Pulse Tangrowth 3",
@@ -374,11 +519,17 @@ eventLocations = {
         "point": "Taka/ZEL/Pulse Tangrowth 3",
         "method": "Mystery Egg Event (~5%)"
     },
-    "Larvesta": {
-        "location": "Jasper Ward",
-        "point": "Taka/ZEL/Pulse Tangrowth 3",
-        "method": "Mystery Egg Event (~5%)"
-    },
+    "Larvesta": [
+        {
+            "location": "Jasper Ward",
+            "point": "Taka/ZEL/Pulse Tangrowth 3",
+            "method": "Mystery Egg Event (~5%)"
+        }, {
+            "location": "Teknite Cave",
+            "point": "Hardy",
+            "method": "Beryl Ward Entrance Event (100%)"
+        }
+    ],
     "Mareep": {
         "location": "Jasper Ward",
         "point": "Taka/Pulse Tangrowth 2",
@@ -387,9 +538,9 @@ eventLocations = {
     "Emolga": {
         "location": "Jasper Ward",
         "point": "Taka/Pulse Tangrowth 2",
-        "method": "Clear or Wind Event (100%)"
+        "method": "Night Event (100%)"
     },
-    "Stantler": {
+    "Girafarig": {
         "location": "Malchous Forest",
         "point": "Taka/ZEL/Pulse Tangrowth 3",
         "method": "Egg (25%)"
@@ -409,10 +560,40 @@ eventLocations = {
         "point": "Taka/ZEL/Pulse Tangrowth 3",
         "method": "Egg (25%)"
     },
-    "Gothita": {
-        "location": "Beryl Ward",
+    "Stantler": {
+        "location": "Rhodochrine Jungle",
         "point": "Taka/ZEL/Pulse Tangrowth 3",
-        "method": "Clean Library Event (100%)"
+        "method": "Western Area Event (100%)"
+    },
+    "Taillow": {
+        "location": "Rhodochrine Jungle",
+        "point": "Taka/ZEL/Pulse Tangrowth 3",
+        "method": "Western Area Pit Trap Event (100%)"
+    },
+    "Seviper": {
+        "location": "The Underroot",
+        "point": "Corey",
+        "method": "Pokesnax Event (100%)"
+    },
+    "Mime Jr.": {
+        "location": "Rhodochrine Jungle",
+        "point": "Corey",
+        "method": "Trade Sunkern (25%)"
+    },
+    "Cryogonal": {
+        "location": "Rhodochrine Jungle",
+        "point": "Corey",
+        "method": "Trade Sunkern (25%)"
+    },
+    "Furfrou": {
+        "location": "Rhodochrine Jungle",
+        "point": "Corey",
+        "method": "Trade Sunkern (25%)"
+    },
+    "Carbink": {
+        "location": "Rhodochrine Jungle",
+        "point": "Corey",
+        "method": "Trade Sunkern (25%)"
     },
     "Helioptile": {
         "location": "Beryl Ward",
@@ -429,6 +610,104 @@ eventLocations = {
         "point": "Corey",
         "method": "Soul Candle Event (100%)"
     },
+    "Mamoswine": {
+        "location": "The Underroot",
+        "point": "Corey",
+        "method": "Breed Ancient Power from Kecleon"
+    },
+    "Tropius": {
+        "location": "Rhodochrine Jungle",
+        "point": "Shelly",
+        "method": "Sunny Western Area Event (100%)"
+    },
+    "Gothita": {
+        "location": "Beryl Ward",
+        "point": "Shelly",
+        "method": "Clean Library Event (100%)"
+    },
+    "Skrelp": {
+        "location": "The Underroot",
+        "point": "Shelly",
+        "method": "Silver Ring Event (100%)"
+    },
+    "Simisage": {
+        "location": "Grand Stairway",
+        "point": "Shelly",
+        "method": "Leaf Stone"
+    },
+    "Victreebel": {
+        "location": "Grand Stairway",
+        "point": "Shelly",
+        "method": "Leaf Stone"
+    },
+    "Vileplume": {
+        "location": "Grand Stairway",
+        "point": "Shelly",
+        "method": "Leaf Stone"
+    },
+    "Arcanine": [
+        {
+            "location": "Lapis Ward",
+            "point": "Shelly",
+            "method": "Fire Stone - Magma Gang 1 Event (100%)"
+        }, {
+            "location": "Grand Stairway",
+            "point": "Shelly",
+            "method": "Fire Stone"
+        }
+    ],
+    "Ludicolo": [
+        {
+            "location": "Lapis Ward",
+            "point": "Shelly",
+            "method": "Water Stone - Aqua Gang 1 Event (100%)"
+        },
+        {
+            "location": "Grand Stairway",
+            "point": "Shelly",
+            "method": "Water Stone"
+        }
+    ],
+    "Eelektross": {
+        "location": "Grand Stairway",
+        "point": "Shelly",
+        "method": "Thunder Stone"
+    },
+    "Raichu": {
+        "location": "Grand Stairway",
+        "point": "Shelly",
+        "method": "Thunder Stone"
+    },
+    "Solrock": [
+        {
+            "location": "Grand Stairway",
+            "point": "Shelly",
+            "method": "Area Above EXPCandy NPC (50%)"
+        }, {
+            "location": "Grand Stairway",
+            "point": "Shade",
+            "method": "Trapped Behind Rock Smash (50%)"
+        }, {
+            "location": "Tanzan Mountain",
+            "point": "Serra",
+            "method": "Pokesnax Event (50%)"
+        }
+    ],
+    "Lunatone": [
+        {
+            "location": "Grand Stairway",
+            "point": "Shelly",
+            "method": "Area Above EXPCandy NPC (50%)"
+        }, {
+            "location": "Grand Stairway",
+            "point": "Shade",
+            "method": "Trapped Behind Rock Smash (50%)"
+        }, {
+            "location": "Tanzan Mountain",
+            "point": "Serra",
+            "method": "Pokesnax Event (50%)"
+        }
+    ],
     "Houndour": [
         {
             "location": "North Obsidia Alleyway",
@@ -439,69 +718,72 @@ eventLocations = {
             "location": "North Obsidia Alleyway",
             "point": "Shade",
             "method": "Magma Gang 2 Event (100%)"
-        },
+        }
     ],
+    "Carvanha": {
+        "location": "Lapis Alleyway",
+        "point": "Shade",
+        "method": "Aqua Gang 2 Event (100%)"
+    },
     "Buizel": {
         "location": "North Obsidia Alleyway",
         "point": "Shelly",
         "method": "Magma Gang 1 Event (100%)"
     },
-    "Mime Jr.": {
+    "Ponyta": {
         "location": "North Obsidia Ward",
         "point": "Shelly",
-        "method": "Trade Sunkern (25%)"
-    },
-    "Cryogonal": {
-        "location": "North Obsidia Ward",
-        "point": "Shelly",
-        "method": "Trade Sunkern (25%)"
-    },
-    "Furfrou": {
-        "location": "North Obsidia Ward",
-        "point": "Shelly",
-        "method": "Trade Sunkern (25%)"
-    },
-    "Carbink": {
-        "location": "North Obsidia Ward",
-        "point": "Shelly",
-        "method": "Trade Sunkern (25%)"
-    },
-    "Zorua": {
-        "location": "North Obsidia Ward",
-        "point": "Shelly",
-        "method": "Fake Corey Event (100%)"
+        "method": "Aqua Gang 1 Event (100%)"
     },
     "Spritzee": {
         "location": "Lapis Ward",
         "point": "Shelly",
         "method": "Flower Shop Puzzle (100%)"
     },
-    "Ponyta": {
+    "Golem": {
         "location": "North Obsidia Ward",
-        "point": "Shelly",
-        "method": "Trade Sunkern (25%)"
+        "point": "Shade",
+        "method": "Link Stone"
     },
-    "Murkrow": [
-        {
-            "location": "Lapis Alleyway",
-            "point": "Shelly",
-            "method": "Windy Nighttime Aqua Gang 1 Event (100%)"
-        },
-        {
-            "location": "Lapis Alleyway",
-            "point": "Shade",
-            "method": "Windy Nighttime Magma Gang 2 Event (100%)"
-        }
-    ],
-    "Zangoose": {
-        "location": "Lapis Alleyway",
-        "point": "Shelly",
-        "method": "Hide and Seek Alleyway Event (100%)"
+    "Gourgeist": {
+        "location": "North Obsidia Ward",
+        "point": "Shade",
+        "method": "Link Stone"
     },
-    "Drifloon": {
-        "location": "Yureyu Power Plant",
-        "point": "Shelly",
-        "method": "Windy Outside Plant Event (100%)"
+    "Aromatisse": {
+        "location": "North Obsidia Ward",
+        "point": "Shade",
+        "method": "Link Stone and Sachet"
+    },
+    "Slurpuff": {
+        "location": "North Obsidia Ward",
+        "point": "Shade",
+        "method": "Link Stone and Whipped Dream"
+    },
+    "Bellossom": {
+        "location": "Grand Stairway",
+        "point": "Shade",
+        "method": "Sun Stone"
+    },
+    "Lilligant": {
+        "location": "Grand Stairway",
+        "point": "Shade",
+        "method": "Sun Stone"
+    },
+    "Heliolisk": {
+        "location": "Grand Stairway",
+        "point": "Shade",
+        "method": "Sun Stone"
+    },
+    "Roserade": {
+        "location": "Grand Stairway",
+        "point": "Shade",
+        "method": "Shiny Stone"
+    },
+    "Chansey": {
+        "location": "Grand Stairway",
+        "point": "Shade",
+        "method": "Oval Stone"
     },
     "Scraggy": {
         "location": "Slums Playground",
@@ -517,6 +799,11 @@ eventLocations = {
         "location": "Beryl Cave",
         "point": "Shade",
         "method": "Silver Ring Event (100%)"
+    },
+    "Nuzleaf": {
+        "location": "Beryl Cave",
+        "point": "Shade",
+        "method": "Windy Shiftry Event (100%)"
     },
     "Natu": {
         "location": "Beryl Cave",
@@ -538,30 +825,15 @@ eventLocations = {
         "point": "Shade",
         "method": "Ill Fated Doll Totem Pole Event (33%)"
     },
-    "Tropius": {
-        "location": "Beryl Cave",
-        "point": "Shade",
-        "method": "Sunny Pokesnax Event (100%)"
-    },
-    "Carvanha": {
-        "location": "Lapis Alleyway",
-        "point": "Shade",
-        "method": "Aqua Gang 2 Event (100%)"
-    },
-    "Lunatone": {
-        "location": "Grand Stairway",
-        "point": "Shade",
-        "method": "Trapped Behind Rock Smash (50%)"
-    },
-    "Solrock": {
-        "location": "Grand Stairway",
-        "point": "Shade",
-        "method": "Trapped Behind Rock Smash (50%)"
-    },
     "Smoochum": {
         "location": "Citrine Mountain",
         "point": "Shade",
         "method": "Beartic Event (100%)"
+    },
+    "Amaura": {
+        "location": "Citrine Mountain",
+        "point": "Shade",
+        "method": "Ice Heal Event (100%)"
     },
     "Croagunk": {
         "location": "Citrine Mountain",
@@ -580,10 +852,25 @@ eventLocations = {
             "method": "Purchase If Missed Previously (100%)"
         }
     ],
+    "Murkrow": {
+        "location": "Lapis Alleyway",
+        "point": "Kiki",
+        "method": "Windy Nighttime Event (100%)"
+    },
     "Corsola": {
         "location": "Apophyll Beach",
         "point": "Kiki",
         "method": "Storm Pokesnax Event (100%)"
+    },
+    "Pyukumuku": {
+        "location": "Apophyll Beach",
+        "point": "Kiki",
+        "method": "Lying On Beach (100%)"
+    },
+    "Shieldon": {
+        "location": "Apophyll Cave",
+        "point": "Kiki",
+        "method": "Trade Ledian"
     },
     "Meditite": {
         "location": "Apophyll Academy",
@@ -598,22 +885,17 @@ eventLocations = {
     "Heatmor": {
         "location": "Pyrous Mountain",
         "point": "Kiki",
-        "method": "Floor B1 If Column Did Not Have Turtonator (50%)"
+        "method": "Pokesnax Floor B1 If Column Did Not Have Turtonator (50%)"
     },
     "Raichu (Alolan)": {
         "location": "Apophyll Beach",
         "point": "Kiki",
-        "method": "Evolve on Beach"
+        "method": "Thunder Stone on Beach"
     },
     "Foongus": {
         "location": "Azurine Island",
         "point": "Aya",
         "method": "Fake Pokeballs (100%)"
-    },
-    "Venipede": {
-        "location": "Byxbysion Wasteland",
-        "point": "Aya",
-        "method": "Walk Under Trees (100%)"
     },
     "Spiritomb": {
         "location": "Byxbysion Tunnels",
@@ -622,33 +904,33 @@ eventLocations = {
     },
     "Misdreavus": {
         "location": "Byxbysion Tunnels",
-        "point": "Aya",
+        "point": "Serra",
         "method": "Kiki Tombstone Event (100%)"
     },
     "Squirtle": {
         "location": "Byxbysion Wasteland",
-        "point": "Aya",
+        "point": "Serra",
         "method": "Rainstorm Event (100%)"
-    },
-    "Roserade": {
-        "location": "Azurine Island",
-        "point": "Aya",
-        "method": "Shiny Stone"
     },
     "Tepig": {
         "location": "Pyrous Mountain",
         "point": "Serra",
-        "method": "pyrous Mountain Strength Puzzle (100%)"
+        "method": "Pyrous Mountain Strength Puzzle (100%)"
     },
     "Darumaka": {
         "location": "Apophyll Academy",
         "point": "Serra",
         "method": "Trade Luvdisc"
     },
-    "Trapinch": {
+    "Bruxish": {
         "location": "Chrysolia Forest",
         "point": "Serra",
         "method": "Trade Mothim"
+    },
+    "Mantine": {
+        "location": "Chrysolia Forest",
+        "point": "Serra",
+        "method": "Level Mantyke With Remoraid"
     },
     "Maractus": {
         "location": "Chrysolia Forest",
@@ -659,6 +941,21 @@ eventLocations = {
         "location": "Chrysolia Forest",
         "point": "Serra",
         "method": "Egg on Train (50%)"
+    },
+    "Eevee": {
+        "location": "Lost Railcave",
+        "point": "Serra",
+        "method": "Diary Event (100%)"
+    },
+    "Karrablast": {
+        "location": "Spinel Town",
+        "point": "Serra",
+        "method": "Trade Shelmet"
+    },
+    "Shelmet": {
+        "location": "Spinel Town",
+        "point": "Serra",
+        "method": "Trade Karrablast"
     },
     "Omanyte": {
         "location": "Spinal Town",
@@ -690,35 +987,6 @@ eventLocations = {
         "point": "Serra",
         "method": "Fossil Reviver (100%)"
     },
-    "Escavelier": [
-        {
-            "location": "Spinal Town",
-            "point": "Radomus",
-            "method": "Trade Karrablast"
-        },
-        {
-            "location": "North Obsidia Ward",
-            "point": "Radomus",
-            "method": "Link Stone on Karrablast"
-        }
-    ],
-    "Accelgor": [
-        {
-            "location": "Spinal Town",
-            "point": "Radomus",
-            "method": "Trade Shelmet"
-        },
-        {
-            "location": "North Obsidia Ward",
-            "point": "Radomus",
-            "method": "Link Stone on Shelmet"
-        }
-    ],
-    "Eevee": {
-        "location": "Lost Railcave",
-        "point": "Serra",
-        "method": "Diary Event (100%)"
-    },
     "Archen": [
         {
             "location": "Spinal Town",
@@ -743,11 +1011,17 @@ eventLocations = {
             "method": "Agate Circus Puzzle (100%)"
         }
     ],
-    "Seviper": {
-        "location": "Tanzan Depths",
-        "point": "Radomus",
-        "method": "Hole In The Wall (100%)"
-    },
+    "Chikorita": [
+        {
+            "location": "Azurine Island",
+            "point": "Serra",
+            "method": "Trade Chimecho"
+        }, {
+            "location": "Azurine Island",
+            "point": "Adrienn",
+            "method": "Azurine Island Nature Center Rooftop (100%)"
+        }
+    ],
     "Heracross": {
         "location": "South Aventurine Woods",
         "point": "Radomus",
@@ -809,6 +1083,11 @@ eventLocations = {
         "point": "Radomus",
         "method": "Trade Dunsparce"
     },
+    "Crabominable": {
+        "location": "Celestinine Mountain",
+        "point": "Radomus",
+        "method": "Evolve in Celestinine Mountain"
+    },
     "Jigglypuff": {
         "location": "7th Street",
         "point": "Subseven Sanctum",
@@ -864,29 +1143,14 @@ eventLocations = {
         "point": "Luna",
         "method": "Frankenstein Event (100%)"
     },
-    "Litwick": {
-        "location": "7th Street",
-        "point": "Luna",
-        "method": "Soul Candle Subseven Sanctum Event (100%)"
-    },
     "Rotom": {
         "location": "Yureyu Power Plant",
         "point": "Luna",
         "method": "Yureyu Key Event (100%)"
     },
-    "Magnezone": {
-        "location": "Yureyu Power Plant",
-        "point": "Luna",
-        "method": "Evolve in Yureyu Key Room"
-    },
-    "Probopass": {
-        "location": "Yureyu Power Plant",
-        "point": "Luna",
-        "method": "Evolve in Yureyu Key Room"
-    },
-    "Solosis": {
+    "Dhelmise": {
         "location": "Byxbysion Wasteland",
-        "point": "Point of No Return",
+        "point": "Luna",
         "method": "Wasteland Wall Event (100%)"
     },
     "Clefairy": {
@@ -895,11 +1159,6 @@ eventLocations = {
         "method": "Win High Striker Event Twice (100%)"
     },
     "Timburr": {
-        "location": "Agate Circus",
-        "point": "Samson",
-        "method": "Agate Circus Puzzle (100%)"
-    },
-    "Turtwig": {
         "location": "Agate Circus",
         "point": "Samson",
         "method": "Agate Circus Puzzle (100%)"
@@ -914,20 +1173,35 @@ eventLocations = {
         "point": "Charlotte",
         "method": "Rage Power Event (100%)"
     },
-    "Magby": {
-        "location": "Calcenon City",
-        "point": "Charlotte",
-        "method": "Trade Magmarizer (100%)"
-    },
     "Munchlax": {
         "location": "Calcenon City",
         "point": "Charlotte",
         "method": "Trade Qwilfish"
     },
+    "Steelix": {
+        "location": "Route 3",
+        "point": "Charlotte",
+        "method": "Link Stone and Metal Coat"
+    },
+    "Dusknoir": {
+        "location": "Route 3",
+        "point": "Charlotte",
+        "method": "Link Stone and Reaper Cloth"
+    },
     "Mega Banette": {
         "location": "Ametrine City",
         "point": "Amaria",
         "method": "Trade Floral Charm (100%)"
+    },
+    "Magby": {
+        "location": "Calcenon City",
+        "point": "T3RR4",
+        "method": "Trade Magmarizer (100%)"
+    },
+    "Turtwig": {
+        "location": "Agate Circus",
+        "point": "T3RR4",
+        "method": "Agate Circus Post-Dive Puzzle (100%)"
     },
     "Riolu": {
         "location": "Ametrine City",
@@ -959,25 +1233,45 @@ eventLocations = {
         "point": "T3RR4",
         "method": "Data Chip PC"
     },
+    "Porygon-Z": {
+        "location": "Gitch World",
+        "point": "T3RR4",
+        "method": "Link Stone and Dubious Disc"
+    },
     "Mega Abomasnow": {
         "location": "Celestinine Cascade",
         "point": "Amaria",
         "method": "Ice Puzzle (100%)"
     },
-    "Lapras": {
-        "location": "Celestinine Cascade",
+    "Milotic": {
+        "location": "Citrine Mountain",
         "point": "Ciel",
-        "method": "Friday Event (100%)"
+        "method": "Link Stone and Prism Scale"
     },
-    "Sneasel": {
-        "location": "Celestinine Cascade",
+    "Milotic": {
+        "location": "Citrine Mountain",
         "point": "Ciel",
-        "method": "Celestinine Puzzle (100%)"
+        "method": "Link Stone and Prism Scale"
+    },
+    "Gliscor": {
+        "location": "Ametrine Mountain",
+        "point": "Ciel",
+        "method": "Link Stone and Razor Fang"
+    },
+    "Electivire": {
+        "location": "Water Treatment Center",
+        "point": "Ciel",
+        "method": "Link Stone and Electirizer"
+    },
+    "Lapras": {
+        "location": "Ametrine Mountain",
+        "point": "Ciel",
+        "method": "Underwater B2F Friday Event (100%)"
     },
     "Totodile": {
-        "location": "Celestinine Cascade",
+        "location": "Ametrine Mountain",
         "point": "Ciel",
-        "method": "Celestinine Puzzle (100%)"
+        "method": "Ametrine Mountain (100%)"
     },
     "Fennekin": {
         "location": "Water Treatment Center",
@@ -988,6 +1282,11 @@ eventLocations = {
         "location": "Celestinine Cascade",
         "point": "Ciel",
         "method": "Silver Ring Event (100%)"
+    },
+    "Zorua": {
+        "location": "Beryl Ward",
+        "point": "Adrienn",
+        "method": "Fake Corey Event (100%)"
     },
     "Ralts": {
         "location": "Obsidia Ward",
@@ -1027,7 +1326,7 @@ eventLocations = {
     "Mega Glalie": {
         "location": "Coral Ward",
         "point": "Amaria",
-        "method": "Underwater City S9 Area (100%)"
+        "method": "Underwater City Sunrise Area (100%)"
     },
     "Mega Aggron": {
         "location": "Underground Railnet",
@@ -1049,13 +1348,8 @@ eventLocations = {
         "point": "Adrienn",
         "method": "G.U.M. Room Event (100%)"
     },
-    "Chikorita": {
-        "location": "Azurine Island",
-        "point": "Adrienn",
-        "method": "Azurine Island Nature Center Rooftop (100%)"
-    },
     "Treecko": {
-        "location": "Rhodochrine Jungle",
+        "location": "The Underroot",
         "point": "Adrienn",
         "method": "Kecleon Event (100%)"
     },
@@ -1063,11 +1357,6 @@ eventLocations = {
         "location": "Azurine Lake",
         "point": "Adrienn",
         "method": "Underwater Puzzle (100%)"
-    },
-    "Chimchar": {
-        "location": "Azurine Island",
-        "point": "Adrienn",
-        "method": "Trade Delibird"
     },
     "Popplio": {
         "location": "Coral Lighthouse",
@@ -1089,7 +1378,7 @@ eventLocations = {
     "Litten": [
         {
             "location": "North Obsidia Alleyway",
-            "point": "Adrienn",
+            "point": "Titania",
             "method": "Aqua Gang 3 Event (100%)"
         },
         {
@@ -1115,6 +1404,16 @@ eventLocations = {
             "method": "Cave"
         }
     ],
+    "Weavile": {
+        "location": "South Aventurine Woods",
+        "point": "Adrienn",
+        "method": "Link Stone and Razor Claw"
+    },
+    "Chimchar": {
+        "location": "Azurine Island",
+        "point": "Titania",
+        "method": "Azurine Island Renovation Trade Carnivine"
+    },
     "Exeggutor (Alolan)": {
         "location": "Tourmaline Desert",
         "point": "Titania",
@@ -1195,11 +1494,6 @@ eventLocations = {
         "location": "Calcenon City",
         "point": "Amaria",
         "method": "Caroline Event (100%)"
-    },
-    "Gastly": {
-        "location": "Route 4",
-        "point": "Hardy",
-        "method": "Route 4 Puzzle (100%)"
     },
     "Larvitar": {
         "location": "Tanzan Depths",
@@ -1289,28 +1583,340 @@ eventLocations = {
     "Froakie": {
         "location": "Agate City",
         "point": "Hardy",
-        "method": "Bee 500 Pokedex Event (100%)"
+        "method": "Bee 200 Pokedex Event (100%)"
     },
     "Poipole": {
         "location": "North Aventurine Woods",
-        "point": "Hardy",
-        "method": "Bee Complete Pokedex Event (100%)"
+        "point": "Saphira",
+        "method": "Bee 700 Pokedex Event (100%)"
+    },
+    "Cresselia": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 1"
+    },
+    "Zapdos": {
+        "location": "Yureyu Power Plant",
+        "point": "Post-Champion",
+        "method": "Tier 2"
+    },
+    "Moltres": {
+        "location": "Pyrous Mountain",
+        "point": "Post-Champion",
+        "method": "Tier 2"
+    },
+    "Articuno": {
+        "location": "Ametrine City",
+        "point": "Post-Champion",
+        "method": "Tier 2"
+    },
+    "Uxie": {
+        "location": "Azurine Lake",
+        "point": "Post-Champion",
+        "method": "Tier 2"
+    },
+    "Mesprit": {
+        "location": "Azurine Cave",
+        "point": "Post-Champion",
+        "method": "Tier 2"
+    },
+    "Azelf": {
+        "location": "Apophyll Beach",
+        "point": "Post-Champion",
+        "method": "Tier 2"
+    },
+    "Regice": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 2"
+    },
+    "Regirock": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 2"
+    },
+    "Registeel": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 2"
+    },
+    "Entei": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 2"
+    },
+    "Suicune": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 2"
+    },
+    "Raikou": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 2"
+    },
+    "Terrakion": {
+        "location": "Route 3",
+        "point": "Post-Champion",
+        "method": "Tier 3"
+    },
+    "Cobalion": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 3"
+    },
+    "Virizion": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 3"
+    },
+    "Keldeo": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 3"
+    },
+    "Landorus": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 3"
+    },
+    "Thundurus": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 3"
+    },
+    "Tornadus": {
+        "location": "Route 3",
+        "point": "Post-Champion",
+        "method": "Tier 3"
+    },
+    "Regigigas": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 3"
+    },
+    "Zygarde": {
+        "location": "The Underroot",
+        "point": "Post-Champion",
+        "method": "Tier 4"
+    },
+    "Volcanion": {
+        "location": "Chrysolia Spring",
+        "point": "Post-Champion",
+        "method": "Tier 4"
+    },
+    "Meloetta": {
+        "location": "Agate Circus",
+        "point": "Post-Champion",
+        "method": "Tier 4"
+    },
+    "Hoopa": {
+        "location": "Lower Peridot Ward",
+        "point": "Post-Champion",
+        "method": "Tier 4"
+    },
+    "Magearna": {
+        "location": "Route 4",
+        "point": "Post-Champion",
+        "method": "Tier 4"
+    },
+    "Celebi": {
+        "location": "Agate City",
+        "point": "Post-Champion",
+        "method": "Tier 4"
+    },
+    "Zeraora": {
+        "location": "Chrysolia Deepwoods",
+        "point": "Post-Champion",
+        "method": "Tier 4"
+    },
+    "Victini": {
+        "location": "Aegir Cave",
+        "point": "Post-Champion",
+        "method": "Tier 4"
+    },
+    "Latias": {
+        "location": "Unexplored Territory",
+        "point": "Post-Champion",
+        "method": "Tier 5"
+    },
+    "Latios": {
+        "location": "Unexplored Territory",
+        "point": "Post-Champion",
+        "method": "Tier 5"
+    },
+    "Diancie": {
+        "location": "Aegir Cave Depths",
+        "point": "Post-Champion",
+        "method": "Tier 5"
+    },
+    "Manaphy": {
+        "location": "Splash Grounds",
+        "point": "Post-Champion",
+        "method": "Tier 5"
+    },
+    "Tapubulu": {
+        "location": "Victory Road",
+        "point": "Post-Champion",
+        "method": "Tier 5"
+    },
+    "Tapufini": {
+        "location": "Victory Road",
+        "point": "Post-Champion",
+        "method": "Tier 5"
+    },
+    "Tapukoko": {
+        "location": "Victory Road",
+        "point": "Post-Champion",
+        "method": "Tier 5"
+    },
+    "Tapulele": {
+        "location": "Victory Road",
+        "point": "Post-Champion",
+        "method": "Tier 5"
+    },
+    "Jirachi": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 5"
+    },
+    "Heatran": {
+        "location": "Ametrine Core",
+        "point": "Post-Champion",
+        "method": "Tier 5"
+    },
+    "Marshadow": {
+        "location": "Apophyll Academy",
+        "point": "Post-Champion",
+        "method": "Tier 6"
+    },
+    "Dialga": {
+        "location": "Subseven Sanctum",
+        "point": "Post-Champion",
+        "method": "Tier 6"
+    },
+    "Genesect": {
+        "location": "Peridot Ward",
+        "point": "Post-Champion",
+        "method": "Tier 6"
+    },
+    "Palkia": {
+        "location": "Subseven Sanctum",
+        "point": "Post-Champion",
+        "method": "Tier 6"
+    },
+    "Shaymin": {
+        "location": "Idyll of Panaceance",
+        "point": "Post-Champion",
+        "method": "Tier 6"
+    },
+    "Darkrai": {
+        "location": "Iolia Valley",
+        "point": "Post-Champion",
+        "method": "Tier 6"
+    },
+    "Ho-oh": {
+        "location": "Mirage Tower?",
+        "point": "Post-Champion",
+        "method": "Tier 7"
+    },
+    "Lugia": {
+        "location": "Mirage Tower?",
+        "point": "Post-Champion",
+        "method": "Tier 7"
+    },
+    "Giratina": {
+        "location": "Byxbysion Wasteland",
+        "point": "Post-Champion",
+        "method": "Tier 7"
+    },
+    "Reshiram": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 7"
+    },
+    "Zekrom": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 7"
+    },
+    "Kyurem": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 7"
+    },
+    "Deoxys": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 7"
+    },
+    "Zygarde": {
+        "location": "The Underroot",
+        "point": "Post-Champion",
+        "method": "Tier 8"
+    },
+    "Groudon": {
+        "location": "Aegir Cave",
+        "point": "Post-Champion",
+        "method": "Tier 8"
+    },
+    "Rayquaza": {
+        "location": "Aegir Cave",
+        "point": "Post-Champion",
+        "method": "Tier 8"
+    },
+    "Xerneas": {
+        "location": "Rhodochrine Tree",
+        "point": "Post-Champion",
+        "method": "Tier 8"
+    },
+    "Yveltal": {
+        "location": "Rhodochrine Tree",
+        "point": "Post-Champion",
+        "method": "Tier 8"
+    },
+    "Mew": {
+        "location": "Neoteric Isle",
+        "point": "Post-Champion",
+        "method": "Tier 8"
+    },
+    "Mewtwo": {
+        "location": "Neoteric Isle",
+        "point": "Post-Champion",
+        "method": "Tier 8"
+    },
+    "Necrozma": {
+        "location": "Citae Prisma",
+        "point": "Post-Champion",
+        "method": "Tier 8"
+    },
+    "Kyogre": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "Tier 8"
+    },
+    "Arceus": {
+        "location": "New World",
+        "point": "Post-Champion",
+        "method": "End"
     }
 }
 
 tmLocations = [
-    {"name": "WORKUP", "location": "Rhodochrine Jungle",
-        "point": "Adrienn", "method": "Up the Right Bridge"},
-    {"name": "DRAGONCLAW", "location": "", "point": "", "method": ""},
-    {"name": "PSYSHOCK", "location": "Agate City",
-        "point": "Hardy", "method": "Bee 500 Pokedex Event"},
-    {"name": "CALMMIND", "location": "", "point": "", "method": ""},
-    {"name": "ROAR", "location": "Ametrine Mountain",
-        "point": "Ciel", "method": "Ametrine Mountain Puzzle"},
+    {"name": "WORKUP", "location": "Ametrine Mountain",
+        "point": "Adrienn", "method": "B3F"},
+    {"name": "DRAGONCLAW", "location": "Labradorra City",
+        "point": "Elite 4/Champion", "method": "Saphira Prize"},
+    {"name": "PSYSHOCK", "location": "Celestinine Mountain",
+        "point": "Ciel", "method": "4F"},
+    {"name": "CALMMIND", "location": "Mirage Tower",
+        "point": "Titania", "method": "Mirage Tower Puzzle"},
+    {"name": "ROAR", "location": "Rhodochrine Jungle",
+        "point": "Shade", "method": "Rhodochrine Jungle Puzzle"},
     {"name": "TOXIC", "location": "Peridot Ward",
         "point": "Adrienn", "method": "Simon ID Tag Event"},
-    {"name": "HAIL", "location": "North Aventurine Woods",
-        "point": "Radomus", "method": "Aventurine Woods Puzzle"},
+    {"name": "HAIL", "location": "Lapis Ward",
+        "point": "Shelly", "method": "Purchase at Pokemart"},
     {"name": "BULKUP", "location": "Tourmaline Desert",
      "point": "Titania", "method": "Search Desert"},
     {"name": "VENOSHOCK", "location": "Byxbysion Wasteland",
@@ -1319,170 +1925,180 @@ tmLocations = [
      "point": "Radomus", "method": "Noel Prize"},
     {"name": "SUNNYDAY", "location": "7th Street", "point": "Luna",
      "method": "Side with Magma Gang or Beat Maxwell"},
-    {"name": "TAUNT", "location": "Water Treatment Center",
-     "point": "Adrienn", "method": "GUM Room Puzzle"},
-    {"name": "ICEBEAM", "location": "", "point": "", "method": ""},
-    {"name": "BLIZZARD", "location": "", "point": "", "method": ""},
+    {"name": "TAUNT", "location": "Byxbysion Wasteland",
+     "point": "Aya", "method": "Search Byxbysion Wasteland"},
+    {"name": "ICEBEAM", "location": "Agate City",
+        "point": "Hardy", "method": "Bee 300 Pokedex Event"},
+    {"name": "BLIZZARD", "location": "Obsidia Ward",
+        "point": "Hardy", "method": "Obsidia Department Store Penthouse Give Kid Lemonade"},
     {"name": "HYPERBEAM", "location": "Spinal Town", "point": "Amaria",
      "method": "Defeat McKrezzy During Mega Ring Event"},
-    {"name": "LIGHTSCREEN", "location": "Azurine Lake",
-     "point": "Adrienn", "method": "Search Sunrise Area Underwater"},
-    {"name": "PROTECT", "location": "Peridot Ward", "point": "Adrienn",
-     "method": "Beat Bet Guy in Blackstream Shelter"},
+    {"name": "LIGHTSCREEN", "location": "Azurine Island",
+     "point": "Titania", "method": "NPC Gift"},
+    {"name": "PROTECT", "location": "North Obsidia Alleyway", "point": "Shelly",
+     "method": "Inside Night Club Lobby"},
     {"name": "RAINDANCE", "location": "7th Street", "point": "Luna",
      "method": "Side with Aqua Gang or Beat Archer"},
     {"name": "ROOST", "location": "1R253 Scrapyard",
      "point": "Titania", "method": "1R253 Scrapyard Puzzle"},
-    {"name": "SAFEGUARD", "location": "Rhodochrine Jungle",
-     "point": "Taka/ZEL/Pulse Tangrowth 3", "method": "Search Totem Area"},
-    {"name": "FRUSTRATION", "location": "Celestinine Cascade",
-     "point": "T3RR4", "method": "Search 1F Upper Left"},
-    {"name": "SOLARBEAM", "location": "Beryl Ward",
-     "point": "Taka/ZEL/Pulse Tangrowth 3", "method": "Beryl Library Bookshelf Puzzle"},
-    {"name": "SMACKDOWN", "location": "Citrine Mountain",
-     "point": "Ciel", "method": "Search 3F Lower Right"},
+    {"name": "SAFEGUARD", "location": "Beryl Ward",
+     "point": "Corey", "method": "Beryl Library Bookshelf Puzzle"},
+    {"name": "FRUSTRATION", "location": "Lapis Ward",
+     "point": "Shelly", "method": "Magma/Aqua Gang 1 Event"},
+    {"name": "SOLARBEAM", "location": "Obsidia Ward",
+     "point": "Adrienn", "method": "Obsidia Department Store 9F"},
+    {"name": "SMACKDOWN", "location": "Celestinine Mountain",
+     "point": "Radomus", "method": "B2F Strength Puzzle"},
     {"name": "THUNDERBOLT", "location": "Obsidia Ward",
      "point": "Adrienn", "method": "Magic Square Puzzle"},
-    {"name": "THUNDER", "location": "", "point": "", "method": ""},
-    {"name": "EARTHQUAKE", "location": "", "point": "", "method": ""},
-    {"name": "RETURN", "location": "Tourmaline Desert",
-     "point": "Titania", "method": "Search Drained Oasis Upper Right"},
-    {"name": "LEECHLIFE", "location": "Azurine Lake", "point": "Adrienn",
-     "method": "Search Fairview 1 House Underwater"},
+    {"name": "THUNDER", "location": "Obsidia Ward", "point": "Hardy",
+        "method": "Obsidia Department Store Penthouse Give Kid Fresh Water"},
+    {"name": "EARTHQUAKE", "location": "Opal Ward",
+        "point": "Hardy", "method": "Starter Pokemon Egg Event"},
+    {"name": "RETURN", "location": "Peridot Ward",
+     "point": "Adrienn", "method": "Blackstream Shelter 1F, Betting Guy"},
+    {"name": "LEECHLIFE", "location": "Celestinine Cascade", "point": "Hardy",
+     "method": "Rock Climb Near Fiore Mansion"},
     {"name": "PSYCHIC", "location": "Route 4", "point": "Hardy",
      "method": "Search Glass Workstation B2F"},
-    {"name": "SHADOWBALL", "location": "Opal Ward",
-     "point": "Hardy", "method": "Starter Pokemon Egg Event"},
+    {"name": "SHADOWBALL", "location": "Beryl Ward",
+     "point": "Adrienn", "method": "Beryl Library Hidden Room"},
     {"name": "BRICKBREAK", "location": "Agate Circus",
      "point": "Charlotte", "method": "Samson Prize"},
-    {"name": "DOUBLETEAM", "location": "Citrine Mountain",
-     "point": "Shade", "method": "Search Citrine Mountain"},
-    {"name": "REFLECT", "location": "Rhodochrine Jungle",
-     "point": "Adrienn", "method": "Search Cage with Silvon Scope"},
+    {"name": "DOUBLETEAM", "location": "Lost Railcave",
+     "point": "Serra", "method": "Lost Railcave Puzzle"},
+    {"name": "REFLECT", "location": "The Underroot",
+     "point": "Adrienn", "method": "Search Area with Silvon Scope"},
     {"name": "SLUDGEWAVE", "location": "Byxbysion Wasteland",
      "point": "Serra", "method": "Aya Prize"},
     {"name": "FLAMETHROWER", "location": "Calcenon City",
      "point": "T3RR4", "method": "Charlotte Prize"},
-    {"name": "SLUDGEBOMB", "location": "", "point": "", "method": ""},
-    {"name": "SANDSTORM", "location": "Water Treatment Center",
-     "point": "Ciel", "method": "Search Onyx Water Grid"},
-    {"name": "FIREBLAST", "location": "", "point": "", "method": ""},
-    {"name": "ROCKTOMB", "location": "Water Treatment Center",
-     "point": "Ciel", "method": "Search Central Obsidia Water Grid"},
-    {"name": "AERIALACE", "location": "Azurine Lake",
-     "point": "Adrienn", "method": "Pyukumuku King Event"},
-    {"name": "TORMENT", "location": "Apophyll Cave",
-     "point": "Serra", "method": "Search 3F Upper Right"},
+    {"name": "SLUDGEBOMB", "location": "Tourmaline Desert",
+        "point": "Titania", "method": "Search Desert"},
+    {"name": "SANDSTORM", "location": "Pyrous Mountain",
+     "point": "Serra", "method": "Search B1F By Tepig"},
+    {"name": "FIREBLAST", "location": "Obsidia Ward", "point": "Hardy",
+        "method": "Obsidia Department Store Penthouse Give Kid Soda Pop"},
+    {"name": "ROCKTOMB", "location": "Celestinine Cascade",
+     "point": "Samson", "method": "Beat Clown Bindra"},
+    {"name": "AERIALACE", "location": "South Aventurine Woods",
+     "point": "Radomus", "method": "Search Woods"},
+    {"name": "TORMENT", "location": "Lapis Ward",
+     "point": "Shelly", "method": "Search Lapis Ward"},
     {"name": "FACADE", "location": "Onyx Ward",
      "point": "Florina", "method": "Game Corner Prize"},
-    {"name": "FLAMECHARGE", "location": "Chrysolia Spring",
-     "point": "Adrienn", "method": "Search B1F Lower Left Sauna"},
-    {"name": "REST", "location": "Azurine Lake", "point": "Adrienn",
-     "method": "Search Sunrise 4 House Underwater"},
+    {"name": "FLAMECHARGE", "location": "Route 3",
+     "point": "Charlotte", "method": "Search Labradorra Calcenon Control Center"},
+    {"name": "REST", "location": "Underground Railnet", "point": "Serra",
+     "method": "Search Underground Railnet"},
     {"name": "ATTRACT", "location": "Onyx Ward",
      "point": "Florina", "method": "Game Corner Prize"},
-    {"name": "THIEF", "location": "Ametrine City",
-     "point": "T3RR4", "method": "Ice Skating Rink Puzzle"},
-    {"name": "LOWSWEEP", "location": "South Obsidia Ward",
-     "point": "Adrienn", "method": "Search Under Opal Bridge"},
+    {"name": "THIEF", "location": "North Obsidia Alleyway",
+     "point": "Shelly", "method": "Search Area"},
+    {"name": "LOWSWEEP", "location": "Celestinine Mountain",
+     "point": "T3RR4", "method": "Celestinine Mountain Puzzle"},
     {"name": "ROUND", "location": "Obsidia Ward",
-     "point": "Shelly", "method": "Obsidia Department Store 4F"},
-    {"name": "ECHOEDVOICE", "location": "Ametrine City",
-     "point": "Charlotte", "method": "6th Stairs Toward Mountain Peak"},
-    {"name": "OVERHEAT", "location": "Route 4", "point": "Hardy",
-     "method": "Search Glass Workstation B2F"},
-    {"name": "STEELWING", "location": "Jasper Ward",
-     "point": "Adrienn", "method": "Crystal Ball Event"},
+     "point": "Aya", "method": "Obsidia Department Store 4F"},
+    {"name": "ECHOEDVOICE", "location": "Peridot Ward",
+     "point": "Kiki", "method": "Search Blackstream Factor B2F"},
+    {"name": "OVERHEAT", "location": "Chrysolia Spring Sauna", "point": "Adrienn",
+     "method": "Search Area"},
+    {"name": "STEELWING", "location": "South Aventurine Woods",
+     "point": "Radomus", "method": "Search Woods"},
     {"name": "FOCUSBLAST", "location": "Apophyll Beach",
      "point": "Hardy", "method": "Rock Climb Near Pyrous Mountain"},
-    {"name": "ENERGYBALL", "location": "", "point": "", "method": ""},
-    {"name": "FALSESWIPE", "location": "Spinal Town", "point": "Serra",
-     "method": "Search Voclain Estate Left Room Upstairs"},
+    {"name": "ENERGYBALL", "location": "Route 3",
+        "point": "Hardy", "method": "Rock Climb"},
+    {"name": "FALSESWIPE", "location": "Obsidia Ward", "point": "Florina",
+     "method": "Room with Day Care Couple Key"},
     {"name": "SCALD", "location": "Celestinine Cascade",
      "point": "Hardy", "method": "Amaria Prize"},
-    {"name": "FLING", "location": "Celestinine Mountain",
-     "point": "Ciel", "method": "Search B2F Upper Hill"},
+    {"name": "FLING", "location": "North Obsidia Alleyway",
+     "point": "Shelly", "method": "The Spyce Trashcan"},
     {"name": "CHARGEBEAM", "location": "Peridot Ward",
      "point": "ZEL/Pulse Tangrowth 1", "method": "Julia Prize"},
-    {"name": "SKYDROP", "location": "Water Treatment Center",
-     "point": "Adrienn", "method": "Search Control Office Room"},
-    {"name": "BRUTALSWING", "location": "Pyrous Mountain",
-     "point": "Serra", "method": "Search B1F Right Side"},
+    {"name": "SKYDROP", "location": "Route 2",
+     "point": "Samson", "method": "Search Route 2"},
+    {"name": "BRUTALSWING", "location": "Azurine Caves",
+     "point": "Adrienn", "method": "King Pyukumuku Event"},
     {"name": "QUASH", "location": "Obsidia Slums",
      "point": "ZEL/Pulse Tangrowth 1", "method": "Search 2F Top Right"},
-    {"name": "WILLOWISP", "location": "Mirage Tower",
-     "point": "Titania", "method": "Search Chosen Room Upper Right"},
+    {"name": "WILLOWISP", "location": "Chrysolia Springs",
+     "point": "Adrienn", "method": "Search Area"},
     {"name": "ACROBATICS", "location": "Agate Circus", "point": "Adrienn",
      "method": "Talk to Ringmaster After Defeating Ciel"},
-    {"name": "EMBARGO", "location": "Grand Stairway",
-     "point": "Shelly", "method": "Search B2F Ascending Left Path"},
+    {"name": "EMBARGO", "location": "Onyx Ward",
+     "point": "Florina", "method": "Search Area"},
     {"name": "EXPLOSION", "location": "7th Street", "point": "Subseven Sanctum",
      "method": "Purchase from Street Rat Merchant"},
     {"name": "SHADOWCLAW", "location": "Yureyu Power Plant",
      "point": "Kiki", "method": "Shade Prize"},
     {"name": "PAYBACK", "location": "Byxbysion Wasteland",
      "point": "Aya", "method": "Search Byxbysion Grotto Middle Fork"},
-    {"name": "SMARTSTRIKE", "location": "Celestinine Mountain",
-     "point": "Ciel", "method": "Search 4F Up the Area"},
+    {"name": "SMARTSTRIKE", "location": "Water Treatment Center",
+     "point": "Ciel", "method": "Search Area"},
     {"name": "GIGAIMPACT", "location": "Coral Lighthouse",
      "point": "Adrienn", "method": "Search Lighthouse Upper Area"},
-    {"name": "ROCKPOLISH", "location": "Celestinine Mountain",
-     "point": "Ciel", "method": "Celestinine Mountain Ice Puzzle"},
+    {"name": "ROCKPOLISH", "location": "Grand Stairway",
+     "point": "Shelly", "method": "B2F Grand Stairway Puzzle"},
     {"name": "AURORAVEIL", "location": "Spinal Town",
      "point": "Noel", "method": "Serra Prize"},
     {"name": "STONEEDGE", "location": "Sugiline Ruin", "point": "Titania",
      "method": "Search 1F Left of Arceus Statue Upper Middle"},
-    {"name": "VOLTSWITCH", "location": "", "point": "", "method": ""},
+    {"name": "VOLTSWITCH", "location": "Tourmaline Desert",
+        "point": "Titania", "method": "Search Desert"},
     {"name": "THUNDERWAVE", "location": "Route 4",
      "point": "Hardy", "method": "Search Mechanic Shed"},
-    {"name": "GYROBALL", "location": "Iolia Valley", "point": "Adrienn",
-     "method": "Search Dark Crystal Cave 4 Entrance"},
-    {"name": "SWORDSDANCE", "location": "", "point": "", "method": ""},
+    {"name": "GYROBALL", "location": "Citrine Mountain", "point": "Ciel",
+     "method": "Search 3F"},
+    {"name": "SWORDSDANCE", "location": "Teknite Ridge",
+        "point": "Titania", "method": "Search Area"},
     {"name": "STRUGGLEBUG", "location": "Lapis Ward",
      "point": "Shade", "method": "Shelly Prize"},
-    {"name": "PSYCHUP", "location": "Peridot Ward", "point": "Kiki",
-     "method": "Search B2F Blackstream Factory"},
+    {"name": "PSYCHUP", "location": "Rhodochrine Jungle", "point": "Correy",
+     "method": "Search Area"},
     {"name": "BULLDOZE", "location": "Glitch World",
      "point": "Ciel", "method": "T3RR4 Prize"},
-    {"name": "FROSTBREATH", "location": "Route 4", "point": "Hardy",
-     "method": "Search Route 4 Lower Right Area with Mountain Field"},
+    {"name": "FROSTBREATH", "location": "Ametrine City", "point": "Ceil",
+     "method": "Search Area"},
     {"name": "ROCKSLIDE", "location": "Agate City",
      "point": "Saphira", "method": "Hardy Prize"},
-    {"name": "XSCISSOR", "location": "Celestinine Cascade",
-     "point": "Amaria", "method": "Fiore Mansion Gym Puzzle"},
-    {"name": "DRAGONTAIL", "location": "Obsidia Ward", "point": "Adrienn",
-     "method": "Search Devon Corp 6F Bottom Right"},
-    {"name": "INFESTATION", "location": "Underground Railnet",
-     "point": "Serra", "method": "Search 1F 4th Breakable Wall 5th Row"},
-    {"name": "POISONJAB", "location": "Teknite Cave",
-     "point": "Titania", "method": "Search 3-4F Area Entrance"},
-    {"name": "DREAMEATER", "location": "Obsidia Ward",
-     "point": "Adrienn", "method": "Obsidia Department Store 9F"},
-    {"name": "GRASSKNOT", "location": "Route 3",
-     "point": "Charlotte", "method": "LCCC Upper Side"},
+    {"name": "XSCISSOR", "location": "Obsidia Ward",
+     "point": "Adrienn", "method": "Devon Corp 6F"},
+    {"name": "DRAGONTAIL", "location": "Celestinine Mountain", "point": "T3RR4",
+     "method": "Search 1F"},
+    {"name": "INFESTATION", "location": "Azurine Island",
+     "point": "Aya", "method": "West-side of Island Where Boat is Docked"},
+    {"name": "POISONJAB", "location": "Water Treatment Center",
+     "point": "Titania", "method": "GUM Room Puzzle"},
+    {"name": "DREAMEATER", "location": "Spinel Town",
+     "point": "Serra", "method": "Voclain Estate"},
+    {"name": "GRASSKNOT", "location": "North Aventurine Woods",
+     "point": "Radomus", "method": "Search Area"},
     {"name": "SWAGGER", "location": "Agate Circus",
      "point": "Samson", "method": "High Striker Prize"},
-    {"name": "SLEEPTALK", "location": "Azurine Island", "point": "Aya",
-     "method": "Search Azurine Island Left Small Path Left of Boat"},
-    {"name": "UTURN", "location": "", "point": "", "method": ""},
+    {"name": "SLEEPTALK", "location": "Peridot Ward", "point": "Aya",
+     "method": "Search Area"},
+    {"name": "UTURN", "location": "Iolia Valley",
+        "point": "Adrienn", "method": "Surf"},
     {"name": "SUBSTITUTE", "location": "Onyx Ward",
      "point": "Florina", "method": "Game Corner Prize"},
     {"name": "FLASHCANNON", "location": "Once Upon a Somewhere/Waste of Time",
      "point": "Amaria", "method": "Titania Prize"},
     {"name": "TRICKROOM", "location": "Vanhanen Labyrinth",
      "point": "Subseven Sanctum", "method": "Radomus Prize"},
-    {"name": "WILDCHARGE", "location": "Tourmaline Desert", "point": "Titania",
-     "method": "Search Tourmaline Desert Platform Jumping Area"},
-    {"name": "SECRETPOWER", "location": "Byxbysion Wasteland",
-     "point": "Serra", "method": "Search Hidden Tunnel Right Water Pool"},
-    {"name": "SNARL", "location": "Yureyu Power Plant",
-     "point": "Luna", "method": "Yureyu Key Event"},
+    {"name": "WILDCHARGE", "location": "Water Treatment Center", "point": "Ciel",
+     "method": "Search Area"},
+    {"name": "SECRETPOWER", "location": "Citrine Mountain",
+     "point": "Ciel", "method": "Search 2F"},
+    {"name": "SNARL", "location": "Ametrine City",
+     "point": "Ciel", "method": "Search Area"},
     {"name": "NATUREPOWER", "location": "Onyx Ward",
      "point": "Taka/Pulse Tangrowth 2", "method": "Florina Prize"},
     {"name": "DARKPULSE", "location": "Iolia Valley",
      "point": "Point of No Return", "method": "Luna Prize"},
-    {"name": "POWERUPPUNCH", "location": "Teknite Ridge", "point": "Titania",
-     "method": "Search Teknite Ridge Left Area Elevated Area"},
+    {"name": "POWERUPPUNCH", "location": "Azurine Island", "point": "Titania",
+     "method": "Search Area"},
     {"name": "DAZZLINGGLEAM", "location": "Coral Ward",
      "point": "Titania", "method": "Adrienn Prize"},
     {"name": "CONFIDE", "location": "Lost Railcave",
@@ -1502,7 +2118,7 @@ tmLocations = [
     {"name": "ROCKSMASH", "location": "Grand Stairway", "point": "Shelly",
      "method": "Given by Black Belt on Middle-Left Ledges"},
     {"name": "FLASH", "location": "Underground Railnet",
-     "point": "Serra", "method": "Search 1F 2nd Breakable Wall"},
+     "point": "Serra", "method": "Search Aron Room"},
     {"name": "ROCKCLIMB", "location": "Route 4", "point": "Hardy", "method": "Given by Hardy"}]
 
 tutorLocations = [
@@ -1725,9 +2341,9 @@ locations = [
     {"name": "Onyx Ward", "point": "Florina"},
     {"name": "Jasper Ward", "point": "Taka/Pulse Tangrowth 2"},
     {"name": "Malchous Forest", "point": "Taka/Pulse Tangrowth 2"},
-    {"name": "The Underroot", "point": "Taka/Pulse Tangrowth 2"},
     {"name": "Beryl Ward", "point": "Taka/ZEL/Pulse Tangrowth 3"},
     {"name": "Rhodochrine Jungle", "point": "Taka/ZEL/Pulse Tangrowth 3"},
+    {"name": "The Underroot", "point": "Corey"},
     {"name": "Beryl Cemetery", "point": "Corey"},
     {"name": "North Obsidia Alleyway", "point": "Shelly"},
     {"name": "Lapis Alleyway", "point": "Shelly"},
@@ -1805,9 +2421,6 @@ locations = [
     {"name": "Manyworld Pool", "point": "Post-Champion"},
     {"name": "Mirage Tower?", "point": "Post-Champion"},
     {"name": "Neoteric Isle", "point": "Post-Champion"},
-    {"name": "New World - Regis", "point": "Post-Champion"},
-    {"name": "New World - Victini", "point": "Post-Champion"},
-    {"name": "New World Helix", "point": "Post-Champion"},
     {"name": "New World", "point": "Post-Champion"},
     {"name": "Splash Grounds", "point": "Post-Champion"},
     {"name": "Twilight Desert", "point": "Post-Champion"},
@@ -1891,7 +2504,10 @@ locationRemap = {
     "Victory Road B2F": "Victory Road",
     "Victory Road B3F": "Victory Road",
     "Victory Road B4F": "Victory Road",
-    "Victory Road B5F": "Victory Road"
+    "Victory Road B5F": "Victory Road",
+    "New World - Regis": "New World",
+    "New World - Victini": "New World",
+    "New World Helix": "New World"
 }
 
 pointOfNoReturn = [
@@ -2702,7 +3318,8 @@ with open(f'gen{gen}_{subgen}.ts', 'w+') as f:
 #     with open("locations2.txt", 'w+') as fil:
 #         pattern = re.compile(r'[\"\,\n]+')
 #         for loc in f2:
-#             fil.write(f"{{\"name\":\"{ pattern.sub('', loc ) }\", \"point\": \"\"}},\n")
+#             fil.write(
+#                 f"{{\"name\":\"{ pattern.sub('', loc ) }\", \"point\": \"\"}},\n")
 
 
 with open("tm_locations.ts", 'w+') as f:

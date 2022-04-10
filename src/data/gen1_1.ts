@@ -60,6 +60,12 @@ export const pokemonData11: Pokemon[] = [
     ],
     locations: [
       { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      {
+        location: "Lapis Ward",
+        point: "Shelly",
+        method: "Fire Stone - Magma Gang 1 Event (100%)",
+      },
+      { location: "Grand Stairway", point: "Shelly", method: "Fire Stone" },
     ],
   },
   {
@@ -1195,6 +1201,7 @@ export const pokemonData11: Pokemon[] = [
         point: "Post-Champion",
         method: "Land",
       },
+      { location: "Grand Stairway", point: "Shelly", method: "Leaf Stone" },
     ],
   },
   {
@@ -1850,7 +1857,6 @@ export const pokemonData11: Pokemon[] = [
       "THUNDERPUNCH",
     ],
     locations: [
-      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
       { location: "New World", point: "Post-Champion", method: "Land" },
       { location: "Twilight Desert", point: "Post-Champion", method: "Cave" },
       { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
@@ -1859,6 +1865,7 @@ export const pokemonData11: Pokemon[] = [
         point: "Post-Champion",
         method: "Cave",
       },
+      { location: "North Obsidia Ward", point: "Shade", method: "Link Stone" },
     ],
   },
   {
@@ -2035,7 +2042,7 @@ export const pokemonData11: Pokemon[] = [
       {
         location: "North Obsidia Ward",
         point: "Shelly",
-        method: "Trade Sunkern (25%)",
+        method: "Aqua Gang 1 Event (100%)",
       },
     ],
   },
@@ -3023,7 +3030,7 @@ export const pokemonData11: Pokemon[] = [
         point: "Post-Champion",
         method: "Water",
       },
-      { location: "New World Helix", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
       { location: "Neoteric Isle", point: "Post-Champion", method: "SuperRod" },
     ],
   },
@@ -3315,7 +3322,7 @@ export const pokemonData11: Pokemon[] = [
       { location: "Byxbysion Wasteland", point: "Aya", method: "LandDay" },
       { location: "Glitch World", point: "T3RR4", method: "Land" },
       { location: "Tourmaline Desert", point: "Titania", method: "GoodRod" },
-      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
       {
         location: "Idyll of Pestilence",
         point: "Post-Champion",
@@ -3659,6 +3666,11 @@ export const pokemonData11: Pokemon[] = [
       "WONDERROOM",
     ],
     locations: [
+      {
+        location: "Jasper Ward",
+        point: "Taka/ZEL/Pulse Tangrowth 3",
+        method: "Mystery Egg Event (~5%)",
+      },
       { location: "Route 4", point: "Hardy", method: "Route 4 Puzzle (100%)" },
     ],
   },
@@ -4153,7 +4165,7 @@ export const pokemonData11: Pokemon[] = [
       {
         location: "Obsidia Slums",
         point: "ZEL/Pulse Tangrowth 1",
-        method: "Egg (25%)",
+        method: "Egg (33%)",
       },
     ],
   },
@@ -5924,6 +5936,7 @@ export const pokemonData11: Pokemon[] = [
       },
       { location: "Route 4", point: "Hardy", method: "LandMorning" },
       { location: "New World", point: "Post-Champion", method: "Land" },
+      { location: "Grand Stairway", point: "Shade", method: "Oval Stone" },
     ],
   },
   {
@@ -6537,11 +6550,6 @@ export const pokemonData11: Pokemon[] = [
       { location: "New World", point: "Post-Champion", method: "Water" },
       { location: "Vacant Past", point: "Post-Champion", method: "GoodRod" },
       { location: "Aegir Cave", point: "Post-Champion", method: "Land" },
-      {
-        location: "New World - Victini",
-        point: "Post-Champion",
-        method: "Land",
-      },
       {
         location: "Unexplored Territory",
         point: "Post-Champion",

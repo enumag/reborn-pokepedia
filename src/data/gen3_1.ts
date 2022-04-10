@@ -615,12 +615,6 @@ export const pokemonData31: Pokemon[] = [
     locations: [
       { location: "Chrysolia Spring", point: "Serra", method: "Cave" },
       { location: "New World", point: "Post-Champion", method: "Land" },
-      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
-      {
-        location: "New World - Victini",
-        point: "Post-Champion",
-        method: "Land",
-      },
       { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
       { location: "Endgame", point: "Post-Champion", method: "Land" },
     ],
@@ -1093,11 +1087,7 @@ export const pokemonData31: Pokemon[] = [
       "ZENHEADBUTT",
     ],
     locations: [
-      {
-        location: "The Underroot",
-        point: "Taka/Pulse Tangrowth 2",
-        method: "Land",
-      },
+      { location: "The Underroot", point: "Corey", method: "Land" },
       { location: "Chrysolia Forest", point: "Serra", method: "LandMorning" },
     ],
   },
@@ -1173,7 +1163,11 @@ export const pokemonData31: Pokemon[] = [
     ],
     locations: [
       { location: "Route 2", point: "Samson", method: "LandMorning" },
-      { location: "Chrysolia Forest", point: "Serra", method: "Trade Mothim" },
+      {
+        location: "Jasper Ward",
+        point: "Taka/ZEL/Pulse Tangrowth 3",
+        method: "Mystery Egg Event (~5%)",
+      },
     ],
   },
   {
@@ -1948,9 +1942,29 @@ export const pokemonData31: Pokemon[] = [
       { location: "Obsidia Alleyway", point: "Adrienn", method: "Cave" },
       { location: "Route 4", point: "Hardy", method: "LandMorning" },
       {
+        location: "Lower Peridot Alley",
+        point: "Taka/Pulse Tangrowth 2",
+        method: "Friday Night Alleyway Event (100%)",
+      },
+      {
+        location: "North Peridot Alley",
+        point: "Taka/Pulse Tangrowth 2",
+        method: "Thursday Night Alleyway Event (100%)",
+      },
+      {
+        location: "Obsidia Alleyway",
+        point: "Taka/Pulse Tangrowth 2",
+        method: "Monday Night Alleyway Event (100%)",
+      },
+      {
+        location: "North Obsidia Alleyway",
+        point: "Shade",
+        method: "Tuesday Night Alleyway Event (100%)",
+      },
+      {
         location: "Lapis Alleyway",
         point: "Shelly",
-        method: "Hide and Seek Alleyway Event (100%)",
+        method: "Wednesday Night Alleyway Event (100%)",
       },
     ],
   },
@@ -2048,9 +2062,9 @@ export const pokemonData31: Pokemon[] = [
       { location: "Tanzan Mountain", point: "Adrienn", method: "Cave" },
       { location: "Tanzan Depths", point: "Adrienn", method: "Cave" },
       {
-        location: "Tanzan Depths",
-        point: "Radomus",
-        method: "Hole In The Wall (100%)",
+        location: "The Underroot",
+        point: "Corey",
+        method: "Pokesnax Event (100%)",
       },
     ],
   },
@@ -2156,8 +2170,18 @@ export const pokemonData31: Pokemon[] = [
       { location: "Manyworld Forest", point: "Post-Champion", method: "Land" },
       {
         location: "Grand Stairway",
+        point: "Shelly",
+        method: "Area Above EXPCandy NPC (50%)",
+      },
+      {
+        location: "Grand Stairway",
         point: "Shade",
         method: "Trapped Behind Rock Smash (50%)",
+      },
+      {
+        location: "Tanzan Mountain",
+        point: "Serra",
+        method: "Pokesnax Event (50%)",
       },
     ],
   },
@@ -2258,8 +2282,18 @@ export const pokemonData31: Pokemon[] = [
       { location: "Manyworld Forest", point: "Post-Champion", method: "Land" },
       {
         location: "Grand Stairway",
+        point: "Shelly",
+        method: "Area Above EXPCandy NPC (50%)",
+      },
+      {
+        location: "Grand Stairway",
         point: "Shade",
         method: "Trapped Behind Rock Smash (50%)",
+      },
+      {
+        location: "Tanzan Mountain",
+        point: "Serra",
+        method: "Pokesnax Event (50%)",
       },
     ],
   },
@@ -2333,11 +2367,7 @@ export const pokemonData31: Pokemon[] = [
       "WATERPULSE",
     ],
     locations: [
-      {
-        location: "The Underroot",
-        point: "Taka/Pulse Tangrowth 2",
-        method: "OldRod",
-      },
+      { location: "The Underroot", point: "Corey", method: "OldRod" },
       { location: "Lapis Alleyway", point: "Shelly", method: "OldRod" },
       { location: "Chrysolia Spring", point: "Adrienn", method: "Water" },
       { location: "Tanzan Cove", point: "Serra", method: "Land" },
@@ -3270,6 +3300,11 @@ export const pokemonData31: Pokemon[] = [
         method: "SuperRod",
       },
       { location: "Mirage Tower?", point: "Post-Champion", method: "SuperRod" },
+      {
+        location: "Citrine Mountain",
+        point: "Ciel",
+        method: "Link Stone and Prism Scale",
+      },
     ],
   },
   {
@@ -3665,11 +3700,7 @@ export const pokemonData31: Pokemon[] = [
       "WONDERROOM",
     ],
     locations: [
-      {
-        location: "The Underroot",
-        point: "Taka/Pulse Tangrowth 2",
-        method: "Land",
-      },
+      { location: "The Underroot", point: "Corey", method: "Land" },
       { location: "Tanzan Mountain", point: "Serra", method: "Cave" },
       { location: "Chrysolia Spring", point: "Serra", method: "Cave" },
       { location: "Lost Railcave", point: "Serra", method: "Cave" },
@@ -3773,11 +3804,7 @@ export const pokemonData31: Pokemon[] = [
       "TRICK",
     ],
     locations: [
-      {
-        location: "The Underroot",
-        point: "Taka/Pulse Tangrowth 2",
-        method: "Land",
-      },
+      { location: "The Underroot", point: "Corey", method: "Land" },
       { location: "Beryl Ward", point: "Adrienn", method: "LandNight" },
       { location: "Beryl Cemetery", point: "Adrienn", method: "LandNight" },
       {
@@ -4266,9 +4293,9 @@ export const pokemonData31: Pokemon[] = [
         method: "LandMorning",
       },
       {
-        location: "Beryl Cave",
-        point: "Shade",
-        method: "Sunny Pokesnax Event (100%)",
+        location: "Rhodochrine Jungle",
+        point: "Shelly",
+        method: "Sunny Western Area Event (100%)",
       },
     ],
   },
@@ -4863,7 +4890,7 @@ export const pokemonData31: Pokemon[] = [
       {
         location: "Coral Ward",
         point: "Amaria",
-        method: "Underwater City S9 Area (100%)",
+        method: "Underwater City Sunrise Area (100%)",
       },
     ],
   },
@@ -6142,7 +6169,9 @@ export const pokemonData31: Pokemon[] = [
       "SUPERPOWER",
       "THUNDERPUNCH",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 2" },
+    ],
   },
   {
     no: 378,
@@ -6222,7 +6251,9 @@ export const pokemonData31: Pokemon[] = [
       "SUPERPOWER",
       "THUNDERPUNCH",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 2" },
+    ],
   },
   {
     no: 379,
@@ -6301,7 +6332,9 @@ export const pokemonData31: Pokemon[] = [
       "SUPERPOWER",
       "THUNDERPUNCH",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 2" },
+    ],
   },
   {
     no: 380,
@@ -6404,7 +6437,13 @@ export const pokemonData31: Pokemon[] = [
       "WATERPULSE",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Tier 5",
+      },
+    ],
   },
   {
     no: 10062,

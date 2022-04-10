@@ -99,7 +99,9 @@ export const pokemonData50: Pokemon[] = [
       "UPROAR",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Aegir Cave", point: "Post-Champion", method: "Tier 4" },
+    ],
   },
   {
     no: 495,
@@ -421,7 +423,7 @@ export const pokemonData50: Pokemon[] = [
       {
         location: "Pyrous Mountain",
         point: "Serra",
-        method: "pyrous Mountain Strength Puzzle (100%)",
+        method: "Pyrous Mountain Strength Puzzle (100%)",
       },
     ],
   },
@@ -1596,6 +1598,7 @@ export const pokemonData50: Pokemon[] = [
     ],
     locations: [
       { location: "Aegir Cave", point: "Post-Champion", method: "Land" },
+      { location: "Grand Stairway", point: "Shelly", method: "Leaf Stone" },
     ],
   },
   {
@@ -1777,11 +1780,7 @@ export const pokemonData50: Pokemon[] = [
     ],
     locations: [
       { location: "Chrysolia Spring", point: "Serra", method: "Cave" },
-      {
-        location: "New World - Victini",
-        point: "Post-Champion",
-        method: "Land",
-      },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -1967,11 +1966,7 @@ export const pokemonData50: Pokemon[] = [
     ],
     locations: [
       { location: "Chrysolia Spring", point: "Serra", method: "Cave" },
-      {
-        location: "New World - Victini",
-        point: "Post-Champion",
-        method: "Land",
-      },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -2145,6 +2140,11 @@ export const pokemonData50: Pokemon[] = [
       },
       { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
       { location: "New World", point: "Post-Champion", method: "Land" },
+      {
+        location: "Obsidia Slums",
+        point: "ZEL/Pulse Tangrowth 1",
+        method: "Moon Stone",
+      },
     ],
   },
   {
@@ -2494,7 +2494,7 @@ export const pokemonData50: Pokemon[] = [
     locations: [
       { location: "Route 4", point: "Charlotte", method: "LandMorning" },
       { location: "Aegir Cave", point: "Post-Champion", method: "Land" },
-      { location: "New World Helix", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -2831,11 +2831,7 @@ export const pokemonData50: Pokemon[] = [
         point: "ZEL/Pulse Tangrowth 1",
         method: "Cave",
       },
-      {
-        location: "The Underroot",
-        point: "Taka/Pulse Tangrowth 2",
-        method: "Land",
-      },
+      { location: "The Underroot", point: "Corey", method: "Land" },
       { location: "Underground Railnet", point: "Shade", method: "Cave" },
       { location: "Iolia Valley", point: "Luna", method: "Cave" },
       { location: "Citrine Mountain", point: "Shade", method: "Cave" },
@@ -3013,11 +3009,6 @@ export const pokemonData50: Pokemon[] = [
     locations: [
       { location: "Tanzan Mountain", point: "Adrienn", method: "Cave" },
       { location: "Tanzan Depths", point: "Adrienn", method: "Cave" },
-      {
-        location: "Jasper Ward",
-        point: "Taka/ZEL/Pulse Tangrowth 3",
-        method: "Mystery Egg Event (~5%)",
-      },
     ],
   },
   {
@@ -4258,11 +4249,6 @@ export const pokemonData50: Pokemon[] = [
     ],
     locations: [
       { location: "Byxbysion Wasteland", point: "Aya", method: "LandMorning" },
-      {
-        location: "Byxbysion Wasteland",
-        point: "Aya",
-        method: "Walk Under Trees (100%)",
-      },
     ],
   },
   {
@@ -4703,6 +4689,7 @@ export const pokemonData50: Pokemon[] = [
       },
       { location: "New World", point: "Post-Champion", method: "Land" },
       { location: "Rhodochrine Tree", point: "Post-Champion", method: "Land" },
+      { location: "Grand Stairway", point: "Shade", method: "Sun Stone" },
     ],
   },
   {
@@ -5227,11 +5214,7 @@ export const pokemonData50: Pokemon[] = [
       { location: "1R253 Scrapyard", point: "Titania", method: "Cave" },
       { location: "Tourmaline Desert", point: "Titania", method: "Cave" },
       { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
-      {
-        location: "New World - Victini",
-        point: "Post-Champion",
-        method: "Land",
-      },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -5556,7 +5539,7 @@ export const pokemonData50: Pokemon[] = [
       { location: "Apophyll Cave", point: "Kiki", method: "Cave" },
       { location: "Sugiline Cave", point: "Titania", method: "Cave" },
       { location: "Sugiline Ruin", point: "Titania", method: "Cave" },
-      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -5859,11 +5842,7 @@ export const pokemonData50: Pokemon[] = [
       { location: "Citae Astrae", point: "Radomus", method: "Cave" },
       { location: "Sugiline Ruin", point: "Titania", method: "Cave" },
       { location: "Tourmaline Desert", point: "Titania", method: "Water" },
-      {
-        location: "New World - Victini",
-        point: "Post-Champion",
-        method: "Land",
-      },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {

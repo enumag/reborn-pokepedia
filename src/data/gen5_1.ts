@@ -332,8 +332,8 @@ export const pokemonData51: Pokemon[] = [
     ],
     locations: [
       {
-        location: "North Obsidia Ward",
-        point: "Shelly",
+        location: "Beryl Ward",
+        point: "Adrienn",
         method: "Fake Corey Event (100%)",
       },
     ],
@@ -513,7 +513,7 @@ export const pokemonData51: Pokemon[] = [
       {
         location: "Lower Peridot Ward",
         point: "Julia",
-        method: "$50 Bum Pokesnax Event (50%)",
+        method: "$50 Bum Pokesnax Event (25%)",
       },
     ],
   },
@@ -694,7 +694,7 @@ export const pokemonData51: Pokemon[] = [
     locations: [
       {
         location: "Beryl Ward",
-        point: "Taka/ZEL/Pulse Tangrowth 3",
+        point: "Shelly",
         method: "Clean Library Event (100%)",
       },
     ],
@@ -973,11 +973,6 @@ export const pokemonData51: Pokemon[] = [
     ],
     locations: [
       { location: "Byxbysion Tunnels", point: "Aya", method: "Cave" },
-      {
-        location: "Byxbysion Wasteland",
-        point: "Point of No Return",
-        method: "Wasteland Wall Event (100%)",
-      },
     ],
   },
   {
@@ -1237,7 +1232,7 @@ export const pokemonData51: Pokemon[] = [
       {
         location: "Obsidia Slums",
         point: "ZEL/Pulse Tangrowth 1",
-        method: "Egg (25%)",
+        method: "Egg (33%)",
       },
     ],
   },
@@ -1379,6 +1374,16 @@ export const pokemonData51: Pokemon[] = [
         location: "Obsidia Ward",
         point: "ZEL/Pulse Tangrowth 1",
         method: "Candy Shop Vanilla Ice Cream (100%)",
+      },
+      {
+        location: "Spinel Town",
+        point: "Serra",
+        method: "Vending Machine Vanilla Ice Cream (100%)",
+      },
+      {
+        location: "7th Street",
+        point: "Subseven Sanctum",
+        method: "Purchase (100%)",
       },
     ],
   },
@@ -1769,11 +1774,10 @@ export const pokemonData51: Pokemon[] = [
     locations: [
       { location: "Jasper Ward", point: "Adrienn", method: "LandMorning" },
       { location: "New World", point: "Post-Champion", method: "Land" },
-      { location: "New World Helix", point: "Post-Champion", method: "Land" },
       {
         location: "Jasper Ward",
         point: "Taka/Pulse Tangrowth 2",
-        method: "Clear or Wind Event (100%)",
+        method: "Night Event (100%)",
       },
     ],
   },
@@ -1844,7 +1848,10 @@ export const pokemonData51: Pokemon[] = [
       "KNOCKOFF",
       "SNORE",
     ],
-    locations: [{ location: "Route 1", point: "Radomus", method: "LandNight" }],
+    locations: [
+      { location: "Route 1", point: "Radomus", method: "LandNight" },
+      { location: "Spinel Town", point: "Serra", method: "Trade Shelmet" },
+    ],
   },
   {
     no: 589,
@@ -2067,7 +2074,6 @@ export const pokemonData51: Pokemon[] = [
     locations: [
       { location: "Azurine Island", point: "Aya", method: "LandMorning" },
       { location: "New World", point: "Post-Champion", method: "Land" },
-      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
       {
         location: "Idyll of Pestilence",
         point: "Post-Champion",
@@ -2165,6 +2171,7 @@ export const pokemonData51: Pokemon[] = [
         point: "Post-Champion",
         method: "GoodRod",
       },
+      { location: "Onyx Ward", point: "Florina", method: "Egg (17%)" },
     ],
   },
   {
@@ -2904,7 +2911,7 @@ export const pokemonData51: Pokemon[] = [
     locations: [
       { location: "Citae Prisma", point: "Post-Champion", method: "OldRod" },
       {
-        location: "South Peridot Alley",
+        location: "Lower Peridot Alley",
         point: "Julia",
         method: "Thunderstorm Event (100%)",
       },
@@ -3061,8 +3068,9 @@ export const pokemonData51: Pokemon[] = [
     ],
     locations: [
       { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
-      { location: "New World Helix", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
       { location: "Citae Prisma", point: "Post-Champion", method: "GoodRod" },
+      { location: "Grand Stairway", point: "Shelly", method: "Thunder Stone" },
     ],
   },
   {
@@ -3254,11 +3262,7 @@ export const pokemonData51: Pokemon[] = [
       "ZENHEADBUTT",
     ],
     locations: [
-      {
-        location: "New World - Victini",
-        point: "Post-Champion",
-        method: "Land",
-      },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -3341,6 +3345,11 @@ export const pokemonData51: Pokemon[] = [
       "TRICK",
     ],
     locations: [
+      {
+        location: "Jasper Ward",
+        point: "Taka/ZEL/Pulse Tangrowth 3",
+        method: "Mystery Egg Event (~5%)",
+      },
       {
         location: "7th Street",
         point: "Luna",
@@ -3479,7 +3488,7 @@ export const pokemonData51: Pokemon[] = [
       "TRICK",
     ],
     locations: [
-      { location: "New World Helix", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -3566,6 +3575,11 @@ export const pokemonData51: Pokemon[] = [
         location: "Jasper Ward",
         point: "Taka/ZEL/Pulse Tangrowth 3",
         method: "Mystery Egg Event (~5%)",
+      },
+      {
+        location: "The Underroot",
+        point: "Luna",
+        method: "Crystal Key Event (100%)",
       },
     ],
   },
@@ -3902,7 +3916,7 @@ export const pokemonData51: Pokemon[] = [
       { location: "Route 4", point: "Hardy", method: "LandMorning" },
       { location: "Charous Mountain", point: "Hardy", method: "Cave" },
       { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
-      { location: "New World Helix", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -3980,10 +3994,10 @@ export const pokemonData51: Pokemon[] = [
     locations: [
       { location: "Ametrine Mountain", point: "Samson", method: "Cave" },
       { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
-      { location: "New World Helix", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
       {
-        location: "North Obsidia Ward",
-        point: "Shelly",
+        location: "Rhodochrine Jungle",
+        point: "Corey",
         method: "Trade Sunkern (25%)",
       },
     ],
@@ -4054,6 +4068,7 @@ export const pokemonData51: Pokemon[] = [
     ],
     locations: [
       { location: "Azurine Island", point: "Aya", method: "LandDay" },
+      { location: "Spinel Town", point: "Serra", method: "Trade Karrablast" },
     ],
   },
   {
@@ -4126,12 +4141,6 @@ export const pokemonData51: Pokemon[] = [
     locations: [
       { location: "Azurine Island", point: "Adrienn", method: "LandDay" },
       { location: "Teknite Ridge", point: "Hardy", method: "LandMorning" },
-      { location: "Spinal Town", point: "Radomus", method: "Trade Shelmet" },
-      {
-        location: "North Obsidia Ward",
-        point: "Radomus",
-        method: "Link Stone on Shelmet",
-      },
     ],
   },
   {
@@ -4686,7 +4695,7 @@ export const pokemonData51: Pokemon[] = [
     locations: [
       { location: "Route 3", point: "Charlotte", method: "LandDay" },
       { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
-      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
       { location: "Aegir Cave", point: "Post-Champion", method: "Land" },
       { location: "Mirage Tower?", point: "Post-Champion", method: "Cave" },
     ],
@@ -5197,14 +5206,7 @@ export const pokemonData51: Pokemon[] = [
       "SNORE",
       "TAILWIND",
     ],
-    locations: [
-      { location: "Route 2", point: "Samson", method: "LandNight" },
-      {
-        location: "Jasper Ward",
-        point: "Taka/ZEL/Pulse Tangrowth 3",
-        method: "Mystery Egg Event (~5%)",
-      },
-    ],
+    locations: [{ location: "Route 2", point: "Samson", method: "LandNight" }],
   },
   {
     no: 630,
@@ -5382,17 +5384,12 @@ export const pokemonData51: Pokemon[] = [
       { location: "Teknite Ridge", point: "Hardy", method: "LandMorning" },
       { location: "Sugiline Cave", point: "Titania", method: "Cave" },
       { location: "Sugiline Ruin", point: "Titania", method: "Cave" },
-      {
-        location: "New World - Victini",
-        point: "Post-Champion",
-        method: "Land",
-      },
+      { location: "New World", point: "Post-Champion", method: "Land" },
       { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
-      { location: "New World Helix", point: "Post-Champion", method: "Land" },
       {
         location: "Pyrous Mountain",
         point: "Kiki",
-        method: "Floor B1 If Column Did Not Have Turtonator (50%)",
+        method: "Pokesnax Floor B1 If Column Did Not Have Turtonator (50%)",
       },
     ],
   },
@@ -5814,6 +5811,11 @@ export const pokemonData51: Pokemon[] = [
         point: "Taka/ZEL/Pulse Tangrowth 3",
         method: "Mystery Egg Event (~5%)",
       },
+      {
+        location: "Teknite Cave",
+        point: "Hardy",
+        method: "Beryl Ward Entrance Event (100%)",
+      },
     ],
   },
   {
@@ -5898,7 +5900,7 @@ export const pokemonData51: Pokemon[] = [
       "ZENHEADBUTT",
     ],
     locations: [
-      { location: "New World Helix", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -5978,7 +5980,9 @@ export const pokemonData51: Pokemon[] = [
       "SUPERPOWER",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 3" },
+    ],
   },
   {
     no: 639,
@@ -6049,7 +6053,9 @@ export const pokemonData51: Pokemon[] = [
       "SUPERPOWER",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Route 3", point: "Post-Champion", method: "Tier 3" },
+    ],
   },
   {
     no: 640,
@@ -6128,7 +6134,9 @@ export const pokemonData51: Pokemon[] = [
       "WORRYSEED",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 3" },
+    ],
   },
   {
     no: 641,
@@ -6213,7 +6221,9 @@ export const pokemonData51: Pokemon[] = [
       "TAILWIND",
       "UPROAR",
     ],
-    locations: [],
+    locations: [
+      { location: "Route 3", point: "Post-Champion", method: "Tier 3" },
+    ],
   },
   {
     no: 10019,

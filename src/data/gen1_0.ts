@@ -901,7 +901,7 @@ export const pokemonData10: Pokemon[] = [
     locations: [
       {
         location: "Byxbysion Wasteland",
-        point: "Aya",
+        point: "Serra",
         method: "Rainstorm Event (100%)",
       },
     ],
@@ -2603,6 +2603,7 @@ export const pokemonData10: Pokemon[] = [
     locations: [
       { location: "Glitch World", point: "T3RR4", method: "Cave" },
       { location: "New World", point: "Post-Champion", method: "Land" },
+      { location: "Grand Stairway", point: "Shelly", method: "Thunder Stone" },
     ],
   },
   {
@@ -2686,7 +2687,11 @@ export const pokemonData10: Pokemon[] = [
       "THUNDERPUNCH",
     ],
     locations: [
-      { location: "Apophyll Beach", point: "Kiki", method: "Evolve on Beach" },
+      {
+        location: "Apophyll Beach",
+        point: "Kiki",
+        method: "Thunder Stone on Beach",
+      },
     ],
   },
   {
@@ -3567,11 +3572,7 @@ export const pokemonData10: Pokemon[] = [
     locations: [
       { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
       { location: "Charous Path", point: "Elite 4/Champion", method: "Land" },
-      {
-        location: "New World - Victini",
-        point: "Post-Champion",
-        method: "Land",
-      },
+      { location: "New World", point: "Post-Champion", method: "Land" },
       { location: "Neoteric Isle", point: "Post-Champion", method: "Land" },
     ],
   },
@@ -3972,6 +3973,11 @@ export const pokemonData10: Pokemon[] = [
     ],
     locations: [
       { location: "Ametrine City", point: "T3RR4", method: "LandMorning" },
+      {
+        location: "Jasper Ward",
+        point: "Taka/ZEL/Pulse Tangrowth 3",
+        method: "Mystery Egg Event (~5%)",
+      },
     ],
   },
   {
@@ -4327,6 +4333,11 @@ export const pokemonData10: Pokemon[] = [
       { location: "Route 4", point: "Hardy", method: "LandMorning" },
       { location: "New World", point: "Post-Champion", method: "Land" },
       { location: "Neoteric Isle", point: "Post-Champion", method: "Land" },
+      {
+        location: "Obsidia Slums",
+        point: "ZEL/Pulse Tangrowth 1",
+        method: "Moon Stone",
+      },
     ],
   },
   {
@@ -4739,6 +4750,7 @@ export const pokemonData10: Pokemon[] = [
         method: "Land",
       },
       { location: "Neoteric Isle", point: "Post-Champion", method: "Land" },
+      { location: "Grand Stairway", point: "Shelly", method: "Leaf Stone" },
     ],
   },
   {
@@ -5898,11 +5910,7 @@ export const pokemonData10: Pokemon[] = [
       "ZENHEADBUTT",
     ],
     locations: [
-      {
-        location: "The Underroot",
-        point: "Taka/Pulse Tangrowth 2",
-        method: "Land",
-      },
+      { location: "The Underroot", point: "Corey", method: "Land" },
       { location: "Neoteric Isle", point: "Post-Champion", method: "OldRod" },
     ],
   },

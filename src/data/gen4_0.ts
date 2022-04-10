@@ -83,8 +83,8 @@ export const pokemonData40: Pokemon[] = [
     locations: [
       {
         location: "Agate Circus",
-        point: "Samson",
-        method: "Agate Circus Puzzle (100%)",
+        point: "T3RR4",
+        method: "Agate Circus Post-Dive Puzzle (100%)",
       },
     ],
   },
@@ -330,8 +330,8 @@ export const pokemonData40: Pokemon[] = [
     locations: [
       {
         location: "Azurine Island",
-        point: "Adrienn",
-        method: "Trade Delibird",
+        point: "Titania",
+        method: "Azurine Island Renovation Trade Carnivine",
       },
     ],
   },
@@ -1609,13 +1609,9 @@ export const pokemonData40: Pokemon[] = [
       "WORRYSEED",
     ],
     locations: [
-      {
-        location: "New World - Victini",
-        point: "Post-Champion",
-        method: "Land",
-      },
+      { location: "New World", point: "Post-Champion", method: "Land" },
       { location: "Aegir Cave Depths", point: "Post-Champion", method: "Cave" },
-      { location: "Azurine Island", point: "Aya", method: "Shiny Stone" },
+      { location: "Grand Stairway", point: "Shade", method: "Shiny Stone" },
     ],
   },
   {
@@ -3341,8 +3337,13 @@ export const pokemonData40: Pokemon[] = [
       { location: "Beryl Ward", point: "Adrienn", method: "LandNight" },
       { location: "Beryl Cemetery", point: "Adrienn", method: "LandNight" },
       {
+        location: "Peridot Ward",
+        point: "Julia",
+        method: "MonoGhost Night Event (100%)",
+      },
+      {
         location: "Yureyu Power Plant",
-        point: "Shelly",
+        point: "Corey",
         method: "Windy Outside Plant Event (100%)",
       },
     ],
@@ -4488,7 +4489,7 @@ export const pokemonData40: Pokemon[] = [
       {
         location: "Obsidia Slums",
         point: "ZEL/Pulse Tangrowth 1",
-        method: "Egg (25%)",
+        method: "Egg (33%)",
       },
     ],
   },
@@ -4589,7 +4590,7 @@ export const pokemonData40: Pokemon[] = [
       { location: "Iolia Valley", point: "Luna", method: "Cave" },
       { location: "Route 3", point: "Charlotte", method: "LandMorning" },
       { location: "Route 4", point: "Charlotte", method: "LandMorning" },
-      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -4782,8 +4783,8 @@ export const pokemonData40: Pokemon[] = [
     locations: [
       { location: "Coral Ward", point: "Adrienn", method: "LandMorning" },
       {
-        location: "North Obsidia Ward",
-        point: "Shelly",
+        location: "Rhodochrine Jungle",
+        point: "Corey",
         method: "Trade Sunkern (25%)",
       },
     ],

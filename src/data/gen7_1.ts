@@ -797,7 +797,9 @@ export const pokemonData71: Pokemon[] = [
       "STEALTHROCK",
       "TELEKINESIS",
     ],
-    locations: [],
+    locations: [
+      { location: "Citae Prisma", point: "Post-Champion", method: "Tier 8" },
+    ],
   },
   {
     no: 10155,
@@ -1156,7 +1158,9 @@ export const pokemonData71: Pokemon[] = [
       "SNORE",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Route 4", point: "Post-Champion", method: "Tier 4" },
+    ],
   },
   {
     no: 802,
@@ -1246,7 +1250,13 @@ export const pokemonData71: Pokemon[] = [
       "THUNDERPUNCH",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Apophyll Academy",
+        point: "Post-Champion",
+        method: "Tier 6",
+      },
+    ],
   },
   {
     no: 803,
@@ -1297,8 +1307,8 @@ export const pokemonData71: Pokemon[] = [
       { location: "Neoteric Isle", point: "Post-Champion", method: "GoodRod" },
       {
         location: "North Aventurine Woods",
-        point: "Hardy",
-        method: "Bee Complete Pokedex Event (100%)",
+        point: "Saphira",
+        method: "Bee 700 Pokedex Event (100%)",
       },
     ],
   },
@@ -1449,7 +1459,7 @@ export const pokemonData71: Pokemon[] = [
     ],
     locations: [
       { location: "Twilight Desert", point: "Post-Champion", method: "Cave" },
-      { location: "New World Helix", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -1599,6 +1609,12 @@ export const pokemonData71: Pokemon[] = [
       "THROATCHOP",
       "THUNDERPUNCH",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Chrysolia Deepwoods",
+        point: "Post-Champion",
+        method: "Tier 4",
+      },
+    ],
   },
 ];

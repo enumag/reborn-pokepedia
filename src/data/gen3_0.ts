@@ -90,7 +90,7 @@ export const pokemonData30: Pokemon[] = [
     ],
     locations: [
       {
-        location: "Rhodochrine Jungle",
+        location: "The Underroot",
         point: "Adrienn",
         method: "Kecleon Event (100%)",
       },
@@ -1364,11 +1364,7 @@ export const pokemonData30: Pokemon[] = [
       "WATERPULSE",
     ],
     locations: [
-      {
-        location: "The Underroot",
-        point: "Taka/Pulse Tangrowth 2",
-        method: "Land",
-      },
+      { location: "The Underroot", point: "Corey", method: "Land" },
       { location: "Opal Ward", point: "Adrienn", method: "LandMorning" },
       { location: "Opal Ward", point: "Julia", method: "Bridge Event (50%)" },
     ],
@@ -1905,6 +1901,12 @@ export const pokemonData30: Pokemon[] = [
         point: "Post-Champion",
         method: "SuperRod",
       },
+      {
+        location: "Lapis Ward",
+        point: "Shelly",
+        method: "Water Stone - Aqua Gang 1 Event (100%)",
+      },
+      { location: "Grand Stairway", point: "Shelly", method: "Water Stone" },
     ],
   },
   {
@@ -2052,7 +2054,13 @@ export const pokemonData30: Pokemon[] = [
       "SYNTHESIS",
       "WORRYSEED",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Beryl Cave",
+        point: "Shade",
+        method: "Windy Shiftry Event (100%)",
+      },
+    ],
   },
   {
     no: 275,
@@ -2231,6 +2239,11 @@ export const pokemonData30: Pokemon[] = [
         location: "North Aventurine Woods",
         point: "Radomus",
         method: "HeadbuttLow",
+      },
+      {
+        location: "Rhodochrine Jungle",
+        point: "Taka/ZEL/Pulse Tangrowth 3",
+        method: "Western Area Pit Trap Event (100%)",
       },
     ],
   },
@@ -4133,6 +4146,11 @@ export const pokemonData30: Pokemon[] = [
         point: "Taka/Pulse Tangrowth 2",
         method: "Pokesnax Event (100%)",
       },
+      {
+        location: "7th Street",
+        point: "Subseven Sanctum",
+        method: "Purchase (100%)",
+      },
     ],
   },
   {
@@ -4383,6 +4401,11 @@ export const pokemonData30: Pokemon[] = [
     locations: [
       { location: "Apophyll Cave", point: "Kiki", method: "RockSmash" },
       { location: "1R253 Scrapyard", point: "Titania", method: "RockSmash" },
+      {
+        location: "Coral Ward",
+        point: "ZEL/Pulse Tangrowth 1",
+        method: "Trade Watchog",
+      },
     ],
   },
   {
@@ -4481,9 +4504,9 @@ export const pokemonData30: Pokemon[] = [
     locations: [
       { location: "Coral Ward", point: "Adrienn", method: "LandMorning" },
       {
-        location: "Coral Ward",
-        point: "ZEL/Pulse Tangrowth 1",
-        method: "Ultra Potion Event (100%)",
+        location: "Lower Peridot Ward",
+        point: "Julia",
+        method: "Oran Berry Event (100%)",
       },
     ],
   },
@@ -5099,6 +5122,11 @@ export const pokemonData30: Pokemon[] = [
         method: "HeadbuttLow",
       },
       { location: "Teknite Cave", point: "Titania", method: "Cave" },
+      {
+        location: "Lower Peridot Ward",
+        point: "Julia",
+        method: "MonoSteel $50 Bum Pokesnax Event (25%)",
+      },
     ],
   },
   {

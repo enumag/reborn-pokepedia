@@ -79,6 +79,7 @@ export const pokemonData20: Pokemon[] = [
       "WORRYSEED",
     ],
     locations: [
+      { location: "Azurine Island", point: "Serra", method: "Trade Chimecho" },
       {
         location: "Azurine Island",
         point: "Adrienn",
@@ -568,9 +569,9 @@ export const pokemonData20: Pokemon[] = [
     ],
     locations: [
       {
-        location: "Celestinine Cascade",
+        location: "Ametrine Mountain",
         point: "Ciel",
-        method: "Celestinine Puzzle (100%)",
+        method: "Ametrine Mountain (100%)",
       },
     ],
   },
@@ -1784,11 +1785,7 @@ export const pokemonData20: Pokemon[] = [
       "WATERPULSE",
     ],
     locations: [
-      {
-        location: "The Underroot",
-        point: "Taka/Pulse Tangrowth 2",
-        method: "OldRod",
-      },
+      { location: "The Underroot", point: "Corey", method: "OldRod" },
       { location: "Ametrine Mountain", point: "Samson", method: "Land" },
       { location: "Celestinine Mountain", point: "Radomus", method: "Land" },
       { location: "Azurine Lake", point: "Adrienn", method: "Cave" },
@@ -1962,7 +1959,7 @@ export const pokemonData20: Pokemon[] = [
       { location: "Onyx Ward", point: "Adrienn", method: "LandMorning" },
       {
         location: "Onyx Ward",
-        point: "Florina",
+        point: "Taka/Pulse Tangrowth 2",
         method: "Rooftop Garden Pokesnax Event (100%)",
       },
     ],
@@ -2242,6 +2239,11 @@ export const pokemonData20: Pokemon[] = [
         location: "Jasper Ward",
         point: "Taka/ZEL/Pulse Tangrowth 3",
         method: "Mystery Egg Event (~5%)",
+      },
+      {
+        location: "Coral Ward",
+        point: "Titania",
+        method: "Railnet Restoration Trade Probopass",
       },
     ],
   },
@@ -2976,6 +2978,7 @@ export const pokemonData20: Pokemon[] = [
         point: "Post-Champion",
         method: "LandDay",
       },
+      { location: "Grand Stairway", point: "Shade", method: "Sun Stone" },
     ],
   },
   {
@@ -3269,11 +3272,6 @@ export const pokemonData20: Pokemon[] = [
       { location: "South Obsidia Ward", point: "Adrienn", method: "LandDay" },
       { location: "New World", point: "Post-Champion", method: "Land" },
       { location: "Manyworld Forest", point: "Post-Champion", method: "Land" },
-      {
-        location: "New World - Victini",
-        point: "Post-Champion",
-        method: "Land",
-      },
     ],
   },
   {
@@ -4378,13 +4376,8 @@ export const pokemonData20: Pokemon[] = [
       { location: "Onyx Ward", point: "Adrienn", method: "LandNight" },
       {
         location: "Lapis Alleyway",
-        point: "Shelly",
-        method: "Windy Nighttime Aqua Gang 1 Event (100%)",
-      },
-      {
-        location: "Lapis Alleyway",
-        point: "Shade",
-        method: "Windy Nighttime Magma Gang 2 Event (100%)",
+        point: "Kiki",
+        method: "Windy Nighttime Event (100%)",
       },
     ],
   },
@@ -4592,7 +4585,7 @@ export const pokemonData20: Pokemon[] = [
     locations: [
       {
         location: "Byxbysion Tunnels",
-        point: "Aya",
+        point: "Serra",
         method: "Kiki Tombstone Event (100%)",
       },
     ],
@@ -4624,7 +4617,7 @@ export const pokemonData20: Pokemon[] = [
     tmTutorMoves: [],
     locations: [
       { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
-      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -4740,6 +4733,11 @@ export const pokemonData20: Pokemon[] = [
         method: "LandMorning",
       },
       { location: "Aegir Cave", point: "Post-Champion", method: "Land" },
+      {
+        location: "Malchous Forest",
+        point: "Taka/ZEL/Pulse Tangrowth 3",
+        method: "Egg (25%)",
+      },
     ],
   },
   {
@@ -5269,6 +5267,11 @@ export const pokemonData20: Pokemon[] = [
         location: "Chrysolia Deepwoods",
         point: "Post-Champion",
         method: "Cave",
+      },
+      {
+        location: "Route 3",
+        point: "Charlotte",
+        method: "Link Stone and Metal Coat",
       },
     ],
   },
@@ -6256,9 +6259,14 @@ export const pokemonData20: Pokemon[] = [
     ],
     locations: [
       {
-        location: "Celestinine Cascade",
+        location: "Jasper Ward",
+        point: "Taka/ZEL/Pulse Tangrowth 3",
+        method: "Mystery Egg Event (~5%)",
+      },
+      {
+        location: "Ametrine Mountain",
         point: "Ciel",
-        method: "Celestinine Puzzle (100%)",
+        method: "Ametrine Mountain (100%)",
       },
     ],
   },
@@ -6624,7 +6632,7 @@ export const pokemonData20: Pokemon[] = [
     ],
     locations: [
       { location: "Pyrous Mountain", point: "Kiki", method: "Cave" },
-      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
       { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
     ],
   },
@@ -6707,6 +6715,11 @@ export const pokemonData20: Pokemon[] = [
       { location: "Lost Railcave", point: "Serra", method: "Cave" },
       { location: "Celestinine Mountain", point: "Radomus", method: "Cave" },
       { location: "Citrine Mountain", point: "Shade", method: "Cave" },
+      {
+        location: "Lower Peridot Ward",
+        point: "Julia",
+        method: "MonoIce $50 Bum Pokesnax Event (25%)",
+      },
     ],
   },
   {

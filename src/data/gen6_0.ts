@@ -655,7 +655,7 @@ export const pokemonData60: Pokemon[] = [
       {
         location: "Agate City",
         point: "Hardy",
-        method: "Bee 500 Pokedex Event (100%)",
+        method: "Bee 200 Pokedex Event (100%)",
       },
     ],
   },
@@ -899,11 +899,7 @@ export const pokemonData60: Pokemon[] = [
     locations: [
       { location: "Beryl Ward", point: "Corey", method: "LandMorning" },
       { location: "Beryl Cemetery", point: "Corey", method: "LandMorning" },
-      {
-        location: "The Underroot",
-        point: "Taka/Pulse Tangrowth 2",
-        method: "Land",
-      },
+      { location: "The Underroot", point: "Corey", method: "Land" },
       { location: "Beryl Cave", point: "Shade", method: "Cave" },
     ],
   },
@@ -2172,7 +2168,7 @@ export const pokemonData60: Pokemon[] = [
     locations: [
       { location: "South Obsidia Ward", point: "Adrienn", method: "LandNight" },
       { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
-      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -2252,8 +2248,8 @@ export const pokemonData60: Pokemon[] = [
         method: "LandMorning",
       },
       {
-        location: "North Obsidia Ward",
-        point: "Shelly",
+        location: "Rhodochrine Jungle",
+        point: "Corey",
         method: "Trade Sunkern (25%)",
       },
     ],
@@ -2340,7 +2336,7 @@ export const pokemonData60: Pokemon[] = [
       {
         location: "Lower Peridot Ward",
         point: "Julia",
-        method: "$50 Bum Pokesnax Event (50%)",
+        method: "$50 Bum Pokesnax Event (25%)",
       },
     ],
   },
@@ -2978,6 +2974,11 @@ export const pokemonData60: Pokemon[] = [
         method: "Land",
       },
       { location: "Rhodochrine Tree", point: "Post-Champion", method: "Land" },
+      {
+        location: "North Obsidia Ward",
+        point: "Shade",
+        method: "Link Stone and Sachet",
+      },
     ],
   },
   {
@@ -3120,7 +3121,12 @@ export const pokemonData60: Pokemon[] = [
       "SNORE",
     ],
     locations: [
-      { location: "New World - Regis", point: "Post-Champion", method: "Land" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+      {
+        location: "North Obsidia Ward",
+        point: "Shade",
+        method: "Link Stone and Whipped Dream",
+      },
     ],
   },
   {
@@ -3575,6 +3581,11 @@ export const pokemonData60: Pokemon[] = [
         point: "Post-Champion",
         method: "OldRod",
       },
+      {
+        location: "The Underroot",
+        point: "Shelly",
+        method: "Silver Ring Event (100%)",
+      },
     ],
   },
   {
@@ -3981,6 +3992,7 @@ export const pokemonData60: Pokemon[] = [
     ],
     locations: [
       { location: "Tourmaline Desert", point: "Titania", method: "Cave" },
+      { location: "Grand Stairway", point: "Shade", method: "Sun Stone" },
     ],
   },
   {
@@ -4672,8 +4684,8 @@ export const pokemonData60: Pokemon[] = [
       { location: "Aegir Cave Depths", point: "Post-Champion", method: "Cave" },
       { location: "Mirage Tower?", point: "Post-Champion", method: "Cave" },
       {
-        location: "North Obsidia Ward",
-        point: "Shelly",
+        location: "Rhodochrine Jungle",
+        point: "Corey",
         method: "Trade Sunkern (25%)",
       },
     ],
@@ -5020,17 +5032,8 @@ export const pokemonData60: Pokemon[] = [
       "WORRYSEED",
     ],
     locations: [
-      {
-        location: "The Underroot",
-        point: "Taka/Pulse Tangrowth 2",
-        method: "Land",
-      },
+      { location: "The Underroot", point: "Corey", method: "Land" },
       { location: "Route 4", point: "Charlotte", method: "LandNight" },
-      {
-        location: "Jasper Ward",
-        point: "Taka/ZEL/Pulse Tangrowth 3",
-        method: "Mystery Egg Event (~5%)",
-      },
     ],
   },
   {
@@ -5535,11 +5538,7 @@ export const pokemonData60: Pokemon[] = [
         point: "ZEL/Pulse Tangrowth 1",
         method: "Cave",
       },
-      {
-        location: "The Underroot",
-        point: "Taka/Pulse Tangrowth 2",
-        method: "Land",
-      },
+      { location: "The Underroot", point: "Corey", method: "Land" },
       { location: "Grand Stairway", point: "Shelly", method: "Cave" },
       { location: "Beryl Cave", point: "Shade", method: "Cave" },
       { location: "Underground Railnet", point: "Shade", method: "Cave" },
@@ -5720,7 +5719,13 @@ export const pokemonData60: Pokemon[] = [
       "WONDERROOM",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Rhodochrine Tree",
+        point: "Post-Champion",
+        method: "Tier 8",
+      },
+    ],
   },
   {
     no: 717,
@@ -5797,7 +5802,13 @@ export const pokemonData60: Pokemon[] = [
       "TAILWIND",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Rhodochrine Tree",
+        point: "Post-Champion",
+        method: "Tier 8",
+      },
+    ],
   },
   {
     no: 718,
@@ -5876,7 +5887,9 @@ export const pokemonData60: Pokemon[] = [
       "SUPERPOWER",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "The Underroot", point: "Post-Champion", method: "Tier 8" },
+    ],
   },
   {
     no: 10118,
@@ -6113,7 +6126,13 @@ export const pokemonData60: Pokemon[] = [
       "TELEKINESIS",
       "WONDERROOM",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Aegir Cave Depths",
+        point: "Post-Champion",
+        method: "Tier 5",
+      },
+    ],
   },
   {
     no: 10075,

@@ -299,7 +299,7 @@ export const pokemonData70: Pokemon[] = [
     locations: [
       {
         location: "North Obsidia Alleyway",
-        point: "Adrienn",
+        point: "Titania",
         method: "Aqua Gang 3 Event (100%)",
       },
       {
@@ -1383,6 +1383,11 @@ export const pokemonData70: Pokemon[] = [
       { location: "Charous Mountain", point: "Hardy", method: "Cave" },
       { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
       { location: "Charous Path", point: "Elite 4/Champion", method: "Land" },
+      {
+        location: "Celestinine Mountain",
+        point: "Radomus",
+        method: "Evolve in Celestinine Mountain",
+      },
     ],
   },
   {
@@ -2325,6 +2330,11 @@ export const pokemonData70: Pokemon[] = [
         point: "Taka/ZEL/Pulse Tangrowth 3",
         method: "Mystery Egg Event (~5%)",
       },
+      {
+        location: "Citrine Mountain",
+        point: "Charlotte",
+        method: "Citrine Mountain Puzzle (100%)",
+      },
     ],
   },
   {
@@ -2878,11 +2888,7 @@ export const pokemonData70: Pokemon[] = [
       "WORRYSEED",
     ],
     locations: [
-      {
-        location: "The Underroot",
-        point: "Taka/Pulse Tangrowth 2",
-        method: "Land",
-      },
+      { location: "The Underroot", point: "Corey", method: "Land" },
       { location: "Beryl Cave", point: "Shade", method: "Cave" },
     ],
   },
@@ -4084,6 +4090,11 @@ export const pokemonData70: Pokemon[] = [
         point: "Post-Champion",
         method: "GoodRod",
       },
+      {
+        location: "Apophyll Beach",
+        point: "Kiki",
+        method: "Lying On Beach (100%)",
+      },
     ],
   },
   {
@@ -4400,11 +4411,6 @@ export const pokemonData70: Pokemon[] = [
         method: "HeadbuttLow",
       },
       { location: "New World", point: "Post-Champion", method: "Land" },
-      {
-        location: "New World - Victini",
-        point: "Post-Champion",
-        method: "Land",
-      },
     ],
   },
   {
@@ -4747,6 +4753,7 @@ export const pokemonData70: Pokemon[] = [
         point: "Post-Champion",
         method: "Land",
       },
+      { location: "Chrysolia Forest", point: "Serra", method: "Trade Mothim" },
     ],
   },
   {
@@ -4928,6 +4935,11 @@ export const pokemonData70: Pokemon[] = [
         location: "Idyll of Pestilence",
         point: "Post-Champion",
         method: "SuperRod",
+      },
+      {
+        location: "Byxbysion Wasteland",
+        point: "Luna",
+        method: "Wasteland Wall Event (100%)",
       },
     ],
   },

@@ -91,6 +91,11 @@ export const pokemonData21: Pokemon[] = [
       { location: "Manyworld Pool", point: "Post-Champion", method: "Land" },
       { location: "Ametrine Core", point: "Post-Champion", method: "GoodRod" },
       { location: "Onyx Ward", point: "Florina", method: "Egg (17%)" },
+      {
+        location: "Chrysolia Forest",
+        point: "Serra",
+        method: "Interact with Fountain After Visiting Spinal Town",
+      },
     ],
   },
   {
@@ -264,6 +269,11 @@ export const pokemonData21: Pokemon[] = [
       { location: "Ametrine Mountain", point: "Samson", method: "Cave" },
       { location: "Celestinine Mountain", point: "Radomus", method: "Cave" },
       { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
+      {
+        location: "Lower Peridot Ward",
+        point: "Julia",
+        method: "Gift Box House Event (100%)",
+      },
     ],
   },
   {
@@ -378,6 +388,11 @@ export const pokemonData21: Pokemon[] = [
         location: "Unexplored Territory",
         point: "Post-Champion",
         method: "SuperRod",
+      },
+      {
+        location: "Chrysolia Forest",
+        point: "Serra",
+        method: "Level Mantyke With Remoraid",
       },
     ],
   },
@@ -1188,9 +1203,9 @@ export const pokemonData21: Pokemon[] = [
       },
       { location: "Aegir Cave", point: "Post-Champion", method: "Land" },
       {
-        location: "Malchous Forest",
+        location: "Rhodochrine Jungle",
         point: "Taka/ZEL/Pulse Tangrowth 3",
-        method: "Egg (25%)",
+        method: "Western Area Event (100%)",
       },
     ],
   },
@@ -1552,6 +1567,11 @@ export const pokemonData21: Pokemon[] = [
         point: "Taka/ZEL/Pulse Tangrowth 3",
         method: "Mystery Egg Event (~5%)",
       },
+      {
+        location: "Calcenon City",
+        point: "T3RR4",
+        method: "Trade Electirizer (100%)",
+      },
     ],
   },
   {
@@ -1634,7 +1654,7 @@ export const pokemonData21: Pokemon[] = [
     locations: [
       {
         location: "Calcenon City",
-        point: "Charlotte",
+        point: "T3RR4",
         method: "Trade Magmarizer (100%)",
       },
     ],
@@ -1936,7 +1956,9 @@ export const pokemonData21: Pokemon[] = [
       "SWIFT",
       "THROATCHOP",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 2" },
+    ],
   },
   {
     no: 244,
@@ -2020,7 +2042,9 @@ export const pokemonData21: Pokemon[] = [
       "STOMPINGTANTRUM",
       "SWIFT",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 2" },
+    ],
   },
   {
     no: 245,
@@ -2102,7 +2126,9 @@ export const pokemonData21: Pokemon[] = [
       "TAILWIND",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 2" },
+    ],
   },
   {
     no: 246,
@@ -2596,7 +2622,9 @@ export const pokemonData21: Pokemon[] = [
       "WONDERROOM",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Mirage Tower?", point: "Post-Champion", method: "Tier 7" },
+    ],
   },
   {
     no: 250,
@@ -2712,6 +2740,8 @@ export const pokemonData21: Pokemon[] = [
       "WORRYSEED",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Agate City", point: "Post-Champion", method: "Tier 4" },
+    ],
   },
 ];

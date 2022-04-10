@@ -89,7 +89,9 @@ export const pokemonData52: Pokemon[] = [
       "THUNDERPUNCH",
       "UPROAR",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 3" },
+    ],
   },
   {
     no: 10020,
@@ -262,7 +264,9 @@ export const pokemonData52: Pokemon[] = [
       "TAILWIND",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 7" },
+    ],
   },
   {
     no: 644,
@@ -349,7 +353,9 @@ export const pokemonData52: Pokemon[] = [
       "THUNDERPUNCH",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 7" },
+    ],
   },
   {
     no: 645,
@@ -435,7 +441,9 @@ export const pokemonData52: Pokemon[] = [
       "STEALTHROCK",
       "SUPERPOWER",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 3" },
+    ],
   },
   {
     no: 10021,
@@ -602,7 +610,9 @@ export const pokemonData52: Pokemon[] = [
       "SNORE",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 7" },
+    ],
   },
   {
     no: 10023,
@@ -837,7 +847,9 @@ export const pokemonData52: Pokemon[] = [
       "SUPERPOWER",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 3" },
+    ],
   },
   {
     no: 10024,
@@ -1017,7 +1029,9 @@ export const pokemonData52: Pokemon[] = [
       "WONDERROOM",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Agate Circus", point: "Post-Champion", method: "Tier 4" },
+    ],
   },
   {
     no: 10018,
@@ -1214,6 +1228,8 @@ export const pokemonData52: Pokemon[] = [
       "TELEKINESIS",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Peridot Ward", point: "Post-Champion", method: "Tier 6" },
+    ],
   },
 ];
