@@ -3882,6 +3882,11 @@ export const pokemonData10: Pokemon[] = [
       "ZENHEADBUTT",
     ],
     locations: [
+      {
+        location: "Jasper Ward",
+        point: "Taka/ZEL/Pulse Tangrowth 3",
+        method: "Mystery Egg Event (~5%)",
+      },
       { location: "Agate Circus", point: "Samson", method: "Trade Stunfisk" },
     ],
   },

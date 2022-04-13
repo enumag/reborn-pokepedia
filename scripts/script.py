@@ -3,8 +3,6 @@ from configparser import (ConfigParser, MissingSectionHeaderError,
 from string import printable
 import json
 
-# TODO https://docs.google.com/spreadsheets/d/1NmNBklcSI_OqWKMAaJ_WyqjBJ5J7lo3IuwTftIaJlIw/edit#gid=1921351918
-
 eventLocations = {
     "Zigzagoon": {
         "location": "Opal Ward",
@@ -493,11 +491,17 @@ eventLocations = {
         "point": "Taka/ZEL/Pulse Tangrowth 3",
         "method": "Mystery Egg Event (~5%)"
     },
-    "Vulpix": {
-        "location": "Jasper Ward",
-        "point": "Taka/ZEL/Pulse Tangrowth 3",
-        "method": "Mystery Egg Event (~5%)"
-    },
+    "Vulpix": [
+        {
+            "location": "Jasper Ward",
+            "point": "Taka/ZEL/Pulse Tangrowth 3",
+            "method": "Mystery Egg Event (~5%)"
+        }, {
+            "location": "Agate Circus",
+            "point": "Samson",
+            "method": "Trade Stunfisk"
+        }
+    ],
     "Elekid": [
         {
             "location": "Jasper Ward",
@@ -745,7 +749,7 @@ eventLocations = {
         "point": "Shade",
         "method": "Link Stone"
     },
-    "Gourgeist": {
+    "Gourgeist (Super Size)": {
         "location": "North Obsidia Ward",
         "point": "Shade",
         "method": "Link Stone"
@@ -830,11 +834,17 @@ eventLocations = {
         "point": "Shade",
         "method": "Beartic Event (100%)"
     },
-    "Amaura": {
-        "location": "Citrine Mountain",
-        "point": "Shade",
-        "method": "Ice Heal Event (100%)"
-    },
+    "Amaura": [
+        {
+            "location": "Citrine Mountain",
+            "point": "Shade",
+            "method": "Ice Heal Event (100%)"
+        }, {
+            "location": "7th Street",
+            "point": "Subseven Sanctum",
+            "method": "Helix Cult Event (50%)"
+        }
+    ],
     "Croagunk": {
         "location": "Citrine Mountain",
         "point": "Shade",
@@ -867,11 +877,17 @@ eventLocations = {
         "point": "Kiki",
         "method": "Lying On Beach (100%)"
     },
-    "Shieldon": {
-        "location": "Apophyll Cave",
-        "point": "Kiki",
-        "method": "Trade Ledian"
-    },
+    "Shieldon": [
+        {
+            "location": "Apophyll Cave",
+            "point": "Kiki",
+            "method": "Trade Ledian"
+        }, {
+            "location": "Spinel Town",
+            "point": "Serra",
+            "method": "Fossil Reviver (100%)"
+        }
+    ],
     "Meditite": {
         "location": "Apophyll Academy",
         "point": "Kiki",
@@ -978,11 +994,6 @@ eventLocations = {
         "method": "Fossil Reviver (100%)"
     },
     "Cranidos": {
-        "location": "Spinel Town",
-        "point": "Serra",
-        "method": "Fossil Reviver (100%)"
-    },
-    "Shieldon": {
         "location": "Spinel Town",
         "point": "Serra",
         "method": "Fossil Reviver (100%)"
@@ -1118,11 +1129,6 @@ eventLocations = {
         "point": "Subseven Sanctum",
         "method": "Purchase (100%)"
     },
-    "Amaura": {
-        "location": "7th Street",
-        "point": "Subseven Sanctum",
-        "method": "Helix Cult Event (50%)"
-    },
     "Tyrunt": {
         "location": "7th Street",
         "point": "Subseven Sanctum",
@@ -1162,11 +1168,6 @@ eventLocations = {
         "location": "Agate Circus",
         "point": "Samson",
         "method": "Agate Circus Puzzle (100%)"
-    },
-    "Vulpix": {
-        "location": "Agate Circus",
-        "point": "Samson",
-        "method": "Trade Stunfisk"
     },
     "Salandit": {
         "location": "Route 2",
@@ -1242,11 +1243,6 @@ eventLocations = {
         "location": "Celestinine Cascade",
         "point": "Amaria",
         "method": "Ice Puzzle (100%)"
-    },
-    "Milotic": {
-        "location": "Citrine Mountain",
-        "point": "Ciel",
-        "method": "Link Stone and Prism Scale"
     },
     "Milotic": {
         "location": "Citrine Mountain",

@@ -2650,7 +2650,9 @@ export const pokemonData21: Pokemon[] = [
     },
     eggMoves: [],
     tmTutorMoves: [],
-    locations: [],
+    locations: [
+      { location: "Mirage Tower?", point: "Post-Champion", method: "Tier 7" },
+    ],
   },
   {
     no: 251,

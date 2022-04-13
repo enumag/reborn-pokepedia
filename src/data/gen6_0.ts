@@ -4245,6 +4245,11 @@ export const pokemonData60: Pokemon[] = [
     ],
     locations: [
       {
+        location: "Citrine Mountain",
+        point: "Shade",
+        method: "Ice Heal Event (100%)",
+      },
+      {
         location: "7th Street",
         point: "Subseven Sanctum",
         method: "Helix Cult Event (50%)",
@@ -5298,7 +5303,9 @@ export const pokemonData60: Pokemon[] = [
       "TRICK",
       "WORRYSEED",
     ],
-    locations: [],
+    locations: [
+      { location: "North Obsidia Ward", point: "Shade", method: "Link Stone" },
+    ],
   },
   {
     no: 712,
