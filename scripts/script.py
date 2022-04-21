@@ -3,8 +3,6 @@ from configparser import (ConfigParser, MissingSectionHeaderError,
 from string import printable
 import json
 
-# TODO https://docs.google.com/spreadsheets/d/1NmNBklcSI_OqWKMAaJ_WyqjBJ5J7lo3IuwTftIaJlIw/edit#gid=1921351918
-
 eventLocations = {
     "Zigzagoon": {
         "location": "Opal Ward",
@@ -377,15 +375,16 @@ eventLocations = {
         "point": "Taka/Pulse Tangrowth 2",
         "method": "Sunny Pokesnax Event (100%)"
     },
-    "Makuhita": [{
-        "location": "Obsidia Slums",
-        "point": "Taka/Pulse Tangrowth 2",
-        "method": "Pokesnax Event (100%)"
-    }, {
-        "location": "7th Street",
-        "point": "Subseven Sanctum",
-        "method": "Purchase (100%)"
-    }
+    "Makuhita": [
+        {
+            "location": "Obsidia Slums",
+            "point": "Taka/Pulse Tangrowth 2",
+            "method": "Pokesnax Event (100%)"
+        }, {
+            "location": "7th Street",
+            "point": "Subseven Sanctum",
+            "method": "Purchase (100%)"
+        }
     ],
     "Growlithe": {
         "location": "Jasper Ward",
