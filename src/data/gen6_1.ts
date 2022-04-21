@@ -102,7 +102,13 @@ export const pokemonData61: Pokemon[] = [
       "WONDERROOM",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Lower Peridot Ward",
+        point: "Post-Champion",
+        method: "Tier 4",
+      },
+    ],
   },
   {
     no: 10086,
@@ -280,6 +286,12 @@ export const pokemonData61: Pokemon[] = [
       "SUPERPOWER",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Chrysolia Spring",
+        point: "Post-Champion",
+        method: "Tier 4",
+      },
+    ],
   },
 ];

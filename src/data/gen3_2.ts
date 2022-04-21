@@ -98,7 +98,13 @@ export const pokemonData32: Pokemon[] = [
       "WONDERROOM",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Tier 5",
+      },
+    ],
   },
   {
     no: 10063,
@@ -274,7 +280,9 @@ export const pokemonData32: Pokemon[] = [
       "UPROAR",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 8" },
+    ],
   },
   {
     no: 10077,
@@ -441,7 +449,9 @@ export const pokemonData32: Pokemon[] = [
       "THUNDERPUNCH",
       "UPROAR",
     ],
-    locations: [],
+    locations: [
+      { location: "Aegir Cave", point: "Post-Champion", method: "Tier 8" },
+    ],
   },
   {
     no: 10078,
@@ -540,7 +550,7 @@ export const pokemonData32: Pokemon[] = [
     types: ["Dragon", "Flying"],
     stats: [105, 150, 90, 95, 150, 90],
     levelUpMoves: {
-      "1": ["TWISTER"],
+      "1": ["DRAGONASCENT", "VCREATE", "TWISTER"],
       "5": ["SCARYFACE"],
       "15": ["ANCIENTPOWER"],
       "20": ["CRUNCH"],
@@ -613,6 +623,7 @@ export const pokemonData32: Pokemon[] = [
       "ANCIENTPOWER",
       "AQUATAIL",
       "BIND",
+      "CELEBRATE",
       "DEFOG",
       "DRACOMETEOR",
       "DRAGONASCENT",
@@ -634,7 +645,9 @@ export const pokemonData32: Pokemon[] = [
       "UPROAR",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      { location: "Aegir Cave", point: "Post-Champion", method: "Tier 8" },
+    ],
   },
   {
     no: 10079,
@@ -642,7 +655,7 @@ export const pokemonData32: Pokemon[] = [
     types: ["Dragon", "Flying"],
     stats: [105, 180, 100, 115, 180, 100],
     levelUpMoves: {
-      "1": ["TWISTER"],
+      "1": ["DRAGONASCENT", "VCREATE", "TWISTER"],
       "5": ["SCARYFACE"],
       "15": ["ANCIENTPOWER"],
       "20": ["CRUNCH"],
@@ -715,6 +728,7 @@ export const pokemonData32: Pokemon[] = [
       "ANCIENTPOWER",
       "AQUATAIL",
       "BIND",
+      "CELEBRATE",
       "DEFOG",
       "DRACOMETEOR",
       "DRAGONASCENT",
@@ -829,7 +843,9 @@ export const pokemonData32: Pokemon[] = [
       "WATERPULSE",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 5" },
+    ],
   },
   {
     no: 386,
@@ -935,7 +951,9 @@ export const pokemonData32: Pokemon[] = [
       "WONDERROOM",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 7" },
+    ],
   },
   {
     no: 10001,

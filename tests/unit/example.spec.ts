@@ -1,7 +1,7 @@
 import { mount } from "@vue/test-utils";
-import Details from "@/views/Details.vue";
+import Details from "@/views/DetailsView.vue";
 
-describe("Details.vue", () => {
+describe("DetailsView.vue", () => {
   it("renders details view", () => {
     const mockRoute = {
       params: {

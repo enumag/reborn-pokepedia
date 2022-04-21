@@ -89,7 +89,9 @@ export const pokemonData52: Pokemon[] = [
       "THUNDERPUNCH",
       "UPROAR",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 3" },
+    ],
   },
   {
     no: 10020,
@@ -262,7 +264,9 @@ export const pokemonData52: Pokemon[] = [
       "TAILWIND",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 7" },
+    ],
   },
   {
     no: 644,
@@ -349,7 +353,9 @@ export const pokemonData52: Pokemon[] = [
       "THUNDERPUNCH",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 7" },
+    ],
   },
   {
     no: 645,
@@ -435,7 +441,9 @@ export const pokemonData52: Pokemon[] = [
       "STEALTHROCK",
       "SUPERPOWER",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 3" },
+    ],
   },
   {
     no: 10021,
@@ -602,7 +610,9 @@ export const pokemonData52: Pokemon[] = [
       "SNORE",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 7" },
+    ],
   },
   {
     no: 10023,
@@ -772,7 +782,7 @@ export const pokemonData52: Pokemon[] = [
     types: ["Water", "Fighting"],
     stats: [91, 72, 90, 108, 129, 90],
     levelUpMoves: {
-      "1": ["AQUAJET", "LEER", "DOUBLEKICK", "BUBBLEBEAM"],
+      "1": ["SECRETSWORD", "AQUAJET", "LEER", "DOUBLEKICK", "BUBBLEBEAM"],
       "7": ["DOUBLEKICK"],
       "13": ["BUBBLEBEAM"],
       "19": ["TAKEDOWN"],
@@ -837,7 +847,9 @@ export const pokemonData52: Pokemon[] = [
       "SUPERPOWER",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Tier 3" },
+    ],
   },
   {
     no: 10024,
@@ -845,7 +857,7 @@ export const pokemonData52: Pokemon[] = [
     types: ["Water", "Fighting"],
     stats: [91, 72, 90, 108, 129, 90],
     levelUpMoves: {
-      "1": ["AQUAJET", "LEER", "DOUBLEKICK", "BUBBLEBEAM"],
+      "1": ["SECRETSWORD", "AQUAJET", "LEER", "DOUBLEKICK", "BUBBLEBEAM"],
       "7": ["DOUBLEKICK"],
       "13": ["BUBBLEBEAM"],
       "19": ["TAKEDOWN"],
@@ -918,7 +930,7 @@ export const pokemonData52: Pokemon[] = [
     types: ["Normal", "Psychic"],
     stats: [100, 77, 77, 90, 128, 128],
     levelUpMoves: {
-      "1": ["ROUND", "QUICKATTACK", "CONFUSION", "SING"],
+      "1": ["RELICSONG", "ROUND", "QUICKATTACK", "CONFUSION", "SING"],
       "6": ["QUICKATTACK"],
       "11": ["CONFUSION"],
       "16": ["SING"],
@@ -980,10 +992,12 @@ export const pokemonData52: Pokemon[] = [
       "SUBSTITUTE",
       "TRICKROOM",
       "SECRETPOWER",
+      "POWERUPPUNCH",
       "STRENGTH",
       "ROCKSMASH",
       "FLASH",
       "ALLYSWITCH",
+      "CELEBRATE",
       "COVET",
       "DRAINPUNCH",
       "DUALCHOP",
@@ -1015,7 +1029,9 @@ export const pokemonData52: Pokemon[] = [
       "WONDERROOM",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Agate Circus", point: "Post-Champion", method: "Tier 4" },
+    ],
   },
   {
     no: 10018,
@@ -1023,7 +1039,7 @@ export const pokemonData52: Pokemon[] = [
     types: ["Normal", "Fighting"],
     stats: [100, 128, 90, 128, 77, 77],
     levelUpMoves: {
-      "1": ["ROUND", "QUICKATTACK", "CONFUSION", "SING"],
+      "1": ["RELICSONG", "ROUND", "QUICKATTACK", "CONFUSION", "SING"],
       "6": ["QUICKATTACK"],
       "11": ["CONFUSION"],
       "16": ["SING"],
@@ -1085,10 +1101,12 @@ export const pokemonData52: Pokemon[] = [
       "SUBSTITUTE",
       "TRICKROOM",
       "SECRETPOWER",
+      "POWERUPPUNCH",
       "STRENGTH",
       "ROCKSMASH",
       "FLASH",
       "ALLYSWITCH",
+      "CELEBRATE",
       "COVET",
       "DRAINPUNCH",
       "DUALCHOP",
@@ -1210,6 +1228,8 @@ export const pokemonData52: Pokemon[] = [
       "TELEKINESIS",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Peridot Ward", point: "Post-Champion", method: "Tier 6" },
+    ],
   },
 ];

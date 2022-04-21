@@ -82,7 +82,14 @@ export const pokemonData12: Pokemon[] = [
       "SWIFT",
       "TAILWIND",
     ],
-    locations: [{ location: "Route 4", point: "Hardy", method: "LandMorning" }],
+    locations: [
+      { location: "Route 4", point: "Hardy", method: "LandMorning" },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Land",
+      },
+    ],
   },
   {
     no: 124,
@@ -180,9 +187,14 @@ export const pokemonData12: Pokemon[] = [
       "TELEKINESIS",
       "TRICK",
       "WATERPULSE",
+      "WONDERROOM",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "Charous Path", point: "Elite 4/Champion", method: "Land" },
+      { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
+    ],
   },
   {
     no: 125,
@@ -260,7 +272,9 @@ export const pokemonData12: Pokemon[] = [
       "SWIFT",
       "THUNDERPUNCH",
     ],
-    locations: [],
+    locations: [
+      { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
+    ],
   },
   {
     no: 126,
@@ -330,7 +344,9 @@ export const pokemonData12: Pokemon[] = [
       "SNORE",
       "THUNDERPUNCH",
     ],
-    locations: [],
+    locations: [
+      { location: "Ametrine Core", point: "Post-Champion", method: "Cave" },
+    ],
   },
   {
     no: 127,
@@ -583,6 +599,7 @@ export const pokemonData12: Pokemon[] = [
       "IRONTAIL",
       "MAGICCOAT",
       "OUTRAGE",
+      "ROLEPLAY",
       "SHOCKWAVE",
       "SNORE",
       "SPITE",
@@ -592,6 +609,7 @@ export const pokemonData12: Pokemon[] = [
     ],
     locations: [
       { location: "Route 1", point: "Radomus", method: "LandMorning" },
+      { location: "Neoteric Isle", point: "Post-Champion", method: "Land" },
     ],
   },
   {
@@ -601,8 +619,10 @@ export const pokemonData12: Pokemon[] = [
     stats: [20, 10, 55, 80, 15, 20],
     levelUpMoves: { "1": ["SPLASH"], "15": ["TACKLE"], "30": ["FLAIL"] },
     eggMoves: [],
-    tmTutorMoves: ["BOUNCE"],
+    tmTutorMoves: ["BOUNCE", "CELEBRATE"],
     locations: [
+      { location: "New World", point: "Post-Champion", method: "Water" },
+      { location: "Vacant Past", point: "Post-Champion", method: "SuperRod" },
       {
         location: "Desert Town",
         point: "Titania",
@@ -678,6 +698,7 @@ export const pokemonData12: Pokemon[] = [
       "ROCKSMASH",
       "AQUATAIL",
       "BOUNCE",
+      "CELEBRATE",
       "DRAGONPULSE",
       "ICYWIND",
       "IRONHEAD",
@@ -689,7 +710,14 @@ export const pokemonData12: Pokemon[] = [
       "UPROAR",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Land",
+      },
+      { location: "Neoteric Isle", point: "Post-Champion", method: "SuperRod" },
+    ],
   },
   {
     no: 10041,
@@ -759,6 +787,7 @@ export const pokemonData12: Pokemon[] = [
       "ROCKSMASH",
       "AQUATAIL",
       "BOUNCE",
+      "CELEBRATE",
       "DRAGONPULSE",
       "ICYWIND",
       "IRONHEAD",
@@ -865,9 +894,20 @@ export const pokemonData12: Pokemon[] = [
     ],
     locations: [
       {
-        location: "Celestinine Cascade",
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Water",
+      },
+      {
+        location: "Aegir Cave Depths",
+        point: "Post-Champion",
+        method: "Water",
+      },
+      { location: "Manyworld Pool", point: "Post-Champion", method: "Land" },
+      {
+        location: "Ametrine Mountain",
         point: "Ciel",
-        method: "Friday Event (100%)",
+        method: "Underwater B2F Friday Event (100%)",
       },
     ],
   },
@@ -880,6 +920,8 @@ export const pokemonData12: Pokemon[] = [
     eggMoves: [],
     tmTutorMoves: [],
     locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "Splash Grounds", point: "Post-Champion", method: "Cave" },
       {
         location: "Peridot Ward",
         point: "Kiki",
@@ -948,9 +990,11 @@ export const pokemonData12: Pokemon[] = [
       "SUBSTITUTE",
       "SECRETPOWER",
       "CONFIDE",
+      "CELEBRATE",
       "COVET",
       "HEADBUTT",
       "HEALBELL",
+      "HELPINGHAND",
       "HYPERVOICE",
       "IRONTAIL",
       "LASERFOCUS",
@@ -1022,6 +1066,7 @@ export const pokemonData12: Pokemon[] = [
       "DIVE",
       "ROCKSMASH",
       "AQUATAIL",
+      "CELEBRATE",
       "COVET",
       "HEADBUTT",
       "HEALBELL",
@@ -1036,7 +1081,22 @@ export const pokemonData12: Pokemon[] = [
       "SNORE",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Land",
+      },
+      { location: "Manyworld Pool", point: "Post-Champion", method: "Land" },
+      {
+        location: "Idyll of Panaceance",
+        point: "Post-Champion",
+        method: "Water",
+      },
+      { location: "Mirage Tower?", point: "Post-Champion", method: "Cave" },
+      { location: "Neoteric Isle", point: "Post-Champion", method: "Water" },
+    ],
   },
   {
     no: 135,
@@ -1093,6 +1153,7 @@ export const pokemonData12: Pokemon[] = [
       "STRENGTH",
       "ROCKSMASH",
       "FLASH",
+      "CELEBRATE",
       "COVET",
       "HEADBUTT",
       "HEALBELL",
@@ -1108,7 +1169,10 @@ export const pokemonData12: Pokemon[] = [
       "SNORE",
       "SWIFT",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 136,
@@ -1162,6 +1226,7 @@ export const pokemonData12: Pokemon[] = [
       "CONFIDE",
       "STRENGTH",
       "ROCKSMASH",
+      "CELEBRATE",
       "COVET",
       "HEADBUTT",
       "HEALBELL",
@@ -1176,7 +1241,9 @@ export const pokemonData12: Pokemon[] = [
       "SUPERPOWER",
       "SWIFT",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+    ],
   },
   {
     no: 137,
@@ -1343,7 +1410,17 @@ export const pokemonData12: Pokemon[] = [
     ],
     locations: [
       {
-        location: "Spinal Town",
+        location: "Manyworld Forest",
+        point: "Post-Champion",
+        method: "OldRod",
+      },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "OldRod",
+      },
+      {
+        location: "Spinel Town",
         point: "Serra",
         method: "Fossil Reviver (100%)",
       },
@@ -1419,7 +1496,18 @@ export const pokemonData12: Pokemon[] = [
       "STEALTHROCK",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Manyworld Forest",
+        point: "Post-Champion",
+        method: "SuperRod",
+      },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "SuperRod",
+      },
+    ],
   },
   {
     no: 140,
@@ -1496,7 +1584,17 @@ export const pokemonData12: Pokemon[] = [
     ],
     locations: [
       {
-        location: "Spinal Town",
+        location: "Manyworld Forest",
+        point: "Post-Champion",
+        method: "OldRod",
+      },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "OldRod",
+      },
+      {
+        location: "Spinel Town",
         point: "Serra",
         method: "Fossil Reviver (100%)",
       },
@@ -1582,7 +1680,18 @@ export const pokemonData12: Pokemon[] = [
       "SUPERPOWER",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Manyworld Forest",
+        point: "Post-Champion",
+        method: "SuperRod",
+      },
+      {
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Water",
+      },
+    ],
   },
   {
     no: 142,
@@ -1670,6 +1779,7 @@ export const pokemonData12: Pokemon[] = [
       "AIRCUTTER",
       "ANCIENTPOWER",
       "AQUATAIL",
+      "CELEBRATE",
       "DEFOG",
       "DRAGONPULSE",
       "EARTHPOWER",
@@ -1685,8 +1795,19 @@ export const pokemonData12: Pokemon[] = [
       "TWISTER",
     ],
     locations: [
+      { location: "Twilight Desert", point: "Post-Champion", method: "Cave" },
       {
-        location: "Spinal Town",
+        location: "Unexplored Territory",
+        point: "Post-Champion",
+        method: "Water",
+      },
+      {
+        location: "Cauldron of the Future",
+        point: "Post-Champion",
+        method: "Land",
+      },
+      {
+        location: "Spinel Town",
         point: "Adrienn",
         method: "Trade Powerful Staraptor Event (100%)",
       },
@@ -1767,6 +1888,7 @@ export const pokemonData12: Pokemon[] = [
       "AIRCUTTER",
       "ANCIENTPOWER",
       "AQUATAIL",
+      "CELEBRATE",
       "DEFOG",
       "DRAGONPULSE",
       "EARTHPOWER",
@@ -1873,6 +1995,7 @@ export const pokemonData12: Pokemon[] = [
       "ROCKCLIMB",
       "AFTERYOU",
       "BLOCK",
+      "CELEBRATE",
       "COVET",
       "FIREPUNCH",
       "FOCUSPUNCH",
@@ -1896,7 +2019,11 @@ export const pokemonData12: Pokemon[] = [
       "WATERPULSE",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Victory Road", point: "Elite 4/Champion", method: "Cave" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+      { location: "Manyworld Forest", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 144,
@@ -1970,7 +2097,9 @@ export const pokemonData12: Pokemon[] = [
       "TWISTER",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      { location: "Ametrine City", point: "Post-Champion", method: "Tier 2" },
+    ],
   },
   {
     no: 145,
@@ -2046,7 +2175,13 @@ export const pokemonData12: Pokemon[] = [
       "TAILWIND",
       "TWISTER",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Yureyu Power Plant",
+        point: "Post-Champion",
+        method: "Tier 2",
+      },
+    ],
   },
   {
     no: 146,
@@ -2119,7 +2254,9 @@ export const pokemonData12: Pokemon[] = [
       "TAILWIND",
       "TWISTER",
     ],
-    locations: [],
+    locations: [
+      { location: "Pyrous Mountain", point: "Post-Champion", method: "Tier 2" },
+    ],
   },
   {
     no: 147,
@@ -2203,6 +2340,7 @@ export const pokemonData12: Pokemon[] = [
     ],
     locations: [
       { location: "Ametrine Mountain", point: "Adrienn", method: "SuperRod" },
+      { location: "New World", point: "Post-Champion", method: "SuperRod" },
     ],
   },
   {
@@ -2389,7 +2527,9 @@ export const pokemonData12: Pokemon[] = [
       "TWISTER",
       "WATERPULSE",
     ],
-    locations: [],
+    locations: [
+      { location: "Manyworld Forest", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 150,
@@ -2508,7 +2648,9 @@ export const pokemonData12: Pokemon[] = [
       "WONDERROOM",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Neoteric Isle", point: "Post-Champion", method: "Tier 8" },
+    ],
   },
   {
     no: 10043,
@@ -2953,6 +3095,8 @@ export const pokemonData12: Pokemon[] = [
       "WORRYSEED",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Neoteric Isle", point: "Post-Champion", method: "Tier 8" },
+    ],
   },
 ];

@@ -1,11 +1,12 @@
 {
   "name": "reborn-pokepedia",
-  "version": "3.1.0",
+  "version": "3.2.1",
   "private": true,
   "description": "Pokemon Reborn Support App",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --mode ghpages",
+    "render": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
@@ -42,24 +43,20 @@
     "@vue/compiler-sfc": "^3.2.31",
     "@vue/eslint-config-typescript": "^10.0.0",
     "@vue/test-utils": "^2.0.0-rc.17",
+    "@vue/vue3-jest": "^27.0.0-alpha.4",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.12.0",
     "eslint-plugin-vue": "^8.5.0",
     "fork-ts-checker-webpack-plugin-v5": "npm:fork-ts-checker-webpack-plugin@^7.2.1",
     "standard-version": "^9.3.2",
+    "ts-jest": "^27.1.4",
     "typescript": "^4.6.3",
-    "vue-jest": "^5.0.0-0",
     "vue-loader-v16": "npm:vue-loader@^17.0.0"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "jest": {
-    "transformIgnorePatterns": [
-      "/node_modules/(?!@ionic/vue|@ionic/vue-router|@ionic/core|@stencil/core|ionicons)"
-    ]
   }
 }

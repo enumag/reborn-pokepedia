@@ -161,6 +161,7 @@ export const pokemonData71: Pokemon[] = [
       "TAILWIND",
       "TELEKINESIS",
       "TRICK",
+      "WONDERROOM",
     ],
     locations: [],
   },
@@ -223,6 +224,7 @@ export const pokemonData71: Pokemon[] = [
       "BIND",
       "FOULPLAY",
       "GUNKSHOT",
+      "HEADBUTT",
       "IRONHEAD",
       "KNOCKOFF",
       "MAGICCOAT",
@@ -236,7 +238,15 @@ export const pokemonData71: Pokemon[] = [
       "WORRYSEED",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Land" },
+      {
+        location: "Idyll of Pestilence",
+        point: "Post-Champion",
+        method: "Land",
+      },
+      { location: "Mirage Tower?", point: "Post-Champion", method: "Cave" },
+    ],
   },
   {
     no: 794,
@@ -315,7 +325,9 @@ export const pokemonData71: Pokemon[] = [
       "SUPERPOWER",
       "THUNDERPUNCH",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 795,
@@ -391,7 +403,9 @@ export const pokemonData71: Pokemon[] = [
       "SNORE",
       "THROATCHOP",
     ],
-    locations: [],
+    locations: [
+      { location: "Citae Prisma", point: "Post-Champion", method: "SuperRod" },
+    ],
   },
   {
     no: 796,
@@ -459,7 +473,9 @@ export const pokemonData71: Pokemon[] = [
       "SNORE",
       "THUNDERPUNCH",
     ],
-    locations: [],
+    locations: [
+      { location: "Neoteric Isle", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 797,
@@ -530,7 +546,13 @@ export const pokemonData71: Pokemon[] = [
       "SUPERPOWER",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Cauldron of the Future",
+        point: "Post-Champion",
+        method: "Land",
+      },
+    ],
   },
   {
     no: 798,
@@ -593,7 +615,13 @@ export const pokemonData71: Pokemon[] = [
       "SYNTHESIS",
       "TAILWIND",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Idyll of Panaceance",
+        point: "Post-Champion",
+        method: "Land",
+      },
+    ],
   },
   {
     no: 799,
@@ -669,7 +697,14 @@ export const pokemonData71: Pokemon[] = [
       "SNORE",
       "STOMPINGTANTRUM",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Land" },
+      {
+        location: "Cauldron of the Future",
+        point: "Post-Champion",
+        method: "Land",
+      },
+    ],
   },
   {
     no: 800,
@@ -762,7 +797,9 @@ export const pokemonData71: Pokemon[] = [
       "STEALTHROCK",
       "TELEKINESIS",
     ],
-    locations: [],
+    locations: [
+      { location: "Citae Prisma", point: "Post-Champion", method: "Tier 8" },
+    ],
   },
   {
     no: 10155,
@@ -1110,6 +1147,7 @@ export const pokemonData71: Pokemon[] = [
       "CONFIDE",
       "AFTERYOU",
       "HEALBELL",
+      "HELPINGHAND",
       "IRONDEFENSE",
       "IRONHEAD",
       "LASTRESORT",
@@ -1120,7 +1158,9 @@ export const pokemonData71: Pokemon[] = [
       "SNORE",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Route 4", point: "Post-Champion", method: "Tier 4" },
+    ],
   },
   {
     no: 802,
@@ -1210,7 +1250,13 @@ export const pokemonData71: Pokemon[] = [
       "THUNDERPUNCH",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Apophyll Academy",
+        point: "Post-Champion",
+        method: "Tier 6",
+      },
+    ],
   },
   {
     no: 803,
@@ -1258,10 +1304,11 @@ export const pokemonData71: Pokemon[] = [
       "UPROAR",
     ],
     locations: [
+      { location: "Neoteric Isle", point: "Post-Champion", method: "GoodRod" },
       {
         location: "North Aventurine Woods",
-        point: "Hardy",
-        method: "Bee Complete Pokedex Event (100%)",
+        point: "Saphira",
+        method: "Bee 700 Pokedex Event (100%)",
       },
     ],
   },
@@ -1410,7 +1457,10 @@ export const pokemonData71: Pokemon[] = [
       "WONDERROOM",
       "ZENHEADBUTT",
     ],
-    locations: [],
+    locations: [
+      { location: "Twilight Desert", point: "Post-Champion", method: "Cave" },
+      { location: "New World", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 806,
@@ -1479,7 +1529,9 @@ export const pokemonData71: Pokemon[] = [
       "TRICK",
       "UPROAR",
     ],
-    locations: [],
+    locations: [
+      { location: "New World", point: "Post-Champion", method: "Land" },
+    ],
   },
   {
     no: 807,
@@ -1557,6 +1609,12 @@ export const pokemonData71: Pokemon[] = [
       "THROATCHOP",
       "THUNDERPUNCH",
     ],
-    locations: [],
+    locations: [
+      {
+        location: "Chrysolia Deepwoods",
+        point: "Post-Champion",
+        method: "Tier 4",
+      },
+    ],
   },
 ];

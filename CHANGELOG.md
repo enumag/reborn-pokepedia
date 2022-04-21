@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.2.1](https://github.com/brentspector/reborn-pokepedia/compare/v3.2.0...v3.2.1) (2022-04-21)
+
+## [3.2.0](https://github.com/brentspector/reborn-pokepedia/compare/v3.0.0...v3.2.0) (2022-04-21)
+
+
+### Features
+
+* **data:** add or update events and tm locations ([954f9af](https://github.com/brentspector/reborn-pokepedia/commit/954f9af98a0e74abf5035a533d27d6e6ef4a4c42))
+* **data:** update data to use new e19 data ([a78bcb3](https://github.com/brentspector/reborn-pokepedia/commit/a78bcb3eb406a6cc1117eaf9381fad3b5466de6a))
+* **data:** update tutor locations ([0c41904](https://github.com/brentspector/reborn-pokepedia/commit/0c41904e4ce25f9c64afe725afef77b8a3db13ab))
+
+
+### Bug Fixes
+
+* **data:** fix names in data ([ddddf15](https://github.com/brentspector/reborn-pokepedia/commit/ddddf150209867bb63f3c69087bbeacec5c29997))
+* **data:** fix overlapping names in data ([aecb88e](https://github.com/brentspector/reborn-pokepedia/commit/aecb88e42970ee2fe22f2e779c4c9300e41e6474))
+* **scripts:** update python script ([16d8efe](https://github.com/brentspector/reborn-pokepedia/commit/16d8efe599b9f334651f1a52bbe5d9108ece0178))
+
 ## [3.1.0](https://github.com/brentspector/reborn-pokepedia/compare/v3.0.0...v3.1.0) (2021-12-27)
 
 
