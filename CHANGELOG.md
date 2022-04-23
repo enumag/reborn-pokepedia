@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.2.2](https://github.com/brentspector/reborn-pokepedia/compare/v3.0.0...v3.2.2) (2022-04-23)
+
+
+### Bug Fixes
+
+* **data:** fix early game data ([2578fcb](https://github.com/brentspector/reborn-pokepedia/commit/2578fcb9840fcedfaf8e3d0b4fb26f416f2f1273)), closes [#27](https://github.com/brentspector/reborn-pokepedia/issues/27)
+
 ### [3.2.1](https://github.com/brentspector/reborn-pokepedia/compare/v3.2.0...v3.2.1) (2022-04-21)
 
 ## [3.2.0](https://github.com/brentspector/reborn-pokepedia/compare/v3.0.0...v3.2.0) (2022-04-21)
