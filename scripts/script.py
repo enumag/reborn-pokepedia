@@ -37,12 +37,12 @@ eventLocations = {
     "Swinub": {
         "location": "Lower Peridot Ward",
         "point": "Julia",
-        "method": "MonoIce $50 Bum Pokesnax Event (25%)"
+        "method": "MonoIce/MonoGround $50 Bum Pokesnax Event (25%)"
     },
     "Aron": {
         "location": "Lower Peridot Ward",
         "point": "Julia",
-        "method": "MonoSteel $50 Bum Pokesnax Event (25%)"
+        "method": "MonoSteel/MonoRock $50 Bum Pokesnax Event (25%)"
     },
     "Teddiursa": {
         "location": "Lower Peridot Ward",
@@ -52,7 +52,12 @@ eventLocations = {
     "Kricketot": {
         "location": "Lower Peridot Ward",
         "point": "Julia",
-        "method": "House NPC (100%)"
+        "method": "House NPC (50%)"
+    },
+    "Dwebble": {
+        "location": "Lower Peridot Ward",
+        "point": "Julia",
+        "method": "MonoRock House NPC (50%)"
     },
     "Delibird": {
         "location": "Lower Peridot Ward",
@@ -193,6 +198,11 @@ eventLocations = {
         "method": "Hair Salon Competition Event (100%)"
     },
     "Wigglytuff": {
+        "location": "Obsidia Slums",
+        "point": "ZEL/Pulse Tangrowth 1",
+        "method": "Moon Stone"
+    },
+    "Delcatty": {
         "location": "Obsidia Slums",
         "point": "ZEL/Pulse Tangrowth 1",
         "method": "Moon Stone"

@@ -5465,7 +5465,14 @@ export const pokemonData50: Pokemon[] = [
       "SNORE",
       "STEALTHROCK",
     ],
-    locations: [{ location: "Apophyll Cave", point: "Kiki", method: "Cave" }],
+    locations: [
+      { location: "Apophyll Cave", point: "Kiki", method: "Cave" },
+      {
+        location: "Lower Peridot Ward",
+        point: "Julia",
+        method: "MonoRock House NPC (50%)",
+      },
+    ],
   },
   {
     no: 558,

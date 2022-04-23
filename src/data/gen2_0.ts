@@ -6718,7 +6718,7 @@ export const pokemonData20: Pokemon[] = [
       {
         location: "Lower Peridot Ward",
         point: "Julia",
-        method: "MonoIce $50 Bum Pokesnax Event (25%)",
+        method: "MonoIce/MonoGround $50 Bum Pokesnax Event (25%)",
       },
     ],
   },

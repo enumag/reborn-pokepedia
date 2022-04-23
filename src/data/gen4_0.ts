@@ -1175,7 +1175,7 @@ export const pokemonData40: Pokemon[] = [
       {
         location: "Lower Peridot Ward",
         point: "Julia",
-        method: "House NPC (100%)",
+        method: "House NPC (50%)",
       },
     ],
   },
@@ -1891,6 +1891,7 @@ export const pokemonData40: Pokemon[] = [
       "STEALTHROCK",
     ],
     locations: [
+      { location: "Apophyll Cave", point: "Kiki", method: "Trade Ledian" },
       {
         location: "Spinel Town",
         point: "Serra",

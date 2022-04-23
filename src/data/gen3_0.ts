@@ -4580,6 +4580,11 @@ export const pokemonData30: Pokemon[] = [
     locations: [
       { location: "Coral Ward", point: "Adrienn", method: "LandMorning" },
       { location: "Manyworld Forest", point: "Post-Champion", method: "Land" },
+      {
+        location: "Obsidia Slums",
+        point: "ZEL/Pulse Tangrowth 1",
+        method: "Moon Stone",
+      },
     ],
   },
   {
@@ -5125,7 +5130,7 @@ export const pokemonData30: Pokemon[] = [
       {
         location: "Lower Peridot Ward",
         point: "Julia",
-        method: "MonoSteel $50 Bum Pokesnax Event (25%)",
+        method: "MonoSteel/MonoRock $50 Bum Pokesnax Event (25%)",
       },
     ],
   },
