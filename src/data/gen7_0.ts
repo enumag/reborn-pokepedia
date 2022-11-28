@@ -2332,7 +2332,7 @@ export const pokemonData70: Pokemon[] = [
       },
       {
         location: "Citrine Mountain",
-        point: "Charlotte",
+        point: "Ciel",
         method: "Citrine Mountain Puzzle (100%)",
       },
     ],
